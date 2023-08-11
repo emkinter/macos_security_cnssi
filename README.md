@@ -11,6 +11,7 @@
 ## 1. Take CNSSi pdf to excel
 Locate the CNSSI 1253 reference document. It can be found [here] {https://www.dcsa.mil/portals/91/documents/ctp/nao/CNSSI_No1253.pdf}.
 
+* This is not always the lastest version available.*
 
 ## 2. Create table to CIA High Med Low
 
