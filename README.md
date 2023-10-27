@@ -2,10 +2,18 @@
 
 This project allows for the creation of cnssi-1253 Overlay Baseline in the [macOS Security Compliance Project](https://github.com/usnistgov/macos_security). A requirement is that you have cloned the macos_security and the macOS_Security_cnssi git repositories on your macOS System and they are located in the same directory.
 
+This README file describes two part to creating a cnssi-1253 baseline for the macOS Security Compliance Project (mSCP). They are listed here in reverse cronological order as the creation of a cnssi-1253 baseline for a newOS is most common.
+* [Creating a new cnssi-1253 baseline for a newOS](#creating-a-new-cnssi-1253-baseline-for-a-newos)
+* [Create the mapping files from the original cnssi-1253 pdf](#create-the-mapping-files-from-the-original-cnssi-1253-pdf)
+
 The repository has three main directories:
-1. [builds](/builds/) which contains all the cnssi-1253 baseline and rule information for each os
-2. [data](/data/) which contains all the data used to generate a cnssi-1253 baselines.
-3. [scripts](/scripts/) which houses any scripts needed for generating cnssi-1253 baselines
+* [builds](/builds/) which contains all the cnssi-1253 baseline and rule information for each os
+* [data](/data/) which contains all the data used to generate a cnssi-1253 baselines.
+* [scripts](/scripts/) which houses any scripts needed for generating cnssi-1253 baselines
+
+
+------------------------------------------------------------------------------------------
+
 
 ## Creating a new cnssi-1253 baseline for a newOS
 
@@ -41,6 +49,10 @@ Move the cnssi-1253_high, cnssi-1253_moderate, and cnssi-1253_low folders from t
 ### 4. Run the cnssi-merge to create the correct baseline tags in all the rules.
 
 Here is the script for [cnssi-merge](/scripts/cnssi-merge.py)
+
+
+------------------------------------------------------------------------------------------
+
 
 ## Create the mapping files from the original cnssi-1253 pdf
 
