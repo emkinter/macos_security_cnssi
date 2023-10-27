@@ -5,11 +5,7 @@ This project allows for the creation of cnssi-1253 Overlay Baseline in the [macO
 This README file describes two part to creating a cnssi-1253 baseline for the macOS Security Compliance Project (mSCP). They are listed here in reverse cronological order as the creation of a cnssi-1253 baseline for a newOS is most common.
 * [Creating a new cnssi-1253 baseline for a newOS](#creating-a-new-cnssi-1253-baseline-for-a-newos)
 * [Create the mapping files from the original cnssi-1253 pdf](#create-the-mapping-files-from-the-original-cnssi-1253-pdf)
-
-The repository has three main directories:
-* [builds](/builds/) which contains all the cnssi-1253 baseline and rule information for each os
-* [data](/data/) which contains all the data used to generate a cnssi-1253 baselines.
-* [scripts](/scripts/) which houses any scripts needed for generating cnssi-1253 baselines
+* [Project Implementation](#project-implementation)
 
 
 ------------------------------------------------------------------------------------------
@@ -85,7 +81,7 @@ Here's an example:
         IH,AC-2(1)
         IH,AC-2(2)
         
-Here is a list of files generated drom the [October 22, 2022 pdf](/data/cnssi-1253_2022.10.22_pdf/CNSSI_1253_Final_CORRECTED_COPY_6Oct22.pdf)
+Here is a list of files generated from the [October 22, 2022 pdf](/data/cnssi-1253_2022.10.22_pdf/CNSSI_1253_Final_CORRECTED_COPY_6Oct22.pdf)
 * [cnssi-1253_confidentiality_high.csv](/data/cnssi-1253_2022.10.22_csv/cnssi-1253_confidentiality_high.csv)
 * [cnssi-1253_confidentiality_moderate.csv](/data/cnssi-1253_2022.10.22_csv/cnssi-1253_confidentiality_moderate.csv)
 * [cnssi-1253_confidentiality_low.csv](/data/cnssi-1253_2022.10.22_csv/cnssi-1253_confidentiality_low.csv)
@@ -95,3 +91,14 @@ Here is a list of files generated drom the [October 22, 2022 pdf](/data/cnssi-12
 * [cnssi-1253_availability_high.csv](/data/cnssi-1253_2022.10.22_csv/cnssi-1253_availability_high.csv)
 * [cnssi-1253_availability_moderate.csv](/data/cnssi-1253_2022.10.22_csv/cnssi-1253_availability_moderate.csv)
 * [cnssi-1253_availability_low.csv](/data/cnssi-1253_2022.10.22_csv/cnssi-1253_availability_low.csv)
+
+
+------------------------------------------------------------------------------------------
+
+
+## Project Implementation
+
+The repository has three main directories:
+* [builds](/builds/) which contains all the cnssi-1253 baseline and rule information for each os
+* [data](/data/) which contains all the data used to generate a cnssi-1253 baselines.
+* [scripts](/scripts/) which houses any scripts needed for generating cnssi-1253 baselines
