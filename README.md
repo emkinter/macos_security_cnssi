@@ -1,4 +1,4 @@
-# macOS Securrity Compliance Project (mSCP) cnssi-1253 Baseline Creation
+# macOS Security Compliance Project (mSCP) cnssi-1253 Baseline Creation
 
 This project allows for the creation of cnssi-1253 Overlay Baseline in the [macOS Security Compliance Project](https://github.com/usnistgov/macos_security). A requirement is that you have cloned the macos_security and the macOS_Security_cnssi git repositories on your macOS System and they are located in the same directory.
 
