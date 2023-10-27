@@ -76,7 +76,7 @@ Manually curate rules that are duplicates for cnssi-1253_high, cnssi-1253_modera
 
 ## 6. Move build folder content (cnssi-1253_high, cnssi-1253_moderate, and cnssi-1253_low) from macos_security to macos_security_cnssi
 
-Move the cnssi-1253_high, cnssi-1253_moderate, and cnssi-1253_low folders from the macos_security build folder to the newOS_cnssi1253 folder in build folder of the macos_security_cnssi project on your macOS System.
+Move the cnssi-1253_high, cnssi-1253_moderate, and cnssi-1253_low folders from the macos_security build folder to the newOS_cnssi1253 folder into [builds](/builds/) folder of the macos_security_cnssi project on your macOS System.
 
 ## 7. Run the cnssi-merge to create the correct baseline tags in all the rules.
 
