@@ -24,15 +24,15 @@ For more information about the generate_mapping script refer to the [macos_secur
 
 The following commands Make sure you are in the macos_security directory and that the macos_security and the macos_security_cnssi are in the same directory.
 
-        ./scripts/generate_mapping.py ../macos_security_cnssi/data/cnssi-1253_2022.10.22_csv/cnssi-1253_confidentiality_high.csv 
-        ./scripts/generate_mapping.py ../macos_security_cnssi/data/cnssi-1253_2022.10.22_csv/cnssi-1253_confidentiality_moderate.csv 
-        ./scripts/generate_mapping.py ../macos_security_cnssi/data/cnssi-1253_2022.10.22_csv/cnssi-1253_confidentiality_low.csv 
-        ./scripts/generate_mapping.py ../macos_security_cnssi/data/cnssi-1253_2022.10.22_csv/cnssi-1253_integrity_high.csv 
-        ./scripts/generate_mapping.py ../macos_security_cnssi/data/cnssi-1253_2022.10.22_csv/cnssi-1253_integrity_moderate.csv 
-        ./scripts/generate_mapping.py ../macos_security_cnssi/data/cnssi-1253_2022.10.22_csv/cnssi-1253_integrity_low.csv 
-        ./scripts/generate_mapping.py ../macos_security_cnssi/data/cnssi-1253_2022.10.22_csv/cnssi-1253_availability_high.csv 
-        ./scripts/generate_mapping.py ../macos_security_cnssi/data/cnssi-1253_2022.10.22_csv/cnssi-1253_availability_moderate.csv 
-        ./scripts/generate_mapping.py ../macos_security_cnssi/data/cnssi-1253_2022.10.22_csv/cnssi-1253_availability_low.csv 
+        ./scripts/generate_mapping.py ../macos_security_cnssi/data/cnssi-1253_2022.10.06_csv/cnssi-1253_confidentiality_high.csv 
+        ./scripts/generate_mapping.py ../macos_security_cnssi/data/cnssi-1253_2022.10.06_csv/cnssi-1253_confidentiality_moderate.csv 
+        ./scripts/generate_mapping.py ../macos_security_cnssi/data/cnssi-1253_2022.10.06_csv/cnssi-1253_confidentiality_low.csv 
+        ./scripts/generate_mapping.py ../macos_security_cnssi/data/cnssi-1253_2022.10.06_csv/cnssi-1253_integrity_high.csv 
+        ./scripts/generate_mapping.py ../macos_security_cnssi/data/cnssi-1253_2022.10.06_csv/cnssi-1253_integrity_moderate.csv 
+        ./scripts/generate_mapping.py ../macos_security_cnssi/data/cnssi-1253_2022.10.06_csv/cnssi-1253_integrity_low.csv 
+        ./scripts/generate_mapping.py ../macos_security_cnssi/data/cnssi-1253_2022.10.06_csv/cnssi-1253_availability_high.csv 
+        ./scripts/generate_mapping.py ../macos_security_cnssi/data/cnssi-1253_2022.10.06_csv/cnssi-1253_availability_moderate.csv 
+        ./scripts/generate_mapping.py ../macos_security_cnssi/data/cnssi-1253_2022.10.06_csv/cnssi-1253_availability_low.csv 
 
 ### 2. Manually curate duplicate rules
 
@@ -58,7 +58,7 @@ Here is the script for [cnssi-merge](/scripts/cnssi-merge.py)
 
 ### 1. Get The Latest cnssi-1253 PDF
 
-The lastest cnssi-1253 pdf was published on October 22, 2022. A copy is available [here](/data/cnssi-1253_2022.10.22_pdf/CNSSI_1253_Final_CORRECTED_COPY_6Oct22.pdf) and the original is [here](https://www.cnss.gov/CNSS/openDoc.cfm?a=m2eKasT6FPJu7OE92KX1DA%3D%3D&b=A2B3BBBF0ACFA8DA5BC33EDE507C3C84F2AD53FB5EED194E664F4BC326C1706A112E6080918197754578D052B2DAA975).
+The lastest cnssi-1253 pdf was published on October 6, 2022. A copy is available [here](/data/cnssi-1253_2022.10.06_pdf/CNSSI_1253_Final_CORRECTED_COPY_6Oct22.pdf) and the original is [here](https://www.cnss.gov/CNSS/openDoc.cfm?a=m2eKasT6FPJu7OE92KX1DA%3D%3D&b=A2B3BBBF0ACFA8DA5BC33EDE507C3C84F2AD53FB5EED194E664F4BC326C1706A112E6080918197754578D052B2DAA975).
 
 ### 2. Create a spreadsheet of the CNSSI Mapping table for cnssi1253_high, cnssi1253_moderate, and cnssi1253_low
 
@@ -81,16 +81,16 @@ Here's an example:
         IH,AC-2(1)
         IH,AC-2(2)
         
-Here is a list of files generated from the [October 22, 2022 pdf](/data/cnssi-1253_2022.10.22_pdf/CNSSI_1253_Final_CORRECTED_COPY_6Oct22.pdf)
-* [cnssi-1253_confidentiality_high.csv](/data/cnssi-1253_2022.10.22_csv/cnssi-1253_confidentiality_high.csv)
-* [cnssi-1253_confidentiality_moderate.csv](/data/cnssi-1253_2022.10.22_csv/cnssi-1253_confidentiality_moderate.csv)
-* [cnssi-1253_confidentiality_low.csv](/data/cnssi-1253_2022.10.22_csv/cnssi-1253_confidentiality_low.csv)
-* [cnssi-1253_integrity_high.csv](/data/cnssi-1253_2022.10.22_csv/cnssi-1253_integrity_high.csv)
-* [cnssi-1253_integrity_moderate.csv](/data/cnssi-1253_2022.10.22_csv/cnssi-1253_integrity_moderate.csv)
-* [cnssi-1253_integrity_low.csv](/data/cnssi-1253_2022.10.22_csv/cnssi-1253_integrity_low.csv)
-* [cnssi-1253_availability_high.csv](/data/cnssi-1253_2022.10.22_csv/cnssi-1253_availability_high.csv)
-* [cnssi-1253_availability_moderate.csv](/data/cnssi-1253_2022.10.22_csv/cnssi-1253_availability_moderate.csv)
-* [cnssi-1253_availability_low.csv](/data/cnssi-1253_2022.10.22_csv/cnssi-1253_availability_low.csv)
+Here is a list of files generated from the [October 6, 2022 pdf](/data/cnssi-1253_2022.10.06_pdf/CNSSI_1253_Final_CORRECTED_COPY_6Oct22.pdf)
+* [cnssi-1253_confidentiality_high.csv](/data/cnssi-1253_2022.10.06_csv/cnssi-1253_confidentiality_high.csv)
+* [cnssi-1253_confidentiality_moderate.csv](/data/cnssi-1253_2022.10.06_csv/cnssi-1253_confidentiality_moderate.csv)
+* [cnssi-1253_confidentiality_low.csv](/data/cnssi-1253_2022.10.06_csv/cnssi-1253_confidentiality_low.csv)
+* [cnssi-1253_integrity_high.csv](/data/cnssi-1253_2022.10.06_csv/cnssi-1253_integrity_high.csv)
+* [cnssi-1253_integrity_moderate.csv](/data/cnssi-1253_2022.10.06_csv/cnssi-1253_integrity_moderate.csv)
+* [cnssi-1253_integrity_low.csv](/data/cnssi-1253_2022.10.06_csv/cnssi-1253_integrity_low.csv)
+* [cnssi-1253_availability_high.csv](/data/cnssi-1253_2022.10.06_csv/cnssi-1253_availability_high.csv)
+* [cnssi-1253_availability_moderate.csv](/data/cnssi-1253_2022.10.06_csv/cnssi-1253_availability_moderate.csv)
+* [cnssi-1253_availability_low.csv](/data/cnssi-1253_2022.10.06_csv/cnssi-1253_availability_low.csv)
 
 
 ------------------------------------------------------------------------------------------
