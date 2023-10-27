@@ -6,11 +6,11 @@ This project allows for the creation of cnssi-1253 Overlay Baseline in the [macO
 
 1. [Get The Latest cnssi-1253 PDF](#1-get-the-latest-cnssi-1253-pdf)
 2. [Create a spreadsheet of the CNSSI Mapping table for cnssi1253_high, cnssi1253_moderate, and cnssi1253_low](#2-create-a-spreadsheet-of-the-cnssi-mapping-table-for-cnssi1253_high-cnssi1253_moderate-and-cnssi1253_low)
-3. Format the .csv
-4. Run mapping script on each of the .csv files (see [generate mapping wiki](https://github.com/usnistgov/macos_security/wiki/Generate-Mapping))
+3. [Format the .csv](#3-format-the-csv)
+4. Run the generate_mapping script on each of the .csv files
 5. Manually curate duplicate rules
 6. Move build from macos_security to macOS_Security_cnssi
-7. Run the [cnssi-merge](https://github.com/emkinter/macos_security_cnssi/blob/main/scripts/cnssi-merge.py) to create the correct baseline tags in all the rules.
+7. 7. Run the cnssi-merge to create the correct baseline tags in all the rules.
 
 ## 1. Get The Latest cnssi-1253 PDF
 
@@ -37,7 +37,9 @@ Here's an example:
         IH,AC-2(1)
         IH,AC-2(2)
 
-## 5. Run mapping script on each of the .csv files (see [generate mapping wiki](https://github.com/usnistgov/macos_security/wiki/Generate-Mapping))
+## 4. Run mapping script on each of the .csv files
+
+For more information about the generate_mapping script refer to the [macos_security generate mapping wiki](https://github.com/usnistgov/macos_security/wiki/Generate-Mapping)
 
 The following commands Make sure you are in the macos_security directory and that the macos_security and the macos_security_cnssi are in the same directory.
 
@@ -51,12 +53,14 @@ The following commands Make sure you are in the macos_security directory and tha
         ./scripts/generate_mapping.py ../macos_security_cnssi/data/cnssi-1253_2022.10.22_csv/cnssi-1253_availability_medium.csv 
         ./scripts/generate_mapping.py ../macos_security_cnssi/data/cnssi-1253_2022.10.22_csv/cnssi-1253_availability_low.csv 
 
-## 6. Manually curate duplicate rules
+## 5. Manually curate duplicate rules
 
 Manually curate rules that are duplicates for cnssi-1253_high, cnssi-1253_moderate, and cnssi-1253_low. Most often you can identify them because they have high, moderate, or low in the rule name.
 
-## 7. Move build from macos_security to macOS_Security_cnssi
+## 6. Move build from macos_security to macOS_Security_cnssi
 
 Move the cnssi-1253_high, cnssi-1253_moderate, and cnssi-1253_low folders from the macos_security build folder to the newOS_cnssi1253 folder in build folder of the macos_security_cnssi project on your macOS System.
 
-## 8. Run the [cnssi-merge](https://github.com/emkinter/macos_security_cnssi/blob/main/scripts/cnssi-merge.py) to create the correct baseline tags in all the rules.
+## 7. Run the cnssi-merge to create the correct baseline tags in all the rules.
+
+[cnssi-merge](https://github.com/emkinter/macos_security_cnssi/blob/main/scripts/cnssi-merge.py)
