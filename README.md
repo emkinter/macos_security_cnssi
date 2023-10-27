@@ -2,6 +2,11 @@
 
 This project allows for the creation of cnssi-1253 Overlay Baseline in the [macOS Security Compliance Project](https://github.com/usnistgov/macos_security). A requirement is that you have cloned the macos_security and the macOS_Security_cnssi git repositories on your macOS System and they are located in the same directory.
 
+The repository has three main directories:
+1. [builds](/builds/) which contains all the cnssi-1253 baseline and rule information for each os
+2. [data](/data/) which contains all the data used to generate a cnssi-1253 baselines.
+3. [scripts](/scripts/) which houses any scripts needed for generating cnssi-1253 baselines
+
 ## Index
 
 1. [Get The Latest cnssi-1253 PDF](#1-get-the-latest-cnssi-1253-pdf)
