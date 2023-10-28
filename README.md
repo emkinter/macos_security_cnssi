@@ -53,22 +53,22 @@ Here is the script for [cnssi-merge](/scripts/cnssi-merge.py)
 ## Create the mapping files from the original cnssi-1253 pdf
 
 1. [Get The Latest cnssi-1253 PDF](#1-get-the-latest-cnssi-1253-pdf)
-2. [Create a spreadsheet of the CNSSI Mapping table for cnssi1253_high, cnssi1253_moderate, and cnssi1253_low](#2-create-a-spreadsheet-of-the-cnssi-mapping-table-for-cnssi-1253_high-cnssi-1253_moderate-and-cnssi-1253_low)
-3. [Format the .csv](#3-format-the-csv)
+2. [Create a spreadsheet of the cnssi-1253 pdf Mapping table for cnssi-1253_high, cnssi-1253_moderate, and cnssi-1253_low](#2-create-a-spreadsheet-of-the-cnssi-1253-pdf-mapping-table-for-cnssi-1253_high-cnssi-1253_moderate-and-cnssi-1253_low)
+3. [Convert the spreadsheet to the .csv format and move the columns to work with the generate_mapping script.](#3-convert-the-spreadsheet-to-the-csv-format-and-move-the-columns-to-work-with-the-generate_mapping-script)
 
 ### 1. Get The Latest cnssi-1253 PDF
 
 The lastest cnssi-1253 pdf was published on October 6, 2022. A copy is available [here](/data/cnssi-1253_2022.10.06_pdf/CNSSI_1253_Final_CORRECTED_COPY_6Oct22.pdf) and the original is [here](https://www.cnss.gov/CNSS/openDoc.cfm?a=m2eKasT6FPJu7OE92KX1DA%3D%3D&b=A2B3BBBF0ACFA8DA5BC33EDE507C3C84F2AD53FB5EED194E664F4BC326C1706A112E6080918197754578D052B2DAA975).
 
-### 2. Create a spreadsheet of the CNSSI Mapping table for cnssi-1253_high, cnssi-1253_moderate, and cnssi-1253_low
+### 2. Create a spreadsheet of the cnssi-1253 pdf Mapping table for cnssi-1253_high, cnssi-1253_moderate, and cnssi-1253_low
 
 Using Adobe Acrobat, convert the spreadsheet tables to an excel spreadsheet.
  
-Create 9 spreadsheets containing the values for each baseline. Confidentiality (low, moderate, high), Integrity (low, moderate, high) & Availability  (low, moderate, high)
+Create 9 spreadsheets containing the values for each baseline. Confidentiality (low, moderate, high), integrity (low, moderate, high) and availability  (low, moderate, high)
 
-### 3. Format the .csv
+### 3. Convert the spreadsheet to the .csv format and move the columns to work with the generate_mapping script.
 
-If you need to know how to format the .csv files look at the [macos_security generate mapping wiki](https://github.com/usnistgov/macos_security/wiki/Generate-Mapping)
+If you need to know how to format the .csv files look at the [macos_security generate_mapping wiki](https://github.com/usnistgov/macos_security/wiki/Generate-Mapping)
 
 Title the spreadsheet the cnssi basline for your data (i.e. cnssi-1253_confidentiality_high.csv)
 Format the data in csv format with the cnssi-1253 values in the first column and the matching 800-53r5 value in the second column
