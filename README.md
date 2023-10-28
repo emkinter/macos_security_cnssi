@@ -1,6 +1,6 @@
 # macOS Security Compliance Project (mSCP) cnssi-1253 Baseline Creation
 
-This project allows for creating cnssi-1253 Overlay Baseline in the [macOS Security Compliance Project](https://github.com/usnistgov/macos_security). A requirement is that you have cloned the [macos_security](https://github.com/usnistgov/macos_security) and the [macos_security_cnssi](https://github.com/emkinter/macos_security_cnssi) git repositories on your macOS System, and locate them in the same directory.
+This project allows for creating cnssi-1253 Overlay Baseline in the [macOS Security Compliance Project (mSCP)](https://github.com/usnistgov/macos_security). A requirement is that you have cloned the [macos_security](https://github.com/usnistgov/macos_security) and the [macos_security_cnssi](https://github.com/emkinter/macos_security_cnssi) git repositories on your macOS System, and locate them in the same directory.
 
 This README file describes three sections. They are listed here in reverse chronological order, as creating a cnssi-1253 baseline for a newOS is most common.
 * [Creating a new cnssi-1253 baseline for a newOS](#creating-a-new-cnssi-1253-baseline-for-a-newos)
@@ -103,7 +103,7 @@ The repository has three main directories:
 * [data](/data/) which contains all the data used to generate a cnssi-1253 baselines.
 * [scripts](/scripts/) which houses any scripts needed for generating cnssi-1253 baselines
 
-For the macOS Security Compliance Project (mSCP), we have chosen only to provide the following baselines:
+For the [macOS Security Compliance Project (mSCP)](https://github.com/usnistgov/macos_security), we have chosen only to provide the following baselines:
 * high confidentiality, integrity, and availability (cnssi-1253_high)
 * moderate confidentiality, integrity, and availability (cnssi-1253_moderate)
 * low confidentiality, integrity, and availability (cnssi-1253_low)
