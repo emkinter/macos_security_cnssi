@@ -54,7 +54,7 @@ Here is the script for [cnssi-merge](/scripts/cnssi-merge.py)
 
 1. [Get The Latest cnssi-1253 PDF](#1-get-the-latest-cnssi-1253-pdf)
 2. [Create a spreadsheet of the cnssi-1253 pdf Mapping table for cnssi-1253_high, cnssi-1253_moderate, and cnssi-1253_low](#2-create-a-spreadsheet-of-the-cnssi-1253-pdf-mapping-table-for-cnssi-1253_high-cnssi-1253_moderate-and-cnssi-1253_low)
-3. [Format the .csv](#3-format-the-csv)
+3. [Convert the spreadsheet to the .csv format and move the columns to work with the generate_mapping script.](#3-convert-the-spreadsheet-to-the-csv-format-and-move-the-columns-to-work-with-the-generate_mapping-script)
 
 ### 1. Get The Latest cnssi-1253 PDF
 
