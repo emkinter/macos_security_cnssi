@@ -1,8 +1,8 @@
 # macOS Security Compliance Project (mSCP) cnssi-1253 Baseline Creation
 
-This project allows for the creation of cnssi-1253 Overlay Baseline in the [macOS Security Compliance Project](https://github.com/usnistgov/macos_security). A requirement is that you have cloned the macos_security and the macOS_Security_cnssi git repositories on your macOS System and they are located in the same directory.
+This project allows for creating cnssi-1253 Overlay Baseline in the [macOS Security Compliance Project](https://github.com/usnistgov/macos_security). A requirement is that you have cloned the macos_security and the macOS_Security_cnssi git repositories on your macOS System, and locate them in the same directory.
 
-This README file describes two part to creating a cnssi-1253 baseline for the macOS Security Compliance Project (mSCP). They are listed here in reverse cronological order as the creation of a cnssi-1253 baseline for a newOS is most common.
+This README file describes three sections. They are listed here in reverse chronological order, as creating a cnssi-1253 baseline for a newOS is most common.
 * [Creating a new cnssi-1253 baseline for a newOS](#creating-a-new-cnssi-1253-baseline-for-a-newos)
 * [Create the mapping files from the original cnssi-1253 pdf](#create-the-mapping-files-from-the-original-cnssi-1253-pdf)
 * [Project Implementation](#project-implementation)
@@ -36,7 +36,7 @@ The following commands Make sure you are in the macos_security directory and tha
 
 ### 2. Manually curate duplicate rules
 
-Manually curate rules that are duplicates for cnssi-1253_high, cnssi-1253_moderate, and cnssi-1253_low. Most often you can identify them because they have high, moderate, or low in the rule name.
+Manually curate rules to eliminate duplicates for cnssi-1253_high, cnssi-1253_moderate, and cnssi-1253_low. You can often identify them because they have high, moderate, or low in the rule name.
 
 ### 3. Move build folder content (cnssi-1253_high, cnssi-1253_moderate, and cnssi-1253_low) from macos_security to macos_security_cnssi
 
@@ -58,20 +58,20 @@ Here is the script for [cnssi-merge](/scripts/cnssi-merge.py)
 
 ### 1. Get The Latest cnssi-1253 PDF
 
-The lastest cnssi-1253 pdf was published on October 6, 2022. A copy is available [here](/data/cnssi-1253_2022.10.06_pdf/CNSSI_1253_Final_CORRECTED_COPY_6Oct22.pdf) and the original is [here](https://www.cnss.gov/CNSS/openDoc.cfm?a=m2eKasT6FPJu7OE92KX1DA%3D%3D&b=A2B3BBBF0ACFA8DA5BC33EDE507C3C84F2AD53FB5EED194E664F4BC326C1706A112E6080918197754578D052B2DAA975).
+The publishing date for the latest cnssi-1253 pdf we found is October 6, 2022. A copy is available [here](/data/cnssi-1253_2022.10.06_pdf/CNSSI_1253_Final_CORRECTED_COPY_6Oct22.pdf) and the original is [here](https://www.cnss.gov/CNSS/openDoc.cfm?a=m2eKasT6FPJu7OE92KX1DA%3D%3D&b=A2B3BBBF0ACFA8DA5BC33EDE507C3C84F2AD53FB5EED194E664F4BC326C1706A112E6080918197754578D052B2DAA975).
 
 ### 2. Create a spreadsheet of the cnssi-1253 pdf Mapping table for cnssi-1253_high, cnssi-1253_moderate, and cnssi-1253_low
 
-Using Adobe Acrobat, convert the spreadsheet tables to an excel spreadsheet.
+Using Adobe Acrobat, convert the spreadsheet tables to an Excel spreadsheet.
  
-Create 9 spreadsheets containing the values for each baseline. Confidentiality (low, moderate, high), integrity (low, moderate, high) and availability  (low, moderate, high)
+Create nine spreadsheets containing the values for each baseline. Confidentiality (low, moderate, high), integrity (low, moderate, high), and availability  (low, moderate, high)
 
 ### 3. Convert the spreadsheet to the .csv format and move the columns to work with the generate_mapping script.
 
-If you need to know how to format the .csv files look at the [macos_security generate_mapping wiki](https://github.com/usnistgov/macos_security/wiki/Generate-Mapping)
+If you need to know how to format the .csv files, look at the [macos_security generate_mapping wiki](https://github.com/usnistgov/macos_security/wiki/Generate-Mapping)
 
-Title the spreadsheet the cnssi basline for your data (i.e. cnssi-1253_confidentiality_high.csv)
-Format the data in csv format with the cnssi-1253 values in the first column and the matching 800-53r5 value in the second column
+Title the spreadsheet the cnssi baseline for your data (i.e. cnssi-1253_confidentiality_high.csv)
+Format the data in .csv format with the cnssi-1253 values in the first column and the matching 800-53r5 value in the second column
 
 Here's an example:
 
@@ -103,9 +103,9 @@ The repository has three main directories:
 * [data](/data/) which contains all the data used to generate a cnssi-1253 baselines.
 * [scripts](/scripts/) which houses any scripts needed for generating cnssi-1253 baselines
 
-For the macOS Security Compliance Project (mSCP) we have chosen to only provide the following baselines:
+For the macOS Security Compliance Project (mSCP), we have chosen only to provide the following baselines:
 * high confidentiality, integrity, and availability (cnssi-1253_high)
 * moderate confidentiality, integrity, and availability (cnssi-1253_moderate)
 * low confidentiality, integrity, and availability (cnssi-1253_low)
 
-It is possible to provide other baselines by mixing other levels of confidentiality, integrity, and availability. This can be accomplished by updating the values in the [.csv files](/data/cnssi-1253_2022.10.06_csv/).
+It is possible to provide other baselines by mixing different levels of confidentiality, integrity, and availability in the [.csv files](/data/cnssi-1253_2022.10.06_csv/).
