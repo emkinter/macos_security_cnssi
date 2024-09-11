@@ -2,8 +2,8 @@
 
 This project allows for creating cnssi-1253 Overlay Baseline in the [macOS Security Compliance Project (mSCP)](https://github.com/usnistgov/macos_security). A requirement is that you have cloned the [macos_security](https://github.com/usnistgov/macos_security) and the [macos_security_cnssi](https://github.com/emkinter/macos_security_cnssi) git repositories on your macOS System, and locate them in the same directory.
 
-This README file has three sections. We list them from most common to least common.
-* [Creating a new cnssi-1253 baseline for a newOS](#creating-a-new-cnssi-1253-baseline-for-a-newos)
+This README file has three sections, listed from most to least common.
+* [Creating a new cnssi-1253 baseline for a new OS](#creating-a-new-cnssi-1253-baseline-for-a-newos)
 * [Create the mapping files from the original cnssi-1253 pdf](#create-the-mapping-files-from-the-original-cnssi-1253-pdf)
 * [Project Implementation](#project-implementation)
 
@@ -11,7 +11,7 @@ This README file has three sections. We list them from most common to least comm
 ------------------------------------------------------------------------------------------
 
 
-## Creating a new cnssi-1253 baseline for a newOS
+## Creating a new cnssi-1253 baseline for a new OS
 
 1. [Run the generate_mapping script on each of the .csv files](#1-run-mapping-script-on-each-of-the-csv-files)
 2. [Manually curate duplicate rules](#2-manually-curate-duplicate-rules)
