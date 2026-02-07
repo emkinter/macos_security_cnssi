@@ -19,7 +19,7 @@
 //       macos_security_cnssi/    (https://github.com/emkinter/macos_security_cnssi)
 //
 // Usage:
-//   swift cnssi_baseline_generator.swift <command> [options]
+//   swift cnssi-baseline-generator.swift <command> [options]
 //   See --help for full details.
 // =============================================================================
 
@@ -654,7 +654,7 @@ struct CNSSIBaselineGenerator {
 // MARK: - CLI
 
 func printUsage() {
-    let prog = (CommandLine.arguments.first ?? "cnssi_baseline_generator")
+    let prog = (CommandLine.arguments.first ?? "cnssi-baseline-generator")
     print("""
     Usage: \(prog) <command> [options]
 
