@@ -462,15 +462,15 @@ struct RuleTagger {
 struct BuildOrganizer {
 
     /// Copies cnssi-1253_{high,moderate,low} from macos_security/build/
-    /// into macos_security_cnssi/builds/<osName>_cnssi-1253/rules/.
+    /// into macos_security_cnssi/builds/<branchName>_cnssi-1253/rules/.
     static func organize(from macosSecurityPath: String,
                          to cnssiPath: String,
-                         osName: String) throws {
+                         branchName: String) throws {
         let fm = FileManager.default
         let srcBuild = (macosSecurityPath as NSString)
                             .appendingPathComponent("build")
         let dstRules = (cnssiPath as NSString)
-                            .appendingPathComponent("builds/\(osName)_cnssi-1253/rules")
+                            .appendingPathComponent("builds/\(branchName)_cnssi-1253/rules")
 
         if !fm.fileExists(atPath: dstRules) {
             try fm.createDirectory(atPath: dstRules,
@@ -508,7 +508,7 @@ struct CNSSIBaselineGenerator {
     }
 
     /// Runs the full six-step workflow from the README.
-    func run(osName: String, dryRun: Bool = false) throws {
+    func run(branchName: String, dryRun: Bool = false) throws {
         printBanner()
         try validatePaths()
 
@@ -574,7 +574,7 @@ struct CNSSIBaselineGenerator {
         // ------ Step 5: Write baseline YAML files --------------------------
         print("\n══ Step 5: Writing Baseline Files ══")
         let buildDir = (cnssiPath as NSString)
-                           .appendingPathComponent("builds/\(osName)_cnssi-1253")
+                           .appendingPathComponent("builds/\(branchName)_cnssi-1253")
         let baselinesDir = (buildDir as NSString)
                                .appendingPathComponent("baselines")
         try FileManager.default.createDirectory(
@@ -597,7 +597,7 @@ struct CNSSIBaselineGenerator {
                                             dryRun: dryRun)
         print("  Updated \(count) rule files")
 
-        printSummary(merged, osName: osName)
+        printSummary(merged, branchName: branchName)
     }
 
     // ---- helpers -----------------------------------------------------------
@@ -633,7 +633,7 @@ struct CNSSIBaselineGenerator {
         """)
     }
 
-    private func printSummary(_ baselines: [Baseline], osName: String) {
+    private func printSummary(_ baselines: [Baseline], branchName: String) {
         print("""
         \n╔══════════════════════════════════════════════════════════════╗
         ║                         Summary                            ║
@@ -644,10 +644,10 @@ struct CNSSIBaselineGenerator {
             print("  ║  \(n)  │  \(bl.rules.count) rules  "
                   + "│  \(bl.sections.count) sections")
         }
-        let os = osName.padding(toLength: 52, withPad: " ", startingAt: 0)
+        let branch = branchName.padding(toLength: 52, withPad: " ", startingAt: 0)
         print("""
         ╠══════════════════════════════════════════════════════════════╣
-        ║  OS: \(os)  ║
+        ║  Branch: \(branch)  ║
         ╚══════════════════════════════════════════════════════════════╝
         """)
     }
@@ -670,7 +670,7 @@ func printUsage() {
     Options:
       --macos-security <path>        Path to the macos_security clone
       --macos-security-cnssi <path>  Path to the macos_security_cnssi clone
-      --os-name <name>               Target OS  (e.g. sequoia, sonoma)
+      --branch-name <name>           Branch  (e.g. tahoe, ios_26, vision_os26)
       --csv <path>                   Single CSV for the 'mapping' command
       --dry-run                      Preview without writing any files
       --help                         Show this message
@@ -681,7 +681,7 @@ func printUsage() {
       swift \(prog) generate \\
         --macos-security ~/repos/macos_security \\
         --macos-security-cnssi ~/repos/macos_security_cnssi \\
-        --os-name sequoia
+        --branch-name tahoe
 
       # Single CSV mapping
       swift \(prog) mapping \\
@@ -692,7 +692,7 @@ func printUsage() {
       swift \(prog) generate \\
         --macos-security ~/repos/macos_security \\
         --macos-security-cnssi ~/repos/macos_security_cnssi \\
-        --os-name sequoia --dry-run
+        --branch-name tahoe --dry-run
     """)
 }
 
@@ -729,14 +729,14 @@ do {
     case "generate":
         guard let ms   = opts["--macos-security"],
               let cn   = opts["--macos-security-cnssi"],
-              let os   = opts["--os-name"] else {
+              let os   = opts["--branch-name"] else {
             print("Error: 'generate' needs --macos-security, "
-                  + "--macos-security-cnssi, and --os-name")
+                  + "--macos-security-cnssi, and --branch-name")
             printUsage(); exit(1)
         }
         let gen = CNSSIBaselineGenerator(macosSecurityPath: ms,
                                          cnssiPath: cn)
-        try gen.run(osName: os, dryRun: flags.contains("--dry-run"))
+        try gen.run(branchName: os, dryRun: flags.contains("--dry-run"))
 
     // ── Single CSV mapping ─────────────────────────────────────────────
     case "mapping":
@@ -757,9 +757,9 @@ do {
     case "merge":
         guard let ms = opts["--macos-security"],
               let cn = opts["--macos-security-cnssi"],
-              let os = opts["--os-name"] else {
+              let os = opts["--branch-name"] else {
             print("Error: 'merge' needs --macos-security, "
-                  + "--macos-security-cnssi, and --os-name")
+                  + "--macos-security-cnssi, and --branch-name")
             exit(1)
         }
         let buildDir     = (cn as NSString)
@@ -825,12 +825,12 @@ do {
     case "organize":
         guard let ms = opts["--macos-security"],
               let cn = opts["--macos-security-cnssi"],
-              let os = opts["--os-name"] else {
+              let os = opts["--branch-name"] else {
             print("Error: 'organize' needs --macos-security, "
-                  + "--macos-security-cnssi, and --os-name")
+                  + "--macos-security-cnssi, and --branch-name")
             exit(1)
         }
-        try BuildOrganizer.organize(from: ms, to: cn, osName: os)
+        try BuildOrganizer.organize(from: ms, to: cn, branchName: os)
 
     default:
         print("Unknown command: \(cmd)"); printUsage(); exit(1)
