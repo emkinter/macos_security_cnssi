@@ -462,26 +462,26 @@ struct RuleTagger {
 struct BuildOrganizer {
 
     /// Copies cnssi-1253_{high,moderate,low} from macos_security/build/
-    /// into macos_security_cnssi/builds/<osName>_cnssi1253/.
+    /// into macos_security_cnssi/builds/<osName>_cnssi-1253/rules/.
     static func organize(from macosSecurityPath: String,
                          to cnssiPath: String,
                          osName: String) throws {
         let fm = FileManager.default
         let srcBuild = (macosSecurityPath as NSString)
                             .appendingPathComponent("build")
-        let dstBuild = (cnssiPath as NSString)
-                            .appendingPathComponent("builds/\(osName)_cnssi1253")
+        let dstRules = (cnssiPath as NSString)
+                            .appendingPathComponent("builds/\(osName)_cnssi-1253/rules")
 
-        if !fm.fileExists(atPath: dstBuild) {
-            try fm.createDirectory(atPath: dstBuild,
+        if !fm.fileExists(atPath: dstRules) {
+            try fm.createDirectory(atPath: dstRules,
                                    withIntermediateDirectories: true)
-            print("  Created: \(dstBuild)")
+            print("  Created: \(dstRules)")
         }
 
         for level in ImpactLevel.allCases {
             let folder = "cnssi-1253_\(level.rawValue)"
             let src = (srcBuild as NSString).appendingPathComponent(folder)
-            let dst = (dstBuild as NSString).appendingPathComponent(folder)
+            let dst = (dstRules as NSString).appendingPathComponent(folder)
 
             guard fm.fileExists(atPath: src) else {
                 print("  ⚠ Source not found, skipping: \(src)"); continue
@@ -574,12 +574,14 @@ struct CNSSIBaselineGenerator {
         // ------ Step 5: Write baseline YAML files --------------------------
         print("\n══ Step 5: Writing Baseline Files ══")
         let buildDir = (cnssiPath as NSString)
-                           .appendingPathComponent("builds/\(osName)_cnssi1253")
+                           .appendingPathComponent("builds/\(osName)_cnssi-1253")
+        let baselinesDir = (buildDir as NSString)
+                               .appendingPathComponent("baselines")
         try FileManager.default.createDirectory(
-            atPath: buildDir, withIntermediateDirectories: true)
+            atPath: baselinesDir, withIntermediateDirectories: true)
 
         for bl in merged {
-            let out = (buildDir as NSString)
+            let out = (baselinesDir as NSString)
                           .appendingPathComponent("\(bl.name).yaml")
             if dryRun {
                 print("  [DRY RUN] Would write \(out)  (\(bl.rules.count) rules)")
@@ -760,13 +762,15 @@ do {
                   + "--macos-security-cnssi, and --os-name")
             exit(1)
         }
-        let buildDir  = (cn as NSString)
-                            .appendingPathComponent("builds/\(os)_cnssi1253")
-        let rulesDir  = (ms as NSString).appendingPathComponent("rules")
+        let buildDir     = (cn as NSString)
+                              .appendingPathComponent("builds/\(os)_cnssi-1253")
+        let baselinesDir = (buildDir as NSString)
+                              .appendingPathComponent("baselines")
+        let rulesDir     = (ms as NSString).appendingPathComponent("rules")
         var baselines = [Baseline]()
 
         for lvl in ImpactLevel.allCases {
-            let p = (buildDir as NSString)
+            let p = (baselinesDir as NSString)
                         .appendingPathComponent("cnssi-1253_\(lvl.rawValue).yaml")
             guard FileManager.default.fileExists(atPath: p) else { continue }
             let content = try String(contentsOfFile: p, encoding: .utf8)
