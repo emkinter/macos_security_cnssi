@@ -462,33 +462,37 @@ struct RuleTagger {
 struct BuildOrganizer {
 
     /// Copies cnssi-1253_{high,moderate,low} from macos_security/build/
-    /// into macos_security_cnssi/builds/<branchName>_cnssi-1253/rules/.
+    /// into macos_security_cnssi/builds/<branchName>_cnssi-1253/<baseline>/rules/.
     static func organize(from macosSecurityPath: String,
                          to cnssiPath: String,
                          branchName: String) throws {
         let fm = FileManager.default
         let srcBuild = (macosSecurityPath as NSString)
                             .appendingPathComponent("build")
-        let dstRules = (cnssiPath as NSString)
-                            .appendingPathComponent("builds/\(branchName)_cnssi-1253/rules")
-
-        if !fm.fileExists(atPath: dstRules) {
-            try fm.createDirectory(atPath: dstRules,
-                                   withIntermediateDirectories: true)
-            print("  Created: \(dstRules)")
-        }
+        let buildDir = (cnssiPath as NSString)
+                            .appendingPathComponent("builds/\(branchName)_cnssi-1253")
 
         for level in ImpactLevel.allCases {
-            let folder = "cnssi-1253_\(level.rawValue)"
-            let src = (srcBuild as NSString).appendingPathComponent(folder)
-            let dst = (dstRules as NSString).appendingPathComponent(folder)
+            let baselineName = "cnssi-1253_\(level.rawValue)"
+            let src = (srcBuild as NSString).appendingPathComponent(baselineName)
+            // New structure: builds/<branch>_cnssi-1253/<baseline>/rules/
+            let dst = (buildDir as NSString)
+                         .appendingPathComponent("\(baselineName)/rules")
 
             guard fm.fileExists(atPath: src) else {
                 print("  ⚠ Source not found, skipping: \(src)"); continue
             }
+            
+            // Create destination directory
+            let dstParent = (dst as NSString).deletingLastPathComponent
+            if !fm.fileExists(atPath: dstParent) {
+                try fm.createDirectory(atPath: dstParent,
+                                       withIntermediateDirectories: true)
+            }
+            
             if fm.fileExists(atPath: dst) { try fm.removeItem(atPath: dst) }
             try fm.copyItem(atPath: src, toPath: dst)
-            print("  Copied: \(folder) → \(dst)")
+            print("  Copied: \(baselineName) → \(dst)")
         }
     }
 }
@@ -575,13 +579,15 @@ struct CNSSIBaselineGenerator {
         print("\n══ Step 5: Writing Baseline Files ══")
         let buildDir = (cnssiPath as NSString)
                            .appendingPathComponent("builds/\(branchName)_cnssi-1253")
-        let baselinesDir = (buildDir as NSString)
-                               .appendingPathComponent("baselines")
-        try FileManager.default.createDirectory(
-            atPath: baselinesDir, withIntermediateDirectories: true)
 
         for bl in merged {
-            let out = (baselinesDir as NSString)
+            // Create directory structure: builds/<branch>_cnssi-1253/<baseline>/baseline/
+            let baselineDir = (buildDir as NSString)
+                                 .appendingPathComponent("\(bl.name)/baseline")
+            try FileManager.default.createDirectory(
+                atPath: baselineDir, withIntermediateDirectories: true)
+            
+            let out = (baselineDir as NSString)
                           .appendingPathComponent("\(bl.name).yaml")
             if dryRun {
                 print("  [DRY RUN] Would write \(out)  (\(bl.rules.count) rules)")
@@ -764,16 +770,15 @@ do {
         }
         let buildDir     = (cn as NSString)
                               .appendingPathComponent("builds/\(os)_cnssi-1253")
-        let baselinesDir = (buildDir as NSString)
-                              .appendingPathComponent("baselines")
         let rulesDir     = (ms as NSString).appendingPathComponent("rules")
         var baselines = [Baseline]()
 
         for lvl in ImpactLevel.allCases {
-            let p = (baselinesDir as NSString)
-                        .appendingPathComponent("cnssi-1253_\(lvl.rawValue).yaml")
-            guard FileManager.default.fileExists(atPath: p) else { continue }
-            let content = try String(contentsOfFile: p, encoding: .utf8)
+            // New structure: builds/<branch>_cnssi-1253/<baseline>/baseline/<baseline>.yaml
+            let baselineFile = (buildDir as NSString)
+                                 .appendingPathComponent("cnssi-1253_\(lvl.rawValue)/baseline/cnssi-1253_\(lvl.rawValue).yaml")
+            guard FileManager.default.fileExists(atPath: baselineFile) else { continue }
+            let content = try String(contentsOfFile: baselineFile, encoding: .utf8)
             let ids = content.components(separatedBy: .newlines)
                 .map { $0.trimmingCharacters(in: .whitespaces) }
                 .filter { $0.hasPrefix("- ") }
