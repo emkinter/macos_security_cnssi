@@ -544,6 +544,8 @@ func checkoutGitBranch(branchName: String, repoPath: String, dryRun: Bool) throw
 func runGenerateMapping(macosSecurityPath: String, csvFiles: [String], dryRun: Bool) throws {
     let scriptsDir = (macosSecurityPath as NSString).appendingPathComponent("scripts")
     let pythonScript = (scriptsDir as NSString).appendingPathComponent("generate_mapping.py")
+    let venvDir = (macosSecurityPath as NSString).appendingPathComponent(".venv")
+    let venvPython = (venvDir as NSString).appendingPathComponent("bin/python3")
 
     // Verify the Python script exists
     guard FileManager.default.fileExists(atPath: pythonScript) else {
@@ -553,23 +555,36 @@ func runGenerateMapping(macosSecurityPath: String, csvFiles: [String], dryRun: B
             "  Please ensure the macos_security repository contains scripts/generate_mapping.py")
     }
 
+    // Check if virtual environment exists
+    guard FileManager.default.fileExists(atPath: venvPython) else {
+        throw MSCPError.invalidConfiguration(
+            "Python virtual environment not found.\n" +
+            "  Expected: \(venvDir)\n" +
+            "  Please set up the Python environment:\n" +
+            "    cd \(macosSecurityPath)\n" +
+            "    python3 -m venv .venv\n" +
+            "    source .venv/bin/activate\n" +
+            "    pip3 install -r requirements.txt\n" +
+            "    deactivate")
+    }
+
     if dryRun {
         print("  [DRY RUN] Would run generate_mapping.py for \(csvFiles.count) CSV files")
         return
     }
 
-    // Run the Python script for each CSV file
+    // Run the Python script for each CSV file using the virtual environment
     for csvFile in csvFiles {
         let task = Process()
         task.currentDirectoryURL = URL(fileURLWithPath: scriptsDir)
-        task.executableURL = URL(fileURLWithPath: "/usr/bin/python3")
+        task.executableURL = URL(fileURLWithPath: venvPython)
         task.arguments = ["generate_mapping.py", csvFile]
 
         let pipe = Pipe()
         task.standardOutput = pipe
         task.standardError = pipe
 
-        print("  Running: python3 generate_mapping.py \((csvFile as NSString).lastPathComponent)")
+        print("  Running: .venv/bin/python3 generate_mapping.py \((csvFile as NSString).lastPathComponent)")
 
         try task.run()
         task.waitUntilExit()
