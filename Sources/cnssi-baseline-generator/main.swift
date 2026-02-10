@@ -540,7 +540,7 @@ func checkoutGitBranch(branchName: String, repoPath: String, dryRun: Bool) throw
 }
 
 /// Runs the Python generate_mapping.py script to create custom rule files
-func runGenerateMapping(macosSecurityPath: String, csvFiles: [String], dryRun: Bool) throws {
+func runGenerateMapping(macosSecurityPath: String, cnssiPath: String, branchName: String, csvFiles: [String], dryRun: Bool) throws {
     let scriptsDir = (macosSecurityPath as NSString).appendingPathComponent("scripts")
     let pythonScript = (scriptsDir as NSString).appendingPathComponent("generate_mapping.py")
     let venvDir = (macosSecurityPath as NSString).appendingPathComponent(".venv")
@@ -569,6 +569,7 @@ func runGenerateMapping(macosSecurityPath: String, csvFiles: [String], dryRun: B
     
     if dryRun {
         print("  [DRY RUN] Would run generate_mapping.py for \(csvFiles.count) CSV files")
+        print("  [DRY RUN] Would copy generated rules to builds/\(branchName)_cnssi-1253/")
         return
     }
     
@@ -596,6 +597,46 @@ func runGenerateMapping(macosSecurityPath: String, csvFiles: [String], dryRun: B
         }
         
         print("  ✓ Generated custom rules from \((csvFile as NSString).lastPathComponent)")
+    }
+    
+    // Copy generated rule files from macos_security/build to macos_security_cnssi/builds
+    print("\n  Copying generated rule files to destination...")
+    let fm = FileManager.default
+    let srcBuildDir = (macosSecurityPath as NSString).appendingPathComponent("build")
+    let destBuildDir = (cnssiPath as NSString).appendingPathComponent("builds/\(branchName)_cnssi-1253")
+    
+    for level in ["high", "low", "moderate"] {
+        let srcRulesDir = (srcBuildDir as NSString).appendingPathComponent("cnssi-1253_\(level)/rules")
+        let destRulesDir = (destBuildDir as NSString).appendingPathComponent("cnssi-1253_\(level)/rules")
+        
+        guard fm.fileExists(atPath: srcRulesDir) else {
+            print("  ⚠ Source rules not found: \(srcRulesDir)")
+            continue
+        }
+        
+        // Create destination directory if it doesn't exist
+        try fm.createDirectory(atPath: destRulesDir, withIntermediateDirectories: true, attributes: nil)
+        
+        // Remove existing rules if any
+        if fm.fileExists(atPath: destRulesDir) {
+            let contents = try fm.contentsOfDirectory(atPath: destRulesDir)
+            for item in contents {
+                let itemPath = (destRulesDir as NSString).appendingPathComponent(item)
+                try fm.removeItem(atPath: itemPath)
+            }
+        }
+        
+        // Copy all rule subdirectories (audit, auth, icloud, os, etc.)
+        let srcContents = try fm.contentsOfDirectory(atPath: srcRulesDir)
+        for section in srcContents {
+            let srcSectionDir = (srcRulesDir as NSString).appendingPathComponent(section)
+            let destSectionDir = (destRulesDir as NSString).appendingPathComponent(section)
+            
+            // Copy the entire section directory
+            try fm.copyItem(atPath: srcSectionDir, toPath: destSectionDir)
+        }
+        
+        print("  ✓ Copied cnssi-1253_\(level) rules (\(srcContents.count) sections)")
     }
 }
 
@@ -637,8 +678,10 @@ struct CNSSIBaselineGenerator {
                 }
             }
         }
-        try runGenerateMapping(macosSecurityPath: macosSecurityPath, 
-                              csvFiles: csvFiles, 
+        try runGenerateMapping(macosSecurityPath: macosSecurityPath,
+                              cnssiPath: cnssiPath,
+                              branchName: branchName,
+                              csvFiles: csvFiles,
                               dryRun: dryRun)
 
         // ------ Step 1: Scan rules -----------------------------------------
