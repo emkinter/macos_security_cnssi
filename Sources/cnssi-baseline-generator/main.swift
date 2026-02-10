@@ -65,6 +65,7 @@ enum MSCPError: Error, CustomStringConvertible {
     case fileNotFound(String)
     case invalidConfiguration(String)
     case missingArgument(String)
+    case invalidInput(String)
 
     var description: String {
         switch self {
@@ -72,6 +73,7 @@ enum MSCPError: Error, CustomStringConvertible {
         case .fileNotFound(let p):      return "File not found: \(p)"
         case .invalidConfiguration(let m): return "Invalid configuration: \(m)"
         case .missingArgument(let m):   return "Missing argument: \(m)"
+        case .invalidInput(let m):      return "Invalid input: \(m)"
         }
     }
 }
@@ -496,6 +498,92 @@ struct BuildOrganizer {
     }
 }
 
+// MARK: - Git Helper
+
+/// Checks out the specified git branch in the repository
+func checkoutGitBranch(branchName: String, repoPath: String, dryRun: Bool) throws {
+    let fm = FileManager.default
+    
+    // Verify this is a git repository
+    let gitDir = (repoPath as NSString).appendingPathComponent(".git")
+    guard fm.fileExists(atPath: gitDir) else {
+        throw MSCPError.invalidInput(
+            "Not a git repository: \(repoPath)")
+    }
+    
+    if dryRun {
+        print("  [DRY RUN] Would checkout branch: \(branchName)")
+        return
+    }
+    
+    // Run git checkout
+    let task = Process()
+    task.currentDirectoryURL = URL(fileURLWithPath: repoPath)
+    task.executableURL = URL(fileURLWithPath: "/usr/bin/git")
+    task.arguments = ["checkout", branchName]
+    
+    let pipe = Pipe()
+    task.standardOutput = pipe
+    task.standardError = pipe
+    
+    try task.run()
+    task.waitUntilExit()
+    
+    if task.terminationStatus != 0 {
+        let data = pipe.fileHandleForReading.readDataToEndOfFile()
+        let output = String(data: data, encoding: .utf8) ?? ""
+        throw MSCPError.invalidInput(
+            "Failed to checkout branch '\(branchName)': \(output)")
+    }
+    
+    print("  ✓ Checked out branch: \(branchName)")
+}
+
+/// Runs the Python generate_mapping.py script to create custom rule files
+func runGenerateMapping(macosSecurityPath: String, csvFiles: [String], dryRun: Bool) throws {
+    let scriptsDir = (macosSecurityPath as NSString).appendingPathComponent("scripts")
+    let pythonScript = (scriptsDir as NSString).appendingPathComponent("generate_mapping.py")
+    
+    // Verify the Python script exists
+    guard FileManager.default.fileExists(atPath: pythonScript) else {
+        throw MSCPError.fileNotFound(
+            "Python generate_mapping.py script not found.\n" +
+            "  Expected: \(pythonScript)\n" +
+            "  Please ensure the macos_security repository contains scripts/generate_mapping.py")
+    }
+    
+    if dryRun {
+        print("  [DRY RUN] Would run generate_mapping.py for \(csvFiles.count) CSV files")
+        return
+    }
+    
+    // Run the Python script for each CSV file
+    for csvFile in csvFiles {
+        let task = Process()
+        task.currentDirectoryURL = URL(fileURLWithPath: scriptsDir)
+        task.executableURL = URL(fileURLWithPath: "/usr/bin/python3")
+        task.arguments = ["generate_mapping.py", csvFile]
+        
+        let pipe = Pipe()
+        task.standardOutput = pipe
+        task.standardError = pipe
+        
+        print("  Running: python3 generate_mapping.py \((csvFile as NSString).lastPathComponent)")
+        
+        try task.run()
+        task.waitUntilExit()
+        
+        if task.terminationStatus != 0 {
+            let data = pipe.fileHandleForReading.readDataToEndOfFile()
+            let output = String(data: data, encoding: .utf8) ?? ""
+            throw MSCPError.invalidInput(
+                "Python script failed for \((csvFile as NSString).lastPathComponent):\n\(output)")
+        }
+        
+        print("  ✓ Generated custom rules from \((csvFile as NSString).lastPathComponent)")
+    }
+}
+
 // MARK: - Orchestrator
 
 struct CNSSIBaselineGenerator {
@@ -514,6 +602,29 @@ struct CNSSIBaselineGenerator {
     func run(branchName: String, dryRun: Bool = false) throws {
         printBanner()
         try validatePaths()
+        
+        // ------ Step 0: Checkout git branch --------------------------------
+        print("\n══ Step 0: Switching to Git Branch ══")
+        try checkoutGitBranch(branchName: branchName, 
+                              repoPath: macosSecurityPath,
+                              dryRun: dryRun)
+
+        // ------ Step 0.5: Generate custom rule files with Python -----------
+        print("\n══ Step 0.5: Generating Custom Rule Files (Python) ══")
+        // Collect all CSV files for the Python script
+        var csvFiles = [String]()
+        for obj in SecurityObjective.allCases {
+            for lvl in ImpactLevel.allCases {
+                let csv = "cnssi-1253_\(obj.rawValue)_\(lvl.rawValue).csv"
+                let path = (csvDataDir as NSString).appendingPathComponent(csv)
+                if FileManager.default.fileExists(atPath: path) {
+                    csvFiles.append(path)
+                }
+            }
+        }
+        try runGenerateMapping(macosSecurityPath: macosSecurityPath, 
+                              csvFiles: csvFiles, 
+                              dryRun: dryRun)
 
         // ------ Step 1: Scan rules -----------------------------------------
         print("\n══ Step 1: Scanning mSCP Rules ══")
@@ -609,20 +720,43 @@ struct CNSSIBaselineGenerator {
 
     private func validatePaths() throws {
         let fm = FileManager.default
+        
+        // Check macos_security directory
         guard fm.fileExists(atPath: macosSecurityPath) else {
             throw MSCPError.directoryNotFound(
-                "macos_security: \(macosSecurityPath)")
+                "The --macos-security path does not exist.\n" +
+                "  Provided: \(macosSecurityPath)\n" +
+                "  Expected: A valid path to the macos_security project directory\n" +
+                "  Example: --macos-security ~/Projects/macos_security")
         }
+        
+        // Check macos_security_cnssi directory
         guard fm.fileExists(atPath: cnssiPath) else {
             throw MSCPError.directoryNotFound(
-                "macos_security_cnssi: \(cnssiPath)")
+                "The --macos-security-cnssi path does not exist.\n" +
+                "  Provided: \(cnssiPath)\n" +
+                "  Expected: A valid path to the macos_security_cnssi project directory\n" +
+                "  Example: --macos-security-cnssi ~/Projects/macos_security_cnssi")
         }
+        
+        // Check rules directory
         guard fm.fileExists(atPath: rulesDir) else {
-            throw MSCPError.directoryNotFound("rules: \(rulesDir)")
+            throw MSCPError.directoryNotFound(
+                "The rules directory does not exist in macos_security.\n" +
+                "  Expected: \(rulesDir)\n" +
+                "  This directory should contain subdirectories like 'audit/', 'auth/', 'os/', etc.\n" +
+                "  Please verify that --macos-security points to a valid macos_security repository.")
         }
+        
+        // Check CSV data directory
         guard fm.fileExists(atPath: csvDataDir) else {
-            throw MSCPError.directoryNotFound("CSV data: \(csvDataDir)")
+            throw MSCPError.directoryNotFound(
+                "The CSV data directory does not exist in macos_security_cnssi.\n" +
+                "  Expected: \(csvDataDir)\n" +
+                "  This directory should contain CNSSI-1253 CSV mapping files.\n" +
+                "  Please verify that --macos-security-cnssi points to a valid macos_security_cnssi repository.")
         }
+        
         print("  Paths validated ✓")
         print("    macos_security      : \(macosSecurityPath)")
         print("    macos_security_cnssi: \(cnssiPath)")
@@ -732,39 +866,83 @@ do {
 
     // ── Full workflow ───────────────────────────────────────────────────
     case "generate":
-        guard let ms   = opts["--macos-security"],
-              let cn   = opts["--macos-security-cnssi"],
-              let os   = opts["--branch-name"] else {
-            print("Error: 'generate' needs --macos-security, "
-                  + "--macos-security-cnssi, and --branch-name")
-            printUsage(); exit(1)
+        let ms   = opts["--macos-security"]
+        let cn   = opts["--macos-security-cnssi"]
+        let os   = opts["--branch-name"]
+        
+        var missing: [String] = []
+        if ms == nil { missing.append("--macos-security <path>") }
+        if cn == nil { missing.append("--macos-security-cnssi <path>") }
+        if os == nil { missing.append("--branch-name <name>") }
+        
+        guard missing.isEmpty else {
+            print("❌ Error: Missing required arguments for 'generate' command:\n")
+            for arg in missing {
+                print("  • \(arg)")
+            }
+            print("\nExample:")
+            print("  swift cnssi-baseline-generator.swift generate \\")
+            print("    --macos-security ~/Projects/macos_security \\")
+            print("    --macos-security-cnssi ~/Projects/macos_security_cnssi \\")
+            print("    --branch-name tahoe")
+            print("\nRun with --help for more information.")
+            exit(1)
         }
-        let gen = CNSSIBaselineGenerator(macosSecurityPath: ms,
-                                         cnssiPath: cn)
-        try gen.run(branchName: os, dryRun: flags.contains("--dry-run"))
+        let gen = CNSSIBaselineGenerator(macosSecurityPath: ms!,
+                                         cnssiPath: cn!)
+        try gen.run(branchName: os!, dryRun: flags.contains("--dry-run"))
 
     // ── Single CSV mapping ─────────────────────────────────────────────
     case "mapping":
-        guard let ms  = opts["--macos-security"],
-              let csv = opts["--csv"] else {
-            print("Error: 'mapping' needs --macos-security and --csv")
-            printUsage(); exit(1)
+        let ms  = opts["--macos-security"]
+        let csv = opts["--csv"]
+        
+        var missing: [String] = []
+        if ms == nil { missing.append("--macos-security <path>") }
+        if csv == nil { missing.append("--csv <path>") }
+        
+        guard missing.isEmpty else {
+            print("❌ Error: Missing required arguments for 'mapping' command:\n")
+            for arg in missing {
+                print("  • \(arg)")
+            }
+            print("\nExample:")
+            print("  swift cnssi-baseline-generator.swift mapping \\")
+            print("    --macos-security ~/Projects/macos_security \\")
+            print("    --csv ~/Projects/macos_security_cnssi/data/cnssi-1253_2022.12.22_csv/cnssi-1253_confidentiality_high.csv")
+            print("\nRun with --help for more information.")
+            exit(1)
         }
-        let rulesDir = (ms as NSString).appendingPathComponent("rules")
+        let rulesDir = (ms! as NSString).appendingPathComponent("rules")
         let rules    = try RuleScanner.scanRules(in: rulesDir)
         let bl = try MappingGenerator.generateBaseline(
-            from: csv, rules: rules,
-            baselineName: (csv as NSString).lastPathComponent)
+            from: csv!, rules: rules,
+            baselineName: (csv! as NSString).lastPathComponent)
         print("\nMatched rules (\(bl.rules.count)):")
         bl.rules.forEach { print("  - \($0)") }
 
     // ── Re-tag only (cnssi-merge) ──────────────────────────────────────
     case "merge":
-        guard let ms = opts["--macos-security"],
-              let cn = opts["--macos-security-cnssi"],
-              let os = opts["--branch-name"] else {
-            print("Error: 'merge' needs --macos-security, "
-                  + "--macos-security-cnssi, and --branch-name")
+        let ms = opts["--macos-security"]
+        let cn = opts["--macos-security-cnssi"]
+        let os = opts["--branch-name"]
+        
+        var missing: [String] = []
+        if ms == nil { missing.append("--macos-security <path>") }
+        if cn == nil { missing.append("--macos-security-cnssi <path>") }
+        if os == nil { missing.append("--branch-name <name>") }
+        
+        guard missing.isEmpty else {
+            print("❌ Error: Missing required arguments for 'merge' command:\n")
+            for arg in missing {
+                print("  • \(arg)")
+            }
+            print("\nExample:")
+            print("  swift cnssi-baseline-generator.swift merge \\")
+            print("    --macos-security ~/Projects/macos_security \\")
+            print("    --macos-security-cnssi ~/Projects/macos_security_cnssi \\")
+            print("    --branch-name tahoe")
+            print("\nRun with --help for more information.")
             exit(1)
         }
         let buildDir     = (cn as NSString)
@@ -797,14 +975,27 @@ do {
 
     // ── Duplicate report ───────────────────────────────────────────────
     case "duplicates":
-        guard let ms = opts["--macos-security"],
-              let cn = opts["--macos-security-cnssi"] else {
-            print("Error: 'duplicates' needs --macos-security "
-                  + "and --macos-security-cnssi")
+        let ms = opts["--macos-security"]
+        let cn = opts["--macos-security-cnssi"]
+        
+        var missing: [String] = []
+        if ms == nil { missing.append("--macos-security <path>") }
+        if cn == nil { missing.append("--macos-security-cnssi <path>") }
+        
+        guard missing.isEmpty else {
+            print("❌ Error: Missing required arguments for 'duplicates' command:\n")
+            for arg in missing {
+                print("  • \(arg)")
+            }
+            print("\nExample:")
+            print("  swift cnssi-baseline-generator.swift duplicates \\")
+            print("    --macos-security ~/Projects/macos_security \\")
+            print("    --macos-security-cnssi ~/Projects/macos_security_cnssi")
+            print("\nRun with --help for more information.")
             exit(1)
         }
-        let rulesDir = (ms as NSString).appendingPathComponent("rules")
-        let csvDir   = (cn as NSString)
+        let rulesDir = (ms! as NSString).appendingPathComponent("rules")
+        let csvDir   = (cn! as NSString)
             .appendingPathComponent("data/cnssi-1253_2022.12.22_csv")
         let rules = try RuleScanner.scanRules(in: rulesDir)
 
@@ -827,14 +1018,29 @@ do {
 
     // ── Move build folders ─────────────────────────────────────────────
     case "organize":
-        guard let ms = opts["--macos-security"],
-              let cn = opts["--macos-security-cnssi"],
-              let os = opts["--branch-name"] else {
-            print("Error: 'organize' needs --macos-security, "
-                  + "--macos-security-cnssi, and --branch-name")
+        let ms = opts["--macos-security"]
+        let cn = opts["--macos-security-cnssi"]
+        let os = opts["--branch-name"]
+        
+        var missing: [String] = []
+        if ms == nil { missing.append("--macos-security <path>") }
+        if cn == nil { missing.append("--macos-security-cnssi <path>") }
+        if os == nil { missing.append("--branch-name <name>") }
+        
+        guard missing.isEmpty else {
+            print("❌ Error: Missing required arguments for 'organize' command:\n")
+            for arg in missing {
+                print("  • \(arg)")
+            }
+            print("\nExample:")
+            print("  swift cnssi-baseline-generator.swift organize \\")
+            print("    --macos-security ~/Projects/macos_security \\")
+            print("    --macos-security-cnssi ~/Projects/macos_security_cnssi \\")
+            print("    --branch-name tahoe")
+            print("\nRun with --help for more information.")
             exit(1)
         }
-        try BuildOrganizer.organize(from: ms, to: cn, branchName: os)
+        try BuildOrganizer.organize(from: ms!, to: cn!, branchName: os!)
 
     default:
         print("Unknown command: \(cmd)"); printUsage(); exit(1)
