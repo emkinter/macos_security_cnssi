@@ -600,7 +600,9 @@ func runGenerateMapping(macosSecurityPath: String, cnssiPath: String, branchName
     }
     
     // Copy generated rule files from macos_security/build to macos_security_cnssi/builds
-    print("\n  Copying generated rule files to destination...")
+    print("\n  Copying custom rule files from macos_security to destination...")
+    print("    Source: \(macosSecurityPath)/build/")
+    print("    Dest:   builds/\(branchName)_cnssi-1253/")
     let fm = FileManager.default
     let srcBuildDir = (macosSecurityPath as NSString).appendingPathComponent("build")
     let destBuildDir = (cnssiPath as NSString).appendingPathComponent("builds/\(branchName)_cnssi-1253")
