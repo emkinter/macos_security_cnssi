@@ -2,9 +2,10 @@
 
 This project allows for creating cnssi-1253 Overlay Baseline in the [macOS Security Compliance Project (mSCP)](https://github.com/usnistgov/macos_security). A requirement is that you have cloned the [macos_security](https://github.com/usnistgov/macos_security) and the [macos_security_cnssi](https://github.com/emkinter/macos_security_cnssi) git repositories on your macOS System, and locate them in the same directory.
 
-This README file has three sections, listed from most to least common.
+This README file has four sections, listed from most to least common.
 * [Creating a new cnssi-1253 baseline for a new OS](#creating-a-new-cnssi-1253-baseline-for-a-newos)
 * [Create the mapping files from the original cnssi-1253 pdf](#create-the-mapping-files-from-the-original-cnssi-1253-pdf)
+* [Building the Swift tools](#building-the-swift-tools)
 * [Project Implementation](#project-implementation)
 
 
@@ -92,6 +93,28 @@ Here is a list of files generated from the [cnssi-1253_2022.12.22 pdf](/data/cns
 * [cnssi-1253_availability_moderate.csv](/data/cnssi-1253_2022.12.22_csv/cnssi-1253_availability_moderate.csv)
 * [cnssi-1253_availability_low.csv](/data/cnssi-1253_2022.12.22_csv/cnssi-1253_availability_low.csv)
 
+
+------------------------------------------------------------------------------------------
+
+
+## Building the Swift tools
+
+The [Xcode project](macos_security_cnssi.xcodeproj) contains two macOS command-line targets and shared schemes:
+
+* `cnssi-baseline-generator` — generates and organizes CNSSI-1253 baselines.
+* `cnssi-merge` — merges CNSSI-1253 tags into mSCP rule files.
+
+Both targets compile the existing files in `Sources/`, support macOS 13 or later, and use the repository root as their working directory. Local builds use ad-hoc signing and do not require a development team. Distribution signing requires a suitable signing identity.
+
+The Swift package remains available for terminal builds:
+
+```sh
+swift build
+swift run cnssi-baseline-generator
+swift run cnssi-merge ../macos_security builds/tahoe_cnssi-1253
+```
+
+`cnssi-merge` requires the mSCP project path and an OS-specific baseline directory containing the `cnssi-1253_high`, `cnssi-1253_moderate`, and `cnssi-1253_low` folders. Running it updates rule files in that mSCP project.
 
 ------------------------------------------------------------------------------------------
 

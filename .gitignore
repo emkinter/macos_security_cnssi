@@ -5,4 +5,5 @@
 .swiftpm/
 Package.resolved
 *.xcodeproj
+!/macos_security_cnssi.xcodeproj/
 xcuserdata/
