@@ -1,34 +1,23 @@
-// swift-tools-version: 5.9
-// =============================================================================
-// Package.swift — mSCP CNSSI-1253 Baseline Tools
-// =============================================================================
-//
-// Open this file in Xcode (File → Open…) to build and run the tools.
-//
-// Targets:
-//   cnssi-baseline-generator  – Full baseline generation workflow
-//   cnssi-merge               – Merge CNSSI tags into mSCP rule files
-//
-// Both are pure-Foundation command-line tools with no external dependencies.
-// =============================================================================
-
+// swift-tools-version: 6.2
 import PackageDescription
 
 let package = Package(
     name: "macos_security_cnssi",
-
-    platforms: [
-        .macOS(.v13)
+    platforms: [.macOS(.v14)],
+    products: [
+        .library(name: "CNSSIWorkflow", targets: ["CNSSIWorkflow"]),
+        .executable(name: "cnssi-baseline-generator", targets: ["cnssi-baseline-generator"]),
+        .executable(name: "cnssi-merge", targets: ["cnssi-merge"])
     ],
-
+    dependencies: [.package(path: "../ComplianceKit")],
     targets: [
-        .executableTarget(
-            name: "cnssi-baseline-generator",
-            path: "Sources/cnssi-baseline-generator"
-        ),
-        .executableTarget(
-            name: "cnssi-merge",
-            path: "Sources/cnssi-merge"
-        ),
+        .target(name: "CNSSIWorkflow", dependencies: [
+            .product(name: "ComplianceKitCore", package: "compliancekit"),
+            .product(name: "ComplianceKitPersistence", package: "compliancekit")
+        ]),
+        .executableTarget(name: "cnssi-baseline-generator", dependencies: ["CNSSIWorkflow"],
+                          swiftSettings: [.defaultIsolation(MainActor.self)]),
+        .executableTarget(name: "cnssi-merge", dependencies: ["CNSSIWorkflow"],
+                          swiftSettings: [.defaultIsolation(MainActor.self)])
     ]
 )

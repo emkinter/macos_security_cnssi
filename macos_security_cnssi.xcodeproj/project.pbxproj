@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+        C0B000000000000000000001 = {isa = PBXBuildFile; productRef = C0B000000000000000000011; };
+        C0B000000000000000000002 = {isa = PBXBuildFile; productRef = C0B000000000000000000011; };
 		A10000000000000000000001 /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = A20000000000000000000001 /* main.swift */; };
 		A10000000000000000000002 /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = A20000000000000000000002 /* main.swift */; };
 /* End PBXBuildFile section */
@@ -28,6 +30,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+                C0B000000000000000000001,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -35,6 +38,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+                C0B000000000000000000002,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -102,7 +106,8 @@
 			);
 			dependencies = (
 			);
-			name = "cnssi-baseline-generator";
+			packageProductDependencies = (C0B000000000000000000011);
+            name = "cnssi-baseline-generator";
 			productName = "cnssi-baseline-generator";
 			productReference = A20000000000000000000003 /* cnssi-baseline-generator */;
 			productType = "com.apple.product-type.tool";
@@ -118,7 +123,8 @@
 			);
 			dependencies = (
 			);
-			name = "cnssi-merge";
+			packageProductDependencies = (C0B000000000000000000011);
+            name = "cnssi-merge";
 			productName = "cnssi-merge";
 			productReference = A20000000000000000000004 /* cnssi-merge */;
 			productType = "com.apple.product-type.tool";
@@ -149,7 +155,8 @@
 			);
 			mainGroup = A40000000000000000000001;
 			productRefGroup = A40000000000000000000005 /* Products */;
-			projectDirPath = "";
+			packageReferences = (C0B000000000000000000010);
+            projectDirPath = "";
 			projectRoot = "";
 			targets = (
 				A50000000000000000000001 /* cnssi-baseline-generator */,
@@ -177,6 +184,13 @@
 		};
 /* End PBXSourcesBuildPhase section */
 
+/* Begin XCLocalSwiftPackageReference section */
+        C0B000000000000000000010 = {isa = XCLocalSwiftPackageReference; relativePath = .; };
+/* End XCLocalSwiftPackageReference section */
+/* Begin XCSwiftPackageProductDependency section */
+        C0B000000000000000000011 = {isa = XCSwiftPackageProductDependency; productName = CNSSIWorkflow; };
+/* End XCSwiftPackageProductDependency section */
+
 /* Begin XCBuildConfiguration section */
 		A90000000000000000000001 /* Debug */ = {
 			isa = XCBuildConfiguration;
@@ -188,14 +202,15 @@
 				DEBUG_INFORMATION_FORMAT = dwarf;
 				ENABLE_TESTABILITY = YES;
 				GCC_OPTIMIZATION_LEVEL = 0;
-				MACOSX_DEPLOYMENT_TARGET = 13.0;
+				MACOSX_DEPLOYMENT_TARGET = 14.0;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = macosx;
 				SUPPORTED_PLATFORMS = macosx;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) DEBUG";
 				SWIFT_DEFAULT_ACTOR_ISOLATION = MainActor;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
-				SWIFT_VERSION = 5.0;
+				SWIFT_VERSION = 6.0;
+                SWIFT_DEFAULT_ACTOR_ISOLATION = MainActor;
 			};
 			name = Debug;
 		};
@@ -207,13 +222,14 @@
 				CODE_SIGN_STYLE = Manual;
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
-				MACOSX_DEPLOYMENT_TARGET = 13.0;
+				MACOSX_DEPLOYMENT_TARGET = 14.0;
 				SDKROOT = macosx;
 				SUPPORTED_PLATFORMS = macosx;
 				SWIFT_COMPILATION_MODE = wholemodule;
 				SWIFT_DEFAULT_ACTOR_ISOLATION = MainActor;
 				SWIFT_OPTIMIZATION_LEVEL = "-O";
-				SWIFT_VERSION = 5.0;
+				SWIFT_VERSION = 6.0;
+                SWIFT_DEFAULT_ACTOR_ISOLATION = MainActor;
 			};
 			name = Release;
 		};

@@ -132,3 +132,46 @@ For the [macOS Security Compliance Project (mSCP)](https://github.com/usnistgov/
 * low confidentiality, integrity, and availability (cnssi-1253_low)
 
 It is possible to provide other baselines by mixing different levels of confidentiality, integrity, and availability in the [.csv files](/data/cnssi-1253_2022.10.06_csv/).
+
+
+## Shared ComplianceKit workflow
+
+The Swift tools now depend on the sibling `../ComplianceKit` package. They require
+Swift 6.2 or later and macOS 14 or later. The original standalone implementations
+remain in `scripts/` for historical reproduction. The native Xcode targets and
+Swift Package Manager targets compile the same thin command-line entry points.
+
+Generation previews by default and never changes the mSCP source checkout:
+
+```sh
+swift run cnssi-baseline-generator generate \
+  --macos-security ../macos_security \
+  --macos-security-cnssi . --target-version 27.0 --level high
+```
+
+Add `--curation path/to/curation.json` to exclude conflicting rule variants. The
+file is a JSON object mapping rule IDs to nonempty decision reasons. No variant
+is automatically discarded based on its name. After reviewing coverage and
+curation, add `--apply` to write a new bundle. Existing output is not overwritten.
+Use `--output <parent>` to select a fresh destination, and `--level all` to plan
+all three uniform impact levels. The library's `ImpactProfile` also supports mixed
+confidentiality, integrity, and availability levels.
+
+Each bundle contains a schema-validated sectioned baseline under `baselines/`,
+partial rule overlays under `rules/`, `coverage.json`, and `manifest.json`. The
+manifest records the mSCP revision, rule-content hash, schema and mapping-input
+hashes, target version, package version, and curation decisions. Unmatched controls
+are reported for separate assessment; matching a rule does not establish full
+CNSSI compliance. Applied generation history is stored locally using SwiftData
+under `.compliancekit/`.
+
+The separate merge step is also a preview until `--apply` is supplied:
+
+```sh
+swift run cnssi-merge ../macos_security builds/macos_27.0_cnssi-1253/cnssi-1253_high
+```
+
+Merging handles partial overlays, preserves other fields, validates merged rules,
+and checks that source files still match the planned input before writing. The
+`organize` step is included in bundle generation. Legacy `--branch-name` values
+are accepted as OS aliases and never switch Git branches.

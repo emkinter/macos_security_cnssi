@@ -1,0 +1,34 @@
+{
+  "baselineID" : "cnssi-1253_high_macos_27.0",
+  "exclusions" : {
+    "auth_smartcard_certificate_trust_enforce_moderate" : "Select auth_smartcard_certificate_trust_enforce_high, matching the upstream 800-53r5_high_macos_27.0 baseline. Both variants map to IA-5(2) and SC-17; retaining both would specify conflicting trust settings. This high-impact example uses hard revocation checking and requires network availability."
+  },
+  "framework" : "cnssi-1253",
+  "mappingInputs" : [
+    {
+      "filename" : "cnssi-1253_availability_high.csv",
+      "id" : "availability",
+      "sha256" : "f4c4546378e17538aba2b61dcde4fb20e4d1876b454b7d70f8ca56b9a333c794"
+    },
+    {
+      "filename" : "cnssi-1253_confidentiality_high.csv",
+      "id" : "confidentiality",
+      "sha256" : "602f775d57724a0379c147ec277569bb4138a625e67ff6a4c58b2385f89374dc"
+    },
+    {
+      "filename" : "cnssi-1253_integrity_high.csv",
+      "id" : "integrity",
+      "sha256" : "e41596a53b4116769b7041a136da0e1baf2273f893c7fe9f1d5a54cc3468d5fa"
+    }
+  ],
+  "packageVersion" : "0.6.0-dev",
+  "repositoryPath" : "/Users/ekkehard/Projects/macos_security",
+  "repositoryRevision" : "ed2c210123db4fa9a195c0e4b065c7832051d328",
+  "ruleCount" : 264,
+  "rulesSHA256" : "dd226df4850760f8075d820967cbccf8c8e3fe49fd833227bf76ce8d960d80b4",
+  "schemaSHA256" : {
+    "mscp_baseline.json" : "a656649738d836b24196f1dd1a19698cb0b6801b362aa3712a8c5373839af541",
+    "mscp_rule.json" : "0010ffe1de6a48c5ecb4016bab9e35ee4723df0b0214c13bebb902ca36498bd2"
+  },
+  "targetVersion" : "27.0.0"
+}

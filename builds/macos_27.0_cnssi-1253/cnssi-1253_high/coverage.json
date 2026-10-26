@@ -1,0 +1,9348 @@
+{
+  "applicableRuleCount" : 326,
+  "controls" : [
+    {
+      "control" : "AC-1",
+      "matchedRuleIDs" : [
+
+      ],
+      "selectedRuleIDs" : [
+
+      ],
+      "sources" : [
+        "availability",
+        "confidentiality",
+        "integrity"
+      ]
+    },
+    {
+      "control" : "AC-10",
+      "matchedRuleIDs" : [
+        "os_limit_gui_sessions"
+      ],
+      "selectedRuleIDs" : [
+        "os_limit_gui_sessions"
+      ],
+      "sources" : [
+        "availability",
+        "confidentiality",
+        "integrity"
+      ]
+    },
+    {
+      "control" : "AC-11",
+      "matchedRuleIDs" : [
+        "system_settings_screensaver_ask_for_password_delay_enforce",
+        "system_settings_screensaver_password_enforce",
+        "system_settings_screensaver_timeout_enforce",
+        "system_settings_token_removal_enforce"
+      ],
+      "selectedRuleIDs" : [
+        "system_settings_screensaver_ask_for_password_delay_enforce",
+        "system_settings_screensaver_password_enforce",
+        "system_settings_screensaver_timeout_enforce",
+        "system_settings_token_removal_enforce"
+      ],
+      "sources" : [
+        "confidentiality",
+        "integrity"
+      ]
+    },
+    {
+      "control" : "AC-11(1)",
+      "matchedRuleIDs" : [
+        "os_loginwindow_adminhostinfo_disabled",
+        "os_screensaver_loginwindow_enforce",
+        "system_settings_hot_corners_disable",
+        "system_settings_hot_corners_secure"
+      ],
+      "selectedRuleIDs" : [
+        "os_loginwindow_adminhostinfo_disabled",
+        "os_screensaver_loginwindow_enforce",
+        "system_settings_hot_corners_disable",
+        "system_settings_hot_corners_secure"
+      ],
+      "sources" : [
+        "confidentiality"
+      ]
+    },
+    {
+      "control" : "AC-12",
+      "matchedRuleIDs" : [
+        "os_ssh_server_alive_interval_configure",
+        "os_sshd_channel_timeout_configure",
+        "os_sshd_client_alive_interval_configure",
+        "os_sshd_unused_connection_timeout_configure",
+        "system_settings_automatic_logout_enforce"
+      ],
+      "selectedRuleIDs" : [
+        "os_ssh_server_alive_interval_configure",
+        "os_sshd_channel_timeout_configure",
+        "os_sshd_client_alive_interval_configure",
+        "os_sshd_unused_connection_timeout_configure",
+        "system_settings_automatic_logout_enforce"
+      ],
+      "sources" : [
+        "confidentiality",
+        "integrity"
+      ]
+    },
+    {
+      "control" : "AC-12(1)",
+      "matchedRuleIDs" : [
+        "os_logoff_capability_and_message"
+      ],
+      "selectedRuleIDs" : [
+        "os_logoff_capability_and_message"
+      ],
+      "sources" : [
+        "confidentiality",
+        "integrity"
+      ]
+    },
+    {
+      "control" : "AC-12(2)",
+      "matchedRuleIDs" : [
+        "os_logoff_capability_and_message"
+      ],
+      "selectedRuleIDs" : [
+        "os_logoff_capability_and_message"
+      ],
+      "sources" : [
+        "confidentiality",
+        "integrity"
+      ]
+    },
+    {
+      "control" : "AC-14",
+      "matchedRuleIDs" : [
+
+      ],
+      "selectedRuleIDs" : [
+
+      ],
+      "sources" : [
+        "confidentiality",
+        "integrity"
+      ]
+    },
+    {
+      "control" : "AC-16",
+      "matchedRuleIDs" : [
+
+      ],
+      "selectedRuleIDs" : [
+
+      ],
+      "sources" : [
+        "confidentiality",
+        "integrity"
+      ]
+    },
+    {
+      "control" : "AC-16(6)",
+      "matchedRuleIDs" : [
+
+      ],
+      "selectedRuleIDs" : [
+
+      ],
+      "sources" : [
+        "confidentiality",
+        "integrity"
+      ]
+    },
+    {
+      "control" : "AC-16(7)",
+      "matchedRuleIDs" : [
+
+      ],
+      "selectedRuleIDs" : [
+
+      ],
+      "sources" : [
+        "confidentiality",
+        "integrity"
+      ]
+    },
+    {
+      "control" : "AC-17",
+      "matchedRuleIDs" : [
+        "os_httpd_disable",
+        "os_nfsd_disable",
+        "os_tftpd_disable",
+        "os_uucp_disable",
+        "system_settings_media_sharing_disabled",
+        "system_settings_rae_disable",
+        "system_settings_screen_sharing_disable",
+        "system_settings_smbd_disable",
+        "system_settings_ssh_disable",
+        "system_settings_ssh_enable"
+      ],
+      "selectedRuleIDs" : [
+        "os_httpd_disable",
+        "os_nfsd_disable",
+        "os_tftpd_disable",
+        "os_uucp_disable",
+        "system_settings_media_sharing_disabled",
+        "system_settings_rae_disable",
+        "system_settings_screen_sharing_disable",
+        "system_settings_smbd_disable",
+        "system_settings_ssh_disable",
+        "system_settings_ssh_enable"
+      ],
+      "sources" : [
+        "confidentiality",
+        "integrity"
+      ]
+    },
+    {
+      "control" : "AC-17(1)",
+      "matchedRuleIDs" : [
+        "audit_flags_lo_configure"
+      ],
+      "selectedRuleIDs" : [
+        "audit_flags_lo_configure"
+      ],
+      "sources" : [
+        "confidentiality",
+        "integrity"
+      ]
+    },
+    {
+      "control" : "AC-17(10)",
+      "matchedRuleIDs" : [
+
+      ],
+      "selectedRuleIDs" : [
+
+      ],
+      "sources" : [
+        "confidentiality",
+        "integrity"
+      ]
+    },
+    {
+      "control" : "AC-17(2)",
+      "matchedRuleIDs" : [
+        "os_ssh_fips_compliant",
+        "os_sshd_fips_compliant"
+      ],
+      "selectedRuleIDs" : [
+        "os_ssh_fips_compliant",
+        "os_sshd_fips_compliant"
+      ],
+      "sources" : [
+        "confidentiality",
+        "integrity"
+      ]
+    },
+    {
+      "control" : "AC-17(3)",
+      "matchedRuleIDs" : [
+        "os_managed_access_control_points"
+      ],
+      "selectedRuleIDs" : [
+        "os_managed_access_control_points"
+      ],
+      "sources" : [
+        "confidentiality",
+        "integrity"
+      ]
+    },
+    {
+      "control" : "AC-17(4)",
+      "matchedRuleIDs" : [
+
+      ],
+      "selectedRuleIDs" : [
+
+      ],
+      "sources" : [
+        "confidentiality",
+        "integrity"
+      ]
+    },
+    {
+      "control" : "AC-17(6)",
+      "matchedRuleIDs" : [
+
+      ],
+      "selectedRuleIDs" : [
+
+      ],
+      "sources" : [
+        "confidentiality"
+      ]
+    },
+    {
+      "control" : "AC-17(9)",
+      "matchedRuleIDs" : [
+        "os_provide_disconnect_remote_access"
+      ],
+      "selectedRuleIDs" : [
+        "os_provide_disconnect_remote_access"
+      ],
+      "sources" : [
+        "confidentiality",
+        "integrity"
+      ]
+    },
+    {
+      "control" : "AC-18",
+      "matchedRuleIDs" : [
+        "system_settings_bluetooth_disable",
+        "system_settings_wifi_disable"
+      ],
+      "selectedRuleIDs" : [
+        "system_settings_bluetooth_disable",
+        "system_settings_wifi_disable"
+      ],
+      "sources" : [
+        "confidentiality",
+        "integrity"
+      ]
+    },
+    {
+      "control" : "AC-18(1)",
+      "matchedRuleIDs" : [
+        "system_settings_wifi_disable",
+        "system_settings_wifi_disable_when_connected_to_ethernet"
+      ],
+      "selectedRuleIDs" : [
+        "system_settings_wifi_disable",
+        "system_settings_wifi_disable_when_connected_to_ethernet"
+      ],
+      "sources" : [
+        "confidentiality",
+        "integrity"
+      ]
+    },
+    {
+      "control" : "AC-18(3)",
+      "matchedRuleIDs" : [
+        "system_settings_bluetooth_disable",
+        "system_settings_wifi_disable",
+        "system_settings_wifi_disable_when_connected_to_ethernet"
+      ],
+      "selectedRuleIDs" : [
+        "system_settings_bluetooth_disable",
+        "system_settings_wifi_disable",
+        "system_settings_wifi_disable_when_connected_to_ethernet"
+      ],
+      "sources" : [
+        "confidentiality",
+        "integrity"
+      ]
+    },
+    {
+      "control" : "AC-18(4)",
+      "matchedRuleIDs" : [
+        "system_settings_bluetooth_sharing_disable"
+      ],
+      "selectedRuleIDs" : [
+        "system_settings_bluetooth_sharing_disable"
+      ],
+      "sources" : [
+        "confidentiality",
+        "integrity"
+      ]
+    },
+    {
+      "control" : "AC-18(5)",
+      "matchedRuleIDs" : [
+
+      ],
+      "selectedRuleIDs" : [
+
+      ],
+      "sources" : [
+        "confidentiality",
+        "integrity"
+      ]
+    },
+    {
+      "control" : "AC-19",
+      "matchedRuleIDs" : [
+        "os_access_control_mobile_devices"
+      ],
+      "selectedRuleIDs" : [
+        "os_access_control_mobile_devices"
+      ],
+      "sources" : [
+        "confidentiality",
+        "integrity"
+      ]
+    },
+    {
+      "control" : "AC-19(5)",
+      "matchedRuleIDs" : [
+
+      ],
+      "selectedRuleIDs" : [
+
+      ],
+      "sources" : [
+        "confidentiality",
+        "integrity"
+      ]
+    },
+    {
+      "control" : "AC-2",
+      "matchedRuleIDs" : [
+        "system_settings_guest_access_smb_disable",
+        "system_settings_guest_account_disable"
+      ],
+      "selectedRuleIDs" : [
+        "system_settings_guest_access_smb_disable",
+        "system_settings_guest_account_disable"
+      ],
+      "sources" : [
+        "confidentiality",
+        "integrity"
+      ]
+    },
+    {
+      "control" : "AC-2(1)",
+      "matchedRuleIDs" : [
+        "os_provide_automated_account_management"
+      ],
+      "selectedRuleIDs" : [
+        "os_provide_automated_account_management"
+      ],
+      "sources" : [
+        "confidentiality",
+        "integrity"
+      ]
+    },
+    {
+      "control" : "AC-2(11)",
+      "matchedRuleIDs" : [
+        "os_filevault_authorized_users",
+        "os_filevault_autologin_disable"
+      ],
+      "selectedRuleIDs" : [
+        "os_filevault_authorized_users",
+        "os_filevault_autologin_disable"
+      ],
+      "sources" : [
+        "availability",
+        "confidentiality",
+        "integrity"
+      ]
+    },
+    {
+      "control" : "AC-2(12)",
+      "matchedRuleIDs" : [
+        "audit_flags_aa_configure",
+        "audit_flags_ad_configure",
+        "audit_flags_ex_configure",
+        "audit_flags_fd_configure",
+        "audit_flags_fm_configure",
+        "audit_flags_fm_failed_configure",
+        "audit_flags_fr_configure",
+        "audit_flags_fw_configure",
+        "audit_flags_lo_configure"
+      ],
+      "selectedRuleIDs" : [
+        "audit_flags_aa_configure",
+        "audit_flags_ad_configure",
+        "audit_flags_ex_configure",
+        "audit_flags_fd_configure",
+        "audit_flags_fm_configure",
+        "audit_flags_fm_failed_configure",
+        "audit_flags_fr_configure",
+        "audit_flags_fw_configure",
+        "audit_flags_lo_configure"
+      ],
+      "sources" : [
+        "confidentiality",
+        "integrity"
+      ]
+    },
+    {
+      "control" : "AC-2(13)",
+      "matchedRuleIDs" : [
+
+      ],
+      "selectedRuleIDs" : [
+
+      ],
+      "sources" : [
+        "confidentiality",
+        "integrity"
+      ]
+    },
+    {
+      "control" : "AC-2(2)",
+      "matchedRuleIDs" : [
+        "pwpolicy_emergency_accounts_disable",
+        "pwpolicy_temporary_accounts_disable",
+        "pwpolicy_temporary_or_emergency_accounts_disable"
+      ],
+      "selectedRuleIDs" : [
+        "pwpolicy_emergency_accounts_disable",
+        "pwpolicy_temporary_accounts_disable",
+        "pwpolicy_temporary_or_emergency_accounts_disable"
+      ],
+      "sources" : [
+        "confidentiality",
+        "integrity"
+      ]
+    },
+    {
+      "control" : "AC-2(3)",
+      "matchedRuleIDs" : [
+        "pwpolicy_account_inactivity_enforce"
+      ],
+      "selectedRuleIDs" : [
+        "pwpolicy_account_inactivity_enforce"
+      ],
+      "sources" : [
+        "confidentiality",
+        "integrity"
+      ]
+    },
+    {
+      "control" : "AC-2(4)",
+      "matchedRuleIDs" : [
+        "audit_flags_ad_configure"
+      ],
+      "selectedRuleIDs" : [
+        "audit_flags_ad_configure"
+      ],
+      "sources" : [
+        "confidentiality",
+        "integrity"
+      ]
+    },
+    {
+      "control" : "AC-2(5)",
+      "matchedRuleIDs" : [
+        "system_settings_automatic_logout_enforce"
+      ],
+      "selectedRuleIDs" : [
+        "system_settings_automatic_logout_enforce"
+      ],
+      "sources" : [
+        "availability",
+        "confidentiality",
+        "integrity"
+      ]
+    },
+    {
+      "control" : "AC-2(7)",
+      "matchedRuleIDs" : [
+
+      ],
+      "selectedRuleIDs" : [
+
+      ],
+      "sources" : [
+        "confidentiality",
+        "integrity"
+      ]
+    },
+    {
+      "control" : "AC-2(9)",
+      "matchedRuleIDs" : [
+        "system_settings_guest_access_smb_disable",
+        "system_settings_guest_account_disable"
+      ],
+      "selectedRuleIDs" : [
+        "system_settings_guest_access_smb_disable",
+        "system_settings_guest_account_disable"
+      ],
+      "sources" : [
+        "confidentiality",
+        "integrity"
+      ]
+    },
+    {
+      "control" : "AC-20",
+      "matchedRuleIDs" : [
+        "icloud_addressbook_disable",
+        "icloud_appleid_system_settings_disable",
+        "icloud_bookmarks_disable",
+        "icloud_calendar_disable",
+        "icloud_drive_disable",
+        "icloud_freeform_disable",
+        "icloud_game_center_disable",
+        "icloud_keychain_disable",
+        "icloud_mail_disable",
+        "icloud_notes_disable",
+        "icloud_photos_disable",
+        "icloud_private_relay_disable",
+        "icloud_reminders_disable",
+        "icloud_sync_disable",
+        "os_account_modification_disable",
+        "os_airdrop_disable",
+        "os_apple_intelligence_pcc_disable",
+        "os_appleid_prompt_disable",
+        "os_calendar_app_disable",
+        "os_definition_lookup_disable",
+        "os_dictation_disable",
+        "os_facetime_app_disable",
+        "os_handoff_disable",
+        "os_icloud_storage_prompt_disable",
+        "os_image_playground_disable",
+        "os_iphone_mirroring_disable",
+        "os_mail_smart_reply_disable",
+        "os_mail_summary_disable",
+        "os_messages_app_disable",
+        "os_messages_summary_disable",
+        "os_natural_language_editing_disable",
+        "os_notes_transcription_disable",
+        "os_notes_transcription_summary_disable",
+        "os_on_device_dictation_enforce",
+        "os_photos_enhanced_search_disable",
+        "os_safari_reader_summary_disable",
+        "os_siri_prompt_disable",
+        "os_skip_apple_intelligence_enable",
+        "os_skip_unlock_with_watch_enable",
+        "os_visual_intelligence_disable",
+        "os_writing_tools_disable",
+        "system_settings_diagnostics_reports_disable",
+        "system_settings_external_intelligence_disable",
+        "system_settings_external_intelligence_sign_in_disable",
+        "system_settings_find_my_disable",
+        "system_settings_improve_assistive_voice_disable",
+        "system_settings_improve_search_disable",
+        "system_settings_improve_siri_dictation_disable",
+        "system_settings_internet_accounts_disable",
+        "system_settings_internet_sharing_disable",
+        "system_settings_personalized_advertising_disable",
+        "system_settings_siri_ai_disable",
+        "system_settings_siri_disable"
+      ],
+      "selectedRuleIDs" : [
+        "icloud_addressbook_disable",
+        "icloud_appleid_system_settings_disable",
+        "icloud_bookmarks_disable",
+        "icloud_calendar_disable",
+        "icloud_drive_disable",
+        "icloud_freeform_disable",
+        "icloud_game_center_disable",
+        "icloud_keychain_disable",
+        "icloud_mail_disable",
+        "icloud_notes_disable",
+        "icloud_photos_disable",
+        "icloud_private_relay_disable",
+        "icloud_reminders_disable",
+        "icloud_sync_disable",
+        "os_account_modification_disable",
+        "os_airdrop_disable",
+        "os_apple_intelligence_pcc_disable",
+        "os_appleid_prompt_disable",
+        "os_calendar_app_disable",
+        "os_definition_lookup_disable",
+        "os_dictation_disable",
+        "os_facetime_app_disable",
+        "os_handoff_disable",
+        "os_icloud_storage_prompt_disable",
+        "os_image_playground_disable",
+        "os_iphone_mirroring_disable",
+        "os_mail_smart_reply_disable",
+        "os_mail_summary_disable",
+        "os_messages_app_disable",
+        "os_messages_summary_disable",
+        "os_natural_language_editing_disable",
+        "os_notes_transcription_disable",
+        "os_notes_transcription_summary_disable",
+        "os_on_device_dictation_enforce",
+        "os_photos_enhanced_search_disable",
+        "os_safari_reader_summary_disable",
+        "os_siri_prompt_disable",
+        "os_skip_apple_intelligence_enable",
+        "os_skip_unlock_with_watch_enable",
+        "os_visual_intelligence_disable",
+        "os_writing_tools_disable",
+        "system_settings_diagnostics_reports_disable",
+        "system_settings_external_intelligence_disable",
+        "system_settings_external_intelligence_sign_in_disable",
+        "system_settings_find_my_disable",
+        "system_settings_improve_assistive_voice_disable",
+        "system_settings_improve_search_disable",
+        "system_settings_improve_siri_dictation_disable",
+        "system_settings_internet_accounts_disable",
+        "system_settings_internet_sharing_disable",
+        "system_settings_personalized_advertising_disable",
+        "system_settings_siri_ai_disable",
+        "system_settings_siri_disable"
+      ],
+      "sources" : [
+        "confidentiality",
+        "integrity"
+      ]
+    },
+    {
+      "control" : "AC-20(1)",
+      "matchedRuleIDs" : [
+        "icloud_addressbook_disable",
+        "icloud_appleid_system_settings_disable",
+        "icloud_bookmarks_disable",
+        "icloud_calendar_disable",
+        "icloud_drive_disable",
+        "icloud_freeform_disable",
+        "icloud_game_center_disable",
+        "icloud_keychain_disable",
+        "icloud_mail_disable",
+        "icloud_notes_disable",
+        "icloud_photos_disable",
+        "icloud_private_relay_disable",
+        "icloud_reminders_disable",
+        "icloud_sync_disable",
+        "os_account_modification_disable",
+        "os_apple_intelligence_pcc_disable",
+        "os_definition_lookup_disable",
+        "os_image_playground_disable",
+        "os_mail_smart_reply_disable",
+        "os_mail_summary_disable",
+        "os_messages_summary_disable",
+        "os_natural_language_editing_disable",
+        "os_notes_transcription_disable",
+        "os_notes_transcription_summary_disable",
+        "os_photos_enhanced_search_disable",
+        "os_safari_reader_summary_disable",
+        "os_visual_intelligence_disable",
+        "os_writing_tools_disable"
+      ],
+      "selectedRuleIDs" : [
+        "icloud_addressbook_disable",
+        "icloud_appleid_system_settings_disable",
+        "icloud_bookmarks_disable",
+        "icloud_calendar_disable",
+        "icloud_drive_disable",
+        "icloud_freeform_disable",
+        "icloud_game_center_disable",
+        "icloud_keychain_disable",
+        "icloud_mail_disable",
+        "icloud_notes_disable",
+        "icloud_photos_disable",
+        "icloud_private_relay_disable",
+        "icloud_reminders_disable",
+        "icloud_sync_disable",
+        "os_account_modification_disable",
+        "os_apple_intelligence_pcc_disable",
+        "os_definition_lookup_disable",
+        "os_image_playground_disable",
+        "os_mail_smart_reply_disable",
+        "os_mail_summary_disable",
+        "os_messages_summary_disable",
+        "os_natural_language_editing_disable",
+        "os_notes_transcription_disable",
+        "os_notes_transcription_summary_disable",
+        "os_photos_enhanced_search_disable",
+        "os_safari_reader_summary_disable",
+        "os_visual_intelligence_disable",
+        "os_writing_tools_disable"
+      ],
+      "sources" : [
+        "confidentiality",
+        "integrity"
+      ]
+    },
+    {
+      "control" : "AC-20(2)",
+      "matchedRuleIDs" : [
+
+      ],
+      "selectedRuleIDs" : [
+
+      ],
+      "sources" : [
+        "confidentiality"
+      ]
+    },
+    {
+      "control" : "AC-20(3)",
+      "matchedRuleIDs" : [
+
+      ],
+      "selectedRuleIDs" : [
+
+      ],
+      "sources" : [
+        "confidentiality",
+        "integrity"
+      ]
+    },
+    {
+      "control" : "AC-21",
+      "matchedRuleIDs" : [
+
+      ],
+      "selectedRuleIDs" : [
+
+      ],
+      "sources" : [
+        "confidentiality"
+      ]
+    },
+    {
+      "control" : "AC-22",
+      "matchedRuleIDs" : [
+
+      ],
+      "selectedRuleIDs" : [
+
+      ],
+      "sources" : [
+        "confidentiality"
+      ]
+    },
+    {
+      "control" : "AC-23",
+      "matchedRuleIDs" : [
+
+      ],
+      "selectedRuleIDs" : [
+
+      ],
+      "sources" : [
+        "confidentiality"
+      ]
+    },
+    {
+      "control" : "AC-3",
+      "matchedRuleIDs" : [
+        "os_airdrop_disable",
+        "os_authenticated_root_enable",
+        "os_filevault_autologin_disable",
+        "os_handoff_disable",
+        "os_httpd_disable",
+        "os_iphone_mirroring_disable",
+        "os_logical_access",
+        "os_nfsd_disable",
+        "os_sip_enable",
+        "os_tftpd_disable",
+        "os_uucp_disable",
+        "system_settings_bluetooth_sharing_disable",
+        "system_settings_media_sharing_disabled",
+        "system_settings_rae_disable",
+        "system_settings_screen_sharing_disable",
+        "system_settings_smbd_disable",
+        "system_settings_ssh_enable"
+      ],
+      "selectedRuleIDs" : [
+        "os_airdrop_disable",
+        "os_authenticated_root_enable",
+        "os_filevault_autologin_disable",
+        "os_handoff_disable",
+        "os_httpd_disable",
+        "os_iphone_mirroring_disable",
+        "os_logical_access",
+        "os_nfsd_disable",
+        "os_sip_enable",
+        "os_tftpd_disable",
+        "os_uucp_disable",
+        "system_settings_bluetooth_sharing_disable",
+        "system_settings_media_sharing_disabled",
+        "system_settings_rae_disable",
+        "system_settings_screen_sharing_disable",
+        "system_settings_smbd_disable",
+        "system_settings_ssh_enable"
+      ],
+      "sources" : [
+        "confidentiality",
+        "integrity"
+      ]
+    },
+    {
+      "control" : "AC-3(4)",
+      "matchedRuleIDs" : [
+        "os_allow_info_passed",
+        "os_change_security_attributes",
+        "os_grant_privs"
+      ],
+      "selectedRuleIDs" : [
+        "os_allow_info_passed",
+        "os_change_security_attributes",
+        "os_grant_privs"
+      ],
+      "sources" : [
+        "confidentiality",
+        "integrity"
+      ]
+    },
+    {
+      "control" : "AC-4",
+      "matchedRuleIDs" : [
+        "os_firewall_default_deny_require",
+        "os_skip_apple_intelligence_enable",
+        "system_settings_firewall_enable",
+        "system_settings_internet_sharing_disable",
+        "system_settings_wifi_disable",
+        "system_settings_wifi_disable_when_connected_to_ethernet"
+      ],
+      "selectedRuleIDs" : [
+        "os_firewall_default_deny_require",
+        "os_skip_apple_intelligence_enable",
+        "system_settings_firewall_enable",
+        "system_settings_internet_sharing_disable",
+        "system_settings_wifi_disable",
+        "system_settings_wifi_disable_when_connected_to_ethernet"
+      ],
+      "sources" : [
+        "confidentiality",
+        "integrity"
+      ]
+    },
+    {
+      "control" : "AC-4(4)",
+      "matchedRuleIDs" : [
+
+      ],
+      "selectedRuleIDs" : [
+
+      ],
+      "sources" : [
+        "confidentiality",
+        "integrity"
+      ]
+    },
+    {
+      "control" : "AC-5",
+      "matchedRuleIDs" : [
+
+      ],
+      "selectedRuleIDs" : [
+
+      ],
+      "sources" : [
+        "confidentiality",
+        "integrity"
+      ]
+    },
+    {
+      "control" : "AC-6",
+      "matchedRuleIDs" : [
+        "os_home_folders_default",
+        "os_home_folders_secure",
+        "os_recovery_lock_enable",
+        "system_settings_system_wide_preferences_configure"
+      ],
+      "selectedRuleIDs" : [
+        "os_home_folders_default",
+        "os_home_folders_secure",
+        "os_recovery_lock_enable",
+        "system_settings_system_wide_preferences_configure"
+      ],
+      "sources" : [
+        "confidentiality",
+        "integrity"
+      ]
+    },
+    {
+      "control" : "AC-6(1)",
+      "matchedRuleIDs" : [
+        "system_settings_system_wide_preferences_configure"
+      ],
+      "selectedRuleIDs" : [
+        "system_settings_system_wide_preferences_configure"
+      ],
+      "sources" : [
+        "confidentiality",
+        "integrity"
+      ]
+    },
+    {
+      "control" : "AC-6(10)",
+      "matchedRuleIDs" : [
+        "os_prevent_priv_functions"
+      ],
+      "selectedRuleIDs" : [
+        "os_prevent_priv_functions"
+      ],
+      "sources" : [
+        "confidentiality",
+        "integrity"
+      ]
+    },
+    {
+      "control" : "AC-6(2)",
+      "matchedRuleIDs" : [
+        "system_settings_system_wide_preferences_configure"
+      ],
+      "selectedRuleIDs" : [
+        "system_settings_system_wide_preferences_configure"
+      ],
+      "sources" : [
+        "confidentiality",
+        "integrity"
+      ]
+    },
+    {
+      "control" : "AC-6(3)",
+      "matchedRuleIDs" : [
+
+      ],
+      "selectedRuleIDs" : [
+
+      ],
+      "sources" : [
+        "confidentiality",
+        "integrity"
+      ]
+    },
+    {
+      "control" : "AC-6(5)",
+      "matchedRuleIDs" : [
+        "system_settings_admin_group_membership_defined"
+      ],
+      "selectedRuleIDs" : [
+        "system_settings_admin_group_membership_defined"
+      ],
+      "sources" : [
+        "confidentiality",
+        "integrity"
+      ]
+    },
+    {
+      "control" : "AC-6(7)",
+      "matchedRuleIDs" : [
+
+      ],
+      "selectedRuleIDs" : [
+
+      ],
+      "sources" : [
+        "confidentiality",
+        "integrity"
+      ]
+    },
+    {
+      "control" : "AC-6(8)",
+      "matchedRuleIDs" : [
+        "os_prevent_priv_execution"
+      ],
+      "selectedRuleIDs" : [
+        "os_prevent_priv_execution"
+      ],
+      "sources" : [
+        "confidentiality",
+        "integrity"
+      ]
+    },
+    {
+      "control" : "AC-6(9)",
+      "matchedRuleIDs" : [
+        "audit_flags_ad_configure",
+        "os_sudo_log_enforce"
+      ],
+      "selectedRuleIDs" : [
+        "audit_flags_ad_configure",
+        "os_sudo_log_enforce"
+      ],
+      "sources" : [
+        "confidentiality",
+        "integrity"
+      ]
+    },
+    {
+      "control" : "AC-7",
+      "matchedRuleIDs" : [
+        "pwpolicy_account_lockout_enforce",
+        "pwpolicy_account_lockout_timeout_enforce"
+      ],
+      "selectedRuleIDs" : [
+        "pwpolicy_account_lockout_enforce",
+        "pwpolicy_account_lockout_timeout_enforce"
+      ],
+      "sources" : [
+        "availability",
+        "confidentiality",
+        "integrity"
+      ]
+    },
+    {
+      "control" : "AC-8",
+      "matchedRuleIDs" : [
+        "os_policy_banner_loginwindow_enforce",
+        "os_policy_banner_ssh_configure",
+        "os_policy_banner_ssh_enforce"
+      ],
+      "selectedRuleIDs" : [
+        "os_policy_banner_loginwindow_enforce",
+        "os_policy_banner_ssh_configure",
+        "os_policy_banner_ssh_enforce"
+      ],
+      "sources" : [
+        "confidentiality",
+        "integrity"
+      ]
+    },
+    {
+      "control" : "AT-1",
+      "matchedRuleIDs" : [
+
+      ],
+      "selectedRuleIDs" : [
+
+      ],
+      "sources" : [
+        "availability",
+        "confidentiality",
+        "integrity"
+      ]
+    },
+    {
+      "control" : "AT-2",
+      "matchedRuleIDs" : [
+
+      ],
+      "selectedRuleIDs" : [
+
+      ],
+      "sources" : [
+        "availability",
+        "confidentiality",
+        "integrity"
+      ]
+    },
+    {
+      "control" : "AT-2(2)",
+      "matchedRuleIDs" : [
+
+      ],
+      "selectedRuleIDs" : [
+
+      ],
+      "sources" : [
+        "availability",
+        "confidentiality",
+        "integrity"
+      ]
+    },
+    {
+      "control" : "AT-2(3)",
+      "matchedRuleIDs" : [
+
+      ],
+      "selectedRuleIDs" : [
+
+      ],
+      "sources" : [
+        "availability",
+        "confidentiality",
+        "integrity"
+      ]
+    },
+    {
+      "control" : "AT-2(4)",
+      "matchedRuleIDs" : [
+
+      ],
+      "selectedRuleIDs" : [
+
+      ],
+      "sources" : [
+        "availability",
+        "confidentiality",
+        "integrity"
+      ]
+    },
+    {
+      "control" : "AT-2(5)",
+      "matchedRuleIDs" : [
+
+      ],
+      "selectedRuleIDs" : [
+
+      ],
+      "sources" : [
+        "availability",
+        "confidentiality",
+        "integrity"
+      ]
+    },
+    {
+      "control" : "AT-2(6)",
+      "matchedRuleIDs" : [
+
+      ],
+      "selectedRuleIDs" : [
+
+      ],
+      "sources" : [
+        "availability",
+        "confidentiality",
+        "integrity"
+      ]
+    },
+    {
+      "control" : "AT-3",
+      "matchedRuleIDs" : [
+
+      ],
+      "selectedRuleIDs" : [
+
+      ],
+      "sources" : [
+        "availability",
+        "confidentiality",
+        "integrity"
+      ]
+    },
+    {
+      "control" : "AT-3(1)",
+      "matchedRuleIDs" : [
+
+      ],
+      "selectedRuleIDs" : [
+
+      ],
+      "sources" : [
+        "availability",
+        "confidentiality",
+        "integrity"
+      ]
+    },
+    {
+      "control" : "AT-3(2)",
+      "matchedRuleIDs" : [
+
+      ],
+      "selectedRuleIDs" : [
+
+      ],
+      "sources" : [
+        "availability",
+        "confidentiality",
+        "integrity"
+      ]
+    },
+    {
+      "control" : "AT-4",
+      "matchedRuleIDs" : [
+
+      ],
+      "selectedRuleIDs" : [
+
+      ],
+      "sources" : [
+        "availability",
+        "confidentiality",
+        "integrity"
+      ]
+    },
+    {
+      "control" : "AT-6",
+      "matchedRuleIDs" : [
+
+      ],
+      "selectedRuleIDs" : [
+
+      ],
+      "sources" : [
+        "availability",
+        "confidentiality",
+        "integrity"
+      ]
+    },
+    {
+      "control" : "AU-1",
+      "matchedRuleIDs" : [
+
+      ],
+      "selectedRuleIDs" : [
+
+      ],
+      "sources" : [
+        "availability",
+        "confidentiality",
+        "integrity"
+      ]
+    },
+    {
+      "control" : "AU-10",
+      "matchedRuleIDs" : [
+        "os_non_repudiation"
+      ],
+      "selectedRuleIDs" : [
+        "os_non_repudiation"
+      ],
+      "sources" : [
+        "integrity"
+      ]
+    },
+    {
+      "control" : "AU-11",
+      "matchedRuleIDs" : [
+        "audit_retention_configure",
+        "os_install_log_retention_configure"
+      ],
+      "selectedRuleIDs" : [
+        "audit_retention_configure",
+        "os_install_log_retention_configure"
+      ],
+      "sources" : [
+        "availability"
+      ]
+    },
+    {
+      "control" : "AU-11(1)",
+      "matchedRuleIDs" : [
+
+      ],
+      "selectedRuleIDs" : [
+
+      ],
+      "sources" : [
+        "availability"
+      ]
+    },
+    {
+      "control" : "AU-12",
+      "matchedRuleIDs" : [
+        "audit_auditd_enabled",
+        "audit_flags_aa_configure",
+        "audit_flags_ad_configure",
+        "audit_flags_ex_configure",
+        "audit_flags_fd_configure",
+        "audit_flags_fm_configure",
+        "audit_flags_fm_failed_configure",
+        "audit_flags_fr_configure",
+        "audit_flags_fw_configure",
+        "audit_flags_lo_configure"
+      ],
+      "selectedRuleIDs" : [
+        "audit_auditd_enabled",
+        "audit_flags_aa_configure",
+        "audit_flags_ad_configure",
+        "audit_flags_ex_configure",
+        "audit_flags_fd_configure",
+        "audit_flags_fm_configure",
+        "audit_flags_fm_failed_configure",
+        "audit_flags_fr_configure",
+        "audit_flags_fw_configure",
+        "audit_flags_lo_configure"
+      ],
+      "sources" : [
+        "confidentiality",
+        "integrity"
+      ]
+    },
+    {
+      "control" : "AU-12(1)",
+      "matchedRuleIDs" : [
+        "audit_auditd_enabled",
+        "os_time_server_enabled",
+        "system_settings_time_server_configure",
+        "system_settings_time_server_enforce"
+      ],
+      "selectedRuleIDs" : [
+        "audit_auditd_enabled",
+        "os_time_server_enabled",
+        "system_settings_time_server_configure",
+        "system_settings_time_server_enforce"
+      ],
+      "sources" : [
+        "integrity"
+      ]
+    },
+    {
+      "control" : "AU-12(3)",
+      "matchedRuleIDs" : [
+        "audit_auditd_enabled"
+      ],
+      "selectedRuleIDs" : [
+        "audit_auditd_enabled"
+      ],
+      "sources" : [
+        "confidentiality",
+        "integrity"
+      ]
+    },
+    {
+      "control" : "AU-14",
+      "matchedRuleIDs" : [
+
+      ],
+      "selectedRuleIDs" : [
+
+      ],
+      "sources" : [
+        "confidentiality",
+        "integrity"
+      ]
+    },
+    {
+      "control" : "AU-14(1)",
+      "matchedRuleIDs" : [
+        "audit_auditd_enabled"
+      ],
+      "selectedRuleIDs" : [
+        "audit_auditd_enabled"
+      ],
+      "sources" : [
+        "confidentiality",
+        "integrity"
+      ]
+    },
+    {
+      "control" : "AU-14(3)",
+      "matchedRuleIDs" : [
+
+      ],
+      "selectedRuleIDs" : [
+
+      ],
+      "sources" : [
+        "confidentiality"
+      ]
+    },
+    {
+      "control" : "AU-16",
+      "matchedRuleIDs" : [
+
+      ],
+      "selectedRuleIDs" : [
+
+      ],
+      "sources" : [
+        "integrity"
+      ]
+    },
+    {
+      "control" : "AU-16(1)",
+      "matchedRuleIDs" : [
+
+      ],
+      "selectedRuleIDs" : [
+
+      ],
+      "sources" : [
+        "integrity"
+      ]
+    },
+    {
+      "control" : "AU-16(2)",
+      "matchedRuleIDs" : [
+
+      ],
+      "selectedRuleIDs" : [
+
+      ],
+      "sources" : [
+        "integrity"
+      ]
+    },
+    {
+      "control" : "AU-2",
+      "matchedRuleIDs" : [
+        "audit_flags_aa_configure",
+        "audit_flags_ad_configure",
+        "audit_flags_ex_configure",
+        "audit_flags_fd_configure",
+        "audit_flags_fm_configure",
+        "audit_flags_fm_failed_configure",
+        "audit_flags_fr_configure",
+        "audit_flags_fw_configure",
+        "audit_flags_lo_configure"
+      ],
+      "selectedRuleIDs" : [
+        "audit_flags_aa_configure",
+        "audit_flags_ad_configure",
+        "audit_flags_ex_configure",
+        "audit_flags_fd_configure",
+        "audit_flags_fm_configure",
+        "audit_flags_fm_failed_configure",
+        "audit_flags_fr_configure",
+        "audit_flags_fw_configure",
+        "audit_flags_lo_configure"
+      ],
+      "sources" : [
+        "confidentiality",
+        "integrity"
+      ]
+    },
+    {
+      "control" : "AU-3",
+      "matchedRuleIDs" : [
+        "audit_auditd_enabled"
+      ],
+      "selectedRuleIDs" : [
+        "audit_auditd_enabled"
+      ],
+      "sources" : [
+        "confidentiality",
+        "integrity"
+      ]
+    },
+    {
+      "control" : "AU-3(1)",
+      "matchedRuleIDs" : [
+        "audit_auditd_enabled"
+      ],
+      "selectedRuleIDs" : [
+        "audit_auditd_enabled"
+      ],
+      "sources" : [
+        "confidentiality",
+        "integrity"
+      ]
+    },
+    {
+      "control" : "AU-4",
+      "matchedRuleIDs" : [
+        "audit_retention_configure",
+        "os_install_log_retention_configure"
+      ],
+      "selectedRuleIDs" : [
+        "audit_retention_configure",
+        "os_install_log_retention_configure"
+      ],
+      "sources" : [
+        "availability"
+      ]
+    },
+    {
+      "control" : "AU-4(1)",
+      "matchedRuleIDs" : [
+        "audit_off_load_records"
+      ],
+      "selectedRuleIDs" : [
+        "audit_off_load_records"
+      ],
+      "sources" : [
+        "availability"
+      ]
+    },
+    {
+      "control" : "AU-5",
+      "matchedRuleIDs" : [
+        "audit_failure_halt",
+        "audit_settings_failure_notify"
+      ],
+      "selectedRuleIDs" : [
+        "audit_failure_halt",
+        "audit_settings_failure_notify"
+      ],
+      "sources" : [
+        "availability"
+      ]
+    },
+    {
+      "control" : "AU-5(1)",
+      "matchedRuleIDs" : [
+        "audit_configure_capacity_notify"
+      ],
+      "selectedRuleIDs" : [
+        "audit_configure_capacity_notify"
+      ],
+      "sources" : [
+        "availability"
+      ]
+    },
+    {
+      "control" : "AU-5(2)",
+      "matchedRuleIDs" : [
+        "audit_settings_failure_notify"
+      ],
+      "selectedRuleIDs" : [
+        "audit_settings_failure_notify"
+      ],
+      "sources" : [
+        "availability"
+      ]
+    },
+    {
+      "control" : "AU-6",
+      "matchedRuleIDs" : [
+
+      ],
+      "selectedRuleIDs" : [
+
+      ],
+      "sources" : [
+        "confidentiality",
+        "integrity"
+      ]
+    },
+    {
+      "control" : "AU-6(1)",
+      "matchedRuleIDs" : [
+
+      ],
+      "selectedRuleIDs" : [
+
+      ],
+      "sources" : [
+        "confidentiality",
+        "integrity"
+      ]
+    },
+    {
+      "control" : "AU-6(3)",
+      "matchedRuleIDs" : [
+
+      ],
+      "selectedRuleIDs" : [
+
+      ],
+      "sources" : [
+        "confidentiality",
+        "integrity"
+      ]
+    },
+    {
+      "control" : "AU-6(4)",
+      "matchedRuleIDs" : [
+
+      ],
+      "selectedRuleIDs" : [
+
+      ],
+      "sources" : [
+        "confidentiality",
+        "integrity"
+      ]
+    },
+    {
+      "control" : "AU-6(5)",
+      "matchedRuleIDs" : [
+
+      ],
+      "selectedRuleIDs" : [
+
+      ],
+      "sources" : [
+        "confidentiality",
+        "integrity"
+      ]
+    },
+    {
+      "control" : "AU-6(6)",
+      "matchedRuleIDs" : [
+
+      ],
+      "selectedRuleIDs" : [
+
+      ],
+      "sources" : [
+        "confidentiality",
+        "integrity"
+      ]
+    },
+    {
+      "control" : "AU-7",
+      "matchedRuleIDs" : [
+        "audit_record_reduction_report_generation"
+      ],
+      "selectedRuleIDs" : [
+        "audit_record_reduction_report_generation"
+      ],
+      "sources" : [
+        "confidentiality",
+        "integrity"
+      ]
+    },
+    {
+      "control" : "AU-7(1)",
+      "matchedRuleIDs" : [
+        "audit_records_processing"
+      ],
+      "selectedRuleIDs" : [
+        "audit_records_processing"
+      ],
+      "sources" : [
+        "confidentiality",
+        "integrity"
+      ]
+    },
+    {
+      "control" : "AU-8",
+      "matchedRuleIDs" : [
+        "audit_auditd_enabled"
+      ],
+      "selectedRuleIDs" : [
+        "audit_auditd_enabled"
+      ],
+      "sources" : [
+        "integrity"
+      ]
+    },
+    {
+      "control" : "AU-9",
+      "matchedRuleIDs" : [
+        "audit_acls_files_configure",
+        "audit_acls_folders_configure",
+        "audit_control_acls_configure",
+        "audit_control_group_configure",
+        "audit_control_mode_configure",
+        "audit_control_owner_configure",
+        "audit_files_group_configure",
+        "audit_files_mode_configure",
+        "audit_files_owner_configure",
+        "audit_flags_fd_configure",
+        "audit_flags_fm_configure",
+        "audit_flags_fm_failed_configure",
+        "audit_flags_fr_configure",
+        "audit_flags_fw_configure",
+        "audit_folder_group_configure",
+        "audit_folder_owner_configure",
+        "audit_folders_mode_configure",
+        "os_sip_enable"
+      ],
+      "selectedRuleIDs" : [
+        "audit_acls_files_configure",
+        "audit_acls_folders_configure",
+        "audit_control_acls_configure",
+        "audit_control_group_configure",
+        "audit_control_mode_configure",
+        "audit_control_owner_configure",
+        "audit_files_group_configure",
+        "audit_files_mode_configure",
+        "audit_files_owner_configure",
+        "audit_flags_fd_configure",
+        "audit_flags_fm_configure",
+        "audit_flags_fm_failed_configure",
+        "audit_flags_fr_configure",
+        "audit_flags_fw_configure",
+        "audit_folder_group_configure",
+        "audit_folder_owner_configure",
+        "audit_folders_mode_configure",
+        "os_sip_enable"
+      ],
+      "sources" : [
+        "availability",
+        "confidentiality",
+        "integrity"
+      ]
+    },
+    {
+      "control" : "AU-9(2)",
+      "matchedRuleIDs" : [
+
+      ],
+      "selectedRuleIDs" : [
+
+      ],
+      "sources" : [
+        "availability",
+        "confidentiality",
+        "integrity"
+      ]
+    },
+    {
+      "control" : "AU-9(3)",
+      "matchedRuleIDs" : [
+        "os_crypto_audit",
+        "os_sip_enable"
+      ],
+      "selectedRuleIDs" : [
+        "os_crypto_audit",
+        "os_sip_enable"
+      ],
+      "sources" : [
+        "integrity"
+      ]
+    },
+    {
+      "control" : "AU-9(4)",
+      "matchedRuleIDs" : [
+
+      ],
+      "selectedRuleIDs" : [
+
+      ],
+      "sources" : [
+        "integrity"
+      ]
+    },
+    {
+      "control" : "AU-9(5)",
+      "matchedRuleIDs" : [
+        "audit_enforce_dual_auth"
+      ],
+      "selectedRuleIDs" : [
+        "audit_enforce_dual_auth"
+      ],
+      "sources" : [
+        "integrity"
+      ]
+    },
+    {
+      "control" : "AU-9(6)",
+      "matchedRuleIDs" : [
+
+      ],
+      "selectedRuleIDs" : [
+
+      ],
+      "sources" : [
+        "availability",
+        "integrity"
+      ]
+    },
+    {
+      "control" : "CA-1",
+      "matchedRuleIDs" : [
+
+      ],
+      "selectedRuleIDs" : [
+
+      ],
+      "sources" : [
+        "availability",
+        "confidentiality",
+        "integrity"
+      ]
+    },
+    {
+      "control" : "CA-2",
+      "matchedRuleIDs" : [
+
+      ],
+      "selectedRuleIDs" : [
+
+      ],
+      "sources" : [
+        "availability",
+        "confidentiality",
+        "integrity"
+      ]
+    },
+    {
+      "control" : "CA-2(1)",
+      "matchedRuleIDs" : [
+
+      ],
+      "selectedRuleIDs" : [
+
+      ],
+      "sources" : [
+        "availability",
+        "confidentiality",
+        "integrity"
+      ]
+    },
+    {
+      "control" : "CA-2(2)",
+      "matchedRuleIDs" : [
+
+      ],
+      "selectedRuleIDs" : [
+
+      ],
+      "sources" : [
+        "availability",
+        "confidentiality",
+        "integrity"
+      ]
+    },
+    {
+      "control" : "CA-3",
+      "matchedRuleIDs" : [
+
+      ],
+      "selectedRuleIDs" : [
+
+      ],
+      "sources" : [
+        "confidentiality",
+        "integrity"
+      ]
+    },
+    {
+      "control" : "CA-3(6)",
+      "matchedRuleIDs" : [
+
+      ],
+      "selectedRuleIDs" : [
+
+      ],
+      "sources" : [
+        "confidentiality",
+        "integrity"
+      ]
+    },
+    {
+      "control" : "CA-5",
+      "matchedRuleIDs" : [
+
+      ],
+      "selectedRuleIDs" : [
+
+      ],
+      "sources" : [
+        "availability",
+        "confidentiality",
+        "integrity"
+      ]
+    },
+    {
+      "control" : "CA-6",
+      "matchedRuleIDs" : [
+
+      ],
+      "selectedRuleIDs" : [
+
+      ],
+      "sources" : [
+        "availability",
+        "confidentiality",
+        "integrity"
+      ]
+    },
+    {
+      "control" : "CA-7",
+      "matchedRuleIDs" : [
+
+      ],
+      "selectedRuleIDs" : [
+
+      ],
+      "sources" : [
+        "availability",
+        "confidentiality",
+        "integrity"
+      ]
+    },
+    {
+      "control" : "CA-7(1)",
+      "matchedRuleIDs" : [
+
+      ],
+      "selectedRuleIDs" : [
+
+      ],
+      "sources" : [
+        "availability",
+        "confidentiality",
+        "integrity"
+      ]
+    },
+    {
+      "control" : "CA-7(3)",
+      "matchedRuleIDs" : [
+
+      ],
+      "selectedRuleIDs" : [
+
+      ],
+      "sources" : [
+        "availability",
+        "confidentiality",
+        "integrity"
+      ]
+    },
+    {
+      "control" : "CA-7(4)",
+      "matchedRuleIDs" : [
+
+      ],
+      "selectedRuleIDs" : [
+
+      ],
+      "sources" : [
+        "availability",
+        "confidentiality",
+        "integrity"
+      ]
+    },
+    {
+      "control" : "CA-7(5)",
+      "matchedRuleIDs" : [
+
+      ],
+      "selectedRuleIDs" : [
+
+      ],
+      "sources" : [
+        "availability",
+        "confidentiality",
+        "integrity"
+      ]
+    },
+    {
+      "control" : "CA-7(6)",
+      "matchedRuleIDs" : [
+
+      ],
+      "selectedRuleIDs" : [
+
+      ],
+      "sources" : [
+        "availability",
+        "confidentiality",
+        "integrity"
+      ]
+    },
+    {
+      "control" : "CA-8",
+      "matchedRuleIDs" : [
+
+      ],
+      "selectedRuleIDs" : [
+
+      ],
+      "sources" : [
+        "availability",
+        "confidentiality",
+        "integrity"
+      ]
+    },
+    {
+      "control" : "CA-8(1)",
+      "matchedRuleIDs" : [
+
+      ],
+      "selectedRuleIDs" : [
+
+      ],
+      "sources" : [
+        "availability",
+        "confidentiality",
+        "integrity"
+      ]
+    },
+    {
+      "control" : "CA-8(3)",
+      "matchedRuleIDs" : [
+
+      ],
+      "selectedRuleIDs" : [
+
+      ],
+      "sources" : [
+        "availability",
+        "confidentiality",
+        "integrity"
+      ]
+    },
+    {
+      "control" : "CA-9",
+      "matchedRuleIDs" : [
+
+      ],
+      "selectedRuleIDs" : [
+
+      ],
+      "sources" : [
+        "confidentiality",
+        "integrity"
+      ]
+    },
+    {
+      "control" : "CM-1",
+      "matchedRuleIDs" : [
+
+      ],
+      "selectedRuleIDs" : [
+
+      ],
+      "sources" : [
+        "confidentiality",
+        "integrity"
+      ]
+    },
+    {
+      "control" : "CM-10",
+      "matchedRuleIDs" : [
+
+      ],
+      "selectedRuleIDs" : [
+
+      ],
+      "sources" : [
+        "integrity"
+      ]
+    },
+    {
+      "control" : "CM-10(1)",
+      "matchedRuleIDs" : [
+
+      ],
+      "selectedRuleIDs" : [
+
+      ],
+      "sources" : [
+        "integrity"
+      ]
+    },
+    {
+      "control" : "CM-11",
+      "matchedRuleIDs" : [
+        "os_background_security_improvement_install_enable"
+      ],
+      "selectedRuleIDs" : [
+        "os_background_security_improvement_install_enable"
+      ],
+      "sources" : [
+        "confidentiality",
+        "integrity"
+      ]
+    },
+    {
+      "control" : "CM-11(2)",
+      "matchedRuleIDs" : [
+        "os_user_app_installation_prohibit"
+      ],
+      "selectedRuleIDs" : [
+        "os_user_app_installation_prohibit"
+      ],
+      "sources" : [
+        "confidentiality",
+        "integrity"
+      ]
+    },
+    {
+      "control" : "CM-12",
+      "matchedRuleIDs" : [
+
+      ],
+      "selectedRuleIDs" : [
+
+      ],
+      "sources" : [
+        "availability",
+        "confidentiality",
+        "integrity"
+      ]
+    },
+    {
+      "control" : "CM-12(1)",
+      "matchedRuleIDs" : [
+
+      ],
+      "selectedRuleIDs" : [
+
+      ],
+      "sources" : [
+        "availability",
+        "confidentiality",
+        "integrity"
+      ]
+    },
+    {
+      "control" : "CM-14",
+      "matchedRuleIDs" : [
+        "os_gatekeeper_enable",
+        "system_settings_gatekeeper_identified_developers_allowed"
+      ],
+      "selectedRuleIDs" : [
+        "os_gatekeeper_enable",
+        "system_settings_gatekeeper_identified_developers_allowed"
+      ],
+      "sources" : [
+        "integrity"
+      ]
+    },
+    {
+      "control" : "CM-2",
+      "matchedRuleIDs" : [
+        "os_mdm_require"
+      ],
+      "selectedRuleIDs" : [
+        "os_mdm_require"
+      ],
+      "sources" : [
+        "integrity"
+      ]
+    },
+    {
+      "control" : "CM-2(2)",
+      "matchedRuleIDs" : [
+
+      ],
+      "selectedRuleIDs" : [
+
+      ],
+      "sources" : [
+        "integrity"
+      ]
+    },
+    {
+      "control" : "CM-2(3)",
+      "matchedRuleIDs" : [
+
+      ],
+      "selectedRuleIDs" : [
+
+      ],
+      "sources" : [
+        "integrity"
+      ]
+    },
+    {
+      "control" : "CM-2(7)",
+      "matchedRuleIDs" : [
+
+      ],
+      "selectedRuleIDs" : [
+
+      ],
+      "sources" : [
+        "integrity"
+      ]
+    },
+    {
+      "control" : "CM-3",
+      "matchedRuleIDs" : [
+
+      ],
+      "selectedRuleIDs" : [
+
+      ],
+      "sources" : [
+        "integrity"
+      ]
+    },
+    {
+      "control" : "CM-3(1)",
+      "matchedRuleIDs" : [
+
+      ],
+      "selectedRuleIDs" : [
+
+      ],
+      "sources" : [
+        "integrity"
+      ]
+    },
+    {
+      "control" : "CM-3(2)",
+      "matchedRuleIDs" : [
+
+      ],
+      "selectedRuleIDs" : [
+
+      ],
+      "sources" : [
+        "integrity"
+      ]
+    },
+    {
+      "control" : "CM-3(4)",
+      "matchedRuleIDs" : [
+
+      ],
+      "selectedRuleIDs" : [
+
+      ],
+      "sources" : [
+        "integrity"
+      ]
+    },
+    {
+      "control" : "CM-3(5)",
+      "matchedRuleIDs" : [
+        "os_notify_unauthorized_baseline_change"
+      ],
+      "selectedRuleIDs" : [
+        "os_notify_unauthorized_baseline_change"
+      ],
+      "sources" : [
+        "integrity"
+      ]
+    },
+    {
+      "control" : "CM-3(6)",
+      "matchedRuleIDs" : [
+
+      ],
+      "selectedRuleIDs" : [
+
+      ],
+      "sources" : [
+        "integrity"
+      ]
+    },
+    {
+      "control" : "CM-3(7)",
+      "matchedRuleIDs" : [
+
+      ],
+      "selectedRuleIDs" : [
+
+      ],
+      "sources" : [
+        "integrity"
+      ]
+    },
+    {
+      "control" : "CM-3(8)",
+      "matchedRuleIDs" : [
+
+      ],
+      "selectedRuleIDs" : [
+
+      ],
+      "sources" : [
+        "integrity"
+      ]
+    },
+    {
+      "control" : "CM-4",
+      "matchedRuleIDs" : [
+
+      ],
+      "selectedRuleIDs" : [
+
+      ],
+      "sources" : [
+        "integrity"
+      ]
+    },
+    {
+      "control" : "CM-4(1)",
+      "matchedRuleIDs" : [
+
+      ],
+      "selectedRuleIDs" : [
+
+      ],
+      "sources" : [
+        "integrity"
+      ]
+    },
+    {
+      "control" : "CM-4(2)",
+      "matchedRuleIDs" : [
+
+      ],
+      "selectedRuleIDs" : [
+
+      ],
+      "sources" : [
+        "integrity"
+      ]
+    },
+    {
+      "control" : "CM-5",
+      "matchedRuleIDs" : [
+        "os_authenticated_root_enable",
+        "os_gatekeeper_enable",
+        "os_install_configuration_profile_disable",
+        "os_mcx_disable_disable",
+        "os_sip_enable",
+        "system_settings_gatekeeper_identified_developers_allowed",
+        "system_settings_gatekeeper_override_disallow"
+      ],
+      "selectedRuleIDs" : [
+        "os_authenticated_root_enable",
+        "os_gatekeeper_enable",
+        "os_install_configuration_profile_disable",
+        "os_mcx_disable_disable",
+        "os_sip_enable",
+        "system_settings_gatekeeper_identified_developers_allowed",
+        "system_settings_gatekeeper_override_disallow"
+      ],
+      "sources" : [
+        "integrity"
+      ]
+    },
+    {
+      "control" : "CM-5(1)",
+      "matchedRuleIDs" : [
+        "audit_auditd_enabled",
+        "audit_flags_aa_configure",
+        "audit_flags_ad_configure",
+        "audit_flags_ex_configure",
+        "audit_flags_fd_configure",
+        "audit_flags_fm_configure",
+        "audit_flags_fm_failed_configure",
+        "audit_flags_fr_configure",
+        "audit_flags_fw_configure",
+        "os_enforce_access_restrictions",
+        "os_mcx_disable_disable",
+        "os_sudoers_timestamp_type_configure"
+      ],
+      "selectedRuleIDs" : [
+        "audit_auditd_enabled",
+        "audit_flags_aa_configure",
+        "audit_flags_ad_configure",
+        "audit_flags_ex_configure",
+        "audit_flags_fd_configure",
+        "audit_flags_fm_configure",
+        "audit_flags_fm_failed_configure",
+        "audit_flags_fr_configure",
+        "audit_flags_fw_configure",
+        "os_enforce_access_restrictions",
+        "os_mcx_disable_disable",
+        "os_sudoers_timestamp_type_configure"
+      ],
+      "sources" : [
+        "integrity"
+      ]
+    },
+    {
+      "control" : "CM-5(5)",
+      "matchedRuleIDs" : [
+
+      ],
+      "selectedRuleIDs" : [
+
+      ],
+      "sources" : [
+        "integrity"
+      ]
+    },
+    {
+      "control" : "CM-5(6)",
+      "matchedRuleIDs" : [
+        "os_sip_enable"
+      ],
+      "selectedRuleIDs" : [
+        "os_sip_enable"
+      ],
+      "sources" : [
+        "integrity"
+      ]
+    },
+    {
+      "control" : "CM-6",
+      "matchedRuleIDs" : [
+        "os_allow_prerelease_disable",
+        "os_call_recording_disable",
+        "os_erase_contents_and_settings_disable",
+        "os_install_configuration_profile_disable",
+        "os_mcx_disable_disable",
+        "os_mdm_require",
+        "os_touchid_prompt_disable",
+        "system_settings_external_intelligence_sign_in_disable"
+      ],
+      "selectedRuleIDs" : [
+        "os_allow_prerelease_disable",
+        "os_call_recording_disable",
+        "os_erase_contents_and_settings_disable",
+        "os_install_configuration_profile_disable",
+        "os_mcx_disable_disable",
+        "os_mdm_require",
+        "os_touchid_prompt_disable",
+        "system_settings_external_intelligence_sign_in_disable"
+      ],
+      "sources" : [
+        "integrity"
+      ]
+    },
+    {
+      "control" : "CM-6(1)",
+      "matchedRuleIDs" : [
+        "os_mcx_disable_disable"
+      ],
+      "selectedRuleIDs" : [
+        "os_mcx_disable_disable"
+      ],
+      "sources" : [
+        "integrity"
+      ]
+    },
+    {
+      "control" : "CM-6(2)",
+      "matchedRuleIDs" : [
+
+      ],
+      "selectedRuleIDs" : [
+
+      ],
+      "sources" : [
+        "integrity"
+      ]
+    },
+    {
+      "control" : "CM-7",
+      "matchedRuleIDs" : [
+        "icloud_addressbook_disable",
+        "icloud_appleid_system_settings_disable",
+        "icloud_bookmarks_disable",
+        "icloud_calendar_disable",
+        "icloud_drive_disable",
+        "icloud_freeform_disable",
+        "icloud_game_center_disable",
+        "icloud_keychain_disable",
+        "icloud_mail_disable",
+        "icloud_notes_disable",
+        "icloud_photos_disable",
+        "icloud_private_relay_disable",
+        "icloud_reminders_disable",
+        "icloud_sync_disable",
+        "os_account_modification_disable",
+        "os_airdrop_disable",
+        "os_allow_prerelease_disable",
+        "os_apple_intelligence_pcc_disable",
+        "os_bluetooth_modification_disable",
+        "os_bonjour_disable",
+        "os_calendar_app_disable",
+        "os_definition_lookup_disable",
+        "os_dictation_disable",
+        "os_erase_contents_and_settings_disable",
+        "os_facetime_app_disable",
+        "os_genmoji_disable",
+        "os_handoff_disable",
+        "os_image_playground_disable",
+        "os_install_configuration_profile_disable",
+        "os_iphone_mirroring_disable",
+        "os_mail_smart_reply_disable",
+        "os_mail_summary_disable",
+        "os_messages_app_disable",
+        "os_messages_summary_disable",
+        "os_natural_language_editing_disable",
+        "os_notes_transcription_disable",
+        "os_notes_transcription_summary_disable",
+        "os_on_device_dictation_enforce",
+        "os_photos_enhanced_search_disable",
+        "os_privacy_setup_prompt_disable",
+        "os_safari_reader_summary_disable",
+        "os_screenshots_disable",
+        "os_siri_prompt_disable",
+        "os_skip_apple_intelligence_enable",
+        "os_skip_screen_time_prompt_enable",
+        "os_visual_intelligence_disable",
+        "os_writing_tools_disable",
+        "system_settings_airplay_receiver_disable",
+        "system_settings_bluetooth_settings_disable",
+        "system_settings_bluetooth_sharing_disable",
+        "system_settings_content_caching_disable",
+        "system_settings_external_intelligence_disable",
+        "system_settings_external_intelligence_sign_in_disable",
+        "system_settings_find_my_disable",
+        "system_settings_firewall_enable",
+        "system_settings_firewall_stealth_mode_enable",
+        "system_settings_improve_assistive_voice_disable",
+        "system_settings_improve_search_disable",
+        "system_settings_improve_siri_dictation_disable",
+        "system_settings_internet_accounts_disable",
+        "system_settings_location_services_disable",
+        "system_settings_personalized_advertising_disable",
+        "system_settings_printer_sharing_disable",
+        "system_settings_remote_management_disable",
+        "system_settings_siri_ai_disable",
+        "system_settings_siri_disable",
+        "system_settings_siri_settings_disable",
+        "system_settings_ssh_disable",
+        "system_settings_ssh_enable",
+        "system_settings_touch_id_settings_disable",
+        "system_settings_wallet_applepay_settings_disable"
+      ],
+      "selectedRuleIDs" : [
+        "icloud_addressbook_disable",
+        "icloud_appleid_system_settings_disable",
+        "icloud_bookmarks_disable",
+        "icloud_calendar_disable",
+        "icloud_drive_disable",
+        "icloud_freeform_disable",
+        "icloud_game_center_disable",
+        "icloud_keychain_disable",
+        "icloud_mail_disable",
+        "icloud_notes_disable",
+        "icloud_photos_disable",
+        "icloud_private_relay_disable",
+        "icloud_reminders_disable",
+        "icloud_sync_disable",
+        "os_account_modification_disable",
+        "os_airdrop_disable",
+        "os_allow_prerelease_disable",
+        "os_apple_intelligence_pcc_disable",
+        "os_bluetooth_modification_disable",
+        "os_bonjour_disable",
+        "os_calendar_app_disable",
+        "os_definition_lookup_disable",
+        "os_dictation_disable",
+        "os_erase_contents_and_settings_disable",
+        "os_facetime_app_disable",
+        "os_genmoji_disable",
+        "os_handoff_disable",
+        "os_image_playground_disable",
+        "os_install_configuration_profile_disable",
+        "os_iphone_mirroring_disable",
+        "os_mail_smart_reply_disable",
+        "os_mail_summary_disable",
+        "os_messages_app_disable",
+        "os_messages_summary_disable",
+        "os_natural_language_editing_disable",
+        "os_notes_transcription_disable",
+        "os_notes_transcription_summary_disable",
+        "os_on_device_dictation_enforce",
+        "os_photos_enhanced_search_disable",
+        "os_privacy_setup_prompt_disable",
+        "os_safari_reader_summary_disable",
+        "os_screenshots_disable",
+        "os_siri_prompt_disable",
+        "os_skip_apple_intelligence_enable",
+        "os_skip_screen_time_prompt_enable",
+        "os_visual_intelligence_disable",
+        "os_writing_tools_disable",
+        "system_settings_airplay_receiver_disable",
+        "system_settings_bluetooth_settings_disable",
+        "system_settings_bluetooth_sharing_disable",
+        "system_settings_content_caching_disable",
+        "system_settings_external_intelligence_disable",
+        "system_settings_external_intelligence_sign_in_disable",
+        "system_settings_find_my_disable",
+        "system_settings_firewall_enable",
+        "system_settings_firewall_stealth_mode_enable",
+        "system_settings_improve_assistive_voice_disable",
+        "system_settings_improve_search_disable",
+        "system_settings_improve_siri_dictation_disable",
+        "system_settings_internet_accounts_disable",
+        "system_settings_location_services_disable",
+        "system_settings_personalized_advertising_disable",
+        "system_settings_printer_sharing_disable",
+        "system_settings_remote_management_disable",
+        "system_settings_siri_ai_disable",
+        "system_settings_siri_disable",
+        "system_settings_siri_settings_disable",
+        "system_settings_ssh_disable",
+        "system_settings_ssh_enable",
+        "system_settings_touch_id_settings_disable",
+        "system_settings_wallet_applepay_settings_disable"
+      ],
+      "sources" : [
+        "confidentiality",
+        "integrity"
+      ]
+    },
+    {
+      "control" : "CM-7(1)",
+      "matchedRuleIDs" : [
+        "icloud_addressbook_disable",
+        "icloud_appleid_system_settings_disable",
+        "icloud_bookmarks_disable",
+        "icloud_calendar_disable",
+        "icloud_drive_disable",
+        "icloud_freeform_disable",
+        "icloud_game_center_disable",
+        "icloud_keychain_disable",
+        "icloud_mail_disable",
+        "icloud_notes_disable",
+        "icloud_photos_disable",
+        "icloud_private_relay_disable",
+        "icloud_reminders_disable",
+        "icloud_sync_disable",
+        "os_account_modification_disable",
+        "os_airdrop_disable",
+        "os_apple_intelligence_pcc_disable",
+        "os_bluetooth_modification_disable",
+        "os_bonjour_disable",
+        "os_calendar_app_disable",
+        "os_definition_lookup_disable",
+        "os_dictation_disable",
+        "os_erase_contents_and_settings_disable",
+        "os_facetime_app_disable",
+        "os_genmoji_disable",
+        "os_handoff_disable",
+        "os_image_playground_disable",
+        "os_install_configuration_profile_disable",
+        "os_iphone_mirroring_disable",
+        "os_mail_smart_reply_disable",
+        "os_mail_summary_disable",
+        "os_messages_app_disable",
+        "os_messages_summary_disable",
+        "os_natural_language_editing_disable",
+        "os_notes_transcription_disable",
+        "os_notes_transcription_summary_disable",
+        "os_on_device_dictation_enforce",
+        "os_photos_enhanced_search_disable",
+        "os_privacy_setup_prompt_disable",
+        "os_safari_reader_summary_disable",
+        "os_screenshots_disable",
+        "os_siri_prompt_disable",
+        "os_skip_screen_time_prompt_enable",
+        "os_visual_intelligence_disable",
+        "os_writing_tools_disable",
+        "system_settings_airplay_receiver_disable",
+        "system_settings_bluetooth_settings_disable",
+        "system_settings_bluetooth_sharing_disable",
+        "system_settings_content_caching_disable",
+        "system_settings_external_intelligence_disable",
+        "system_settings_external_intelligence_sign_in_disable",
+        "system_settings_find_my_disable",
+        "system_settings_firewall_enable",
+        "system_settings_firewall_stealth_mode_enable",
+        "system_settings_improve_assistive_voice_disable",
+        "system_settings_improve_search_disable",
+        "system_settings_improve_siri_dictation_disable",
+        "system_settings_internet_accounts_disable",
+        "system_settings_location_services_disable",
+        "system_settings_personalized_advertising_disable",
+        "system_settings_printer_sharing_disable",
+        "system_settings_remote_management_disable",
+        "system_settings_siri_ai_disable",
+        "system_settings_siri_disable",
+        "system_settings_siri_settings_disable",
+        "system_settings_ssh_disable",
+        "system_settings_ssh_enable",
+        "system_settings_touch_id_settings_disable",
+        "system_settings_wallet_applepay_settings_disable"
+      ],
+      "selectedRuleIDs" : [
+        "icloud_addressbook_disable",
+        "icloud_appleid_system_settings_disable",
+        "icloud_bookmarks_disable",
+        "icloud_calendar_disable",
+        "icloud_drive_disable",
+        "icloud_freeform_disable",
+        "icloud_game_center_disable",
+        "icloud_keychain_disable",
+        "icloud_mail_disable",
+        "icloud_notes_disable",
+        "icloud_photos_disable",
+        "icloud_private_relay_disable",
+        "icloud_reminders_disable",
+        "icloud_sync_disable",
+        "os_account_modification_disable",
+        "os_airdrop_disable",
+        "os_apple_intelligence_pcc_disable",
+        "os_bluetooth_modification_disable",
+        "os_bonjour_disable",
+        "os_calendar_app_disable",
+        "os_definition_lookup_disable",
+        "os_dictation_disable",
+        "os_erase_contents_and_settings_disable",
+        "os_facetime_app_disable",
+        "os_genmoji_disable",
+        "os_handoff_disable",
+        "os_image_playground_disable",
+        "os_install_configuration_profile_disable",
+        "os_iphone_mirroring_disable",
+        "os_mail_smart_reply_disable",
+        "os_mail_summary_disable",
+        "os_messages_app_disable",
+        "os_messages_summary_disable",
+        "os_natural_language_editing_disable",
+        "os_notes_transcription_disable",
+        "os_notes_transcription_summary_disable",
+        "os_on_device_dictation_enforce",
+        "os_photos_enhanced_search_disable",
+        "os_privacy_setup_prompt_disable",
+        "os_safari_reader_summary_disable",
+        "os_screenshots_disable",
+        "os_siri_prompt_disable",
+        "os_skip_screen_time_prompt_enable",
+        "os_visual_intelligence_disable",
+        "os_writing_tools_disable",
+        "system_settings_airplay_receiver_disable",
+        "system_settings_bluetooth_settings_disable",
+        "system_settings_bluetooth_sharing_disable",
+        "system_settings_content_caching_disable",
+        "system_settings_external_intelligence_disable",
+        "system_settings_external_intelligence_sign_in_disable",
+        "system_settings_find_my_disable",
+        "system_settings_firewall_enable",
+        "system_settings_firewall_stealth_mode_enable",
+        "system_settings_improve_assistive_voice_disable",
+        "system_settings_improve_search_disable",
+        "system_settings_improve_siri_dictation_disable",
+        "system_settings_internet_accounts_disable",
+        "system_settings_location_services_disable",
+        "system_settings_personalized_advertising_disable",
+        "system_settings_printer_sharing_disable",
+        "system_settings_remote_management_disable",
+        "system_settings_siri_ai_disable",
+        "system_settings_siri_disable",
+        "system_settings_siri_settings_disable",
+        "system_settings_ssh_disable",
+        "system_settings_ssh_enable",
+        "system_settings_touch_id_settings_disable",
+        "system_settings_wallet_applepay_settings_disable"
+      ],
+      "sources" : [
+        "confidentiality",
+        "integrity"
+      ]
+    },
+    {
+      "control" : "CM-7(2)",
+      "matchedRuleIDs" : [
+        "os_parental_controls_enable"
+      ],
+      "selectedRuleIDs" : [
+        "os_parental_controls_enable"
+      ],
+      "sources" : [
+        "confidentiality",
+        "integrity"
+      ]
+    },
+    {
+      "control" : "CM-7(3)",
+      "matchedRuleIDs" : [
+
+      ],
+      "selectedRuleIDs" : [
+
+      ],
+      "sources" : [
+        "confidentiality",
+        "integrity"
+      ]
+    },
+    {
+      "control" : "CM-7(5)",
+      "matchedRuleIDs" : [
+        "system_settings_internet_accounts_disable",
+        "system_settings_siri_settings_disable",
+        "system_settings_touch_id_settings_disable",
+        "system_settings_wallet_applepay_settings_disable"
+      ],
+      "selectedRuleIDs" : [
+        "system_settings_internet_accounts_disable",
+        "system_settings_siri_settings_disable",
+        "system_settings_touch_id_settings_disable",
+        "system_settings_wallet_applepay_settings_disable"
+      ],
+      "sources" : [
+        "confidentiality",
+        "integrity"
+      ]
+    },
+    {
+      "control" : "CM-7(8)",
+      "matchedRuleIDs" : [
+
+      ],
+      "selectedRuleIDs" : [
+
+      ],
+      "sources" : [
+        "integrity"
+      ]
+    },
+    {
+      "control" : "CM-7(9)",
+      "matchedRuleIDs" : [
+
+      ],
+      "selectedRuleIDs" : [
+
+      ],
+      "sources" : [
+        "integrity"
+      ]
+    },
+    {
+      "control" : "CM-8",
+      "matchedRuleIDs" : [
+
+      ],
+      "selectedRuleIDs" : [
+
+      ],
+      "sources" : [
+        "integrity"
+      ]
+    },
+    {
+      "control" : "CM-8(1)",
+      "matchedRuleIDs" : [
+
+      ],
+      "selectedRuleIDs" : [
+
+      ],
+      "sources" : [
+        "integrity"
+      ]
+    },
+    {
+      "control" : "CM-8(2)",
+      "matchedRuleIDs" : [
+
+      ],
+      "selectedRuleIDs" : [
+
+      ],
+      "sources" : [
+        "integrity"
+      ]
+    },
+    {
+      "control" : "CM-8(3)",
+      "matchedRuleIDs" : [
+        "system_settings_usb_restricted_mode"
+      ],
+      "selectedRuleIDs" : [
+        "system_settings_usb_restricted_mode"
+      ],
+      "sources" : [
+        "integrity"
+      ]
+    },
+    {
+      "control" : "CM-8(4)",
+      "matchedRuleIDs" : [
+
+      ],
+      "selectedRuleIDs" : [
+
+      ],
+      "sources" : [
+        "confidentiality",
+        "integrity"
+      ]
+    },
+    {
+      "control" : "CM-9",
+      "matchedRuleIDs" : [
+
+      ],
+      "selectedRuleIDs" : [
+
+      ],
+      "sources" : [
+        "integrity"
+      ]
+    },
+    {
+      "control" : "CP-1",
+      "matchedRuleIDs" : [
+
+      ],
+      "selectedRuleIDs" : [
+
+      ],
+      "sources" : [
+        "availability",
+        "confidentiality",
+        "integrity"
+      ]
+    },
+    {
+      "control" : "CP-10",
+      "matchedRuleIDs" : [
+
+      ],
+      "selectedRuleIDs" : [
+
+      ],
+      "sources" : [
+        "availability"
+      ]
+    },
+    {
+      "control" : "CP-10(2)",
+      "matchedRuleIDs" : [
+
+      ],
+      "selectedRuleIDs" : [
+
+      ],
+      "sources" : [
+        "availability"
+      ]
+    },
+    {
+      "control" : "CP-10(4)",
+      "matchedRuleIDs" : [
+
+      ],
+      "selectedRuleIDs" : [
+
+      ],
+      "sources" : [
+        "availability"
+      ]
+    },
+    {
+      "control" : "CP-10(6)",
+      "matchedRuleIDs" : [
+
+      ],
+      "selectedRuleIDs" : [
+
+      ],
+      "sources" : [
+        "availability"
+      ]
+    },
+    {
+      "control" : "CP-2",
+      "matchedRuleIDs" : [
+
+      ],
+      "selectedRuleIDs" : [
+
+      ],
+      "sources" : [
+        "availability"
+      ]
+    },
+    {
+      "control" : "CP-2(1)",
+      "matchedRuleIDs" : [
+
+      ],
+      "selectedRuleIDs" : [
+
+      ],
+      "sources" : [
+        "availability"
+      ]
+    },
+    {
+      "control" : "CP-2(2)",
+      "matchedRuleIDs" : [
+
+      ],
+      "selectedRuleIDs" : [
+
+      ],
+      "sources" : [
+        "availability"
+      ]
+    },
+    {
+      "control" : "CP-2(3)",
+      "matchedRuleIDs" : [
+
+      ],
+      "selectedRuleIDs" : [
+
+      ],
+      "sources" : [
+        "availability"
+      ]
+    },
+    {
+      "control" : "CP-2(5)",
+      "matchedRuleIDs" : [
+
+      ],
+      "selectedRuleIDs" : [
+
+      ],
+      "sources" : [
+        "availability"
+      ]
+    },
+    {
+      "control" : "CP-2(8)",
+      "matchedRuleIDs" : [
+
+      ],
+      "selectedRuleIDs" : [
+
+      ],
+      "sources" : [
+        "availability"
+      ]
+    },
+    {
+      "control" : "CP-3",
+      "matchedRuleIDs" : [
+
+      ],
+      "selectedRuleIDs" : [
+
+      ],
+      "sources" : [
+        "availability"
+      ]
+    },
+    {
+      "control" : "CP-3(1)",
+      "matchedRuleIDs" : [
+
+      ],
+      "selectedRuleIDs" : [
+
+      ],
+      "sources" : [
+        "availability"
+      ]
+    },
+    {
+      "control" : "CP-4",
+      "matchedRuleIDs" : [
+
+      ],
+      "selectedRuleIDs" : [
+
+      ],
+      "sources" : [
+        "availability"
+      ]
+    },
+    {
+      "control" : "CP-4(1)",
+      "matchedRuleIDs" : [
+
+      ],
+      "selectedRuleIDs" : [
+
+      ],
+      "sources" : [
+        "availability"
+      ]
+    },
+    {
+      "control" : "CP-4(2)",
+      "matchedRuleIDs" : [
+
+      ],
+      "selectedRuleIDs" : [
+
+      ],
+      "sources" : [
+        "availability"
+      ]
+    },
+    {
+      "control" : "CP-6",
+      "matchedRuleIDs" : [
+
+      ],
+      "selectedRuleIDs" : [
+
+      ],
+      "sources" : [
+        "availability"
+      ]
+    },
+    {
+      "control" : "CP-6(1)",
+      "matchedRuleIDs" : [
+
+      ],
+      "selectedRuleIDs" : [
+
+      ],
+      "sources" : [
+        "availability"
+      ]
+    },
+    {
+      "control" : "CP-6(2)",
+      "matchedRuleIDs" : [
+
+      ],
+      "selectedRuleIDs" : [
+
+      ],
+      "sources" : [
+        "availability"
+      ]
+    },
+    {
+      "control" : "CP-6(3)",
+      "matchedRuleIDs" : [
+
+      ],
+      "selectedRuleIDs" : [
+
+      ],
+      "sources" : [
+        "availability"
+      ]
+    },
+    {
+      "control" : "CP-7",
+      "matchedRuleIDs" : [
+
+      ],
+      "selectedRuleIDs" : [
+
+      ],
+      "sources" : [
+        "availability"
+      ]
+    },
+    {
+      "control" : "CP-7(1)",
+      "matchedRuleIDs" : [
+
+      ],
+      "selectedRuleIDs" : [
+
+      ],
+      "sources" : [
+        "availability"
+      ]
+    },
+    {
+      "control" : "CP-7(2)",
+      "matchedRuleIDs" : [
+
+      ],
+      "selectedRuleIDs" : [
+
+      ],
+      "sources" : [
+        "availability"
+      ]
+    },
+    {
+      "control" : "CP-7(3)",
+      "matchedRuleIDs" : [
+
+      ],
+      "selectedRuleIDs" : [
+
+      ],
+      "sources" : [
+        "availability"
+      ]
+    },
+    {
+      "control" : "CP-7(4)",
+      "matchedRuleIDs" : [
+
+      ],
+      "selectedRuleIDs" : [
+
+      ],
+      "sources" : [
+        "availability"
+      ]
+    },
+    {
+      "control" : "CP-8",
+      "matchedRuleIDs" : [
+
+      ],
+      "selectedRuleIDs" : [
+
+      ],
+      "sources" : [
+        "availability"
+      ]
+    },
+    {
+      "control" : "CP-8(1)",
+      "matchedRuleIDs" : [
+
+      ],
+      "selectedRuleIDs" : [
+
+      ],
+      "sources" : [
+        "availability"
+      ]
+    },
+    {
+      "control" : "CP-8(2)",
+      "matchedRuleIDs" : [
+
+      ],
+      "selectedRuleIDs" : [
+
+      ],
+      "sources" : [
+        "availability"
+      ]
+    },
+    {
+      "control" : "CP-8(3)",
+      "matchedRuleIDs" : [
+
+      ],
+      "selectedRuleIDs" : [
+
+      ],
+      "sources" : [
+        "availability"
+      ]
+    },
+    {
+      "control" : "CP-8(4)",
+      "matchedRuleIDs" : [
+
+      ],
+      "selectedRuleIDs" : [
+
+      ],
+      "sources" : [
+        "availability"
+      ]
+    },
+    {
+      "control" : "CP-8(5)",
+      "matchedRuleIDs" : [
+
+      ],
+      "selectedRuleIDs" : [
+
+      ],
+      "sources" : [
+        "availability"
+      ]
+    },
+    {
+      "control" : "CP-9",
+      "matchedRuleIDs" : [
+
+      ],
+      "selectedRuleIDs" : [
+
+      ],
+      "sources" : [
+        "availability",
+        "confidentiality",
+        "integrity"
+      ]
+    },
+    {
+      "control" : "CP-9(1)",
+      "matchedRuleIDs" : [
+
+      ],
+      "selectedRuleIDs" : [
+
+      ],
+      "sources" : [
+        "availability",
+        "integrity"
+      ]
+    },
+    {
+      "control" : "CP-9(2)",
+      "matchedRuleIDs" : [
+
+      ],
+      "selectedRuleIDs" : [
+
+      ],
+      "sources" : [
+        "availability"
+      ]
+    },
+    {
+      "control" : "CP-9(3)",
+      "matchedRuleIDs" : [
+
+      ],
+      "selectedRuleIDs" : [
+
+      ],
+      "sources" : [
+        "availability"
+      ]
+    },
+    {
+      "control" : "CP-9(5)",
+      "matchedRuleIDs" : [
+
+      ],
+      "selectedRuleIDs" : [
+
+      ],
+      "sources" : [
+        "availability"
+      ]
+    },
+    {
+      "control" : "CP-9(8)",
+      "matchedRuleIDs" : [
+
+      ],
+      "selectedRuleIDs" : [
+
+      ],
+      "sources" : [
+        "availability",
+        "confidentiality",
+        "integrity"
+      ]
+    },
+    {
+      "control" : "IA-1",
+      "matchedRuleIDs" : [
+
+      ],
+      "selectedRuleIDs" : [
+
+      ],
+      "sources" : [
+        "confidentiality",
+        "integrity"
+      ]
+    },
+    {
+      "control" : "IA-10",
+      "matchedRuleIDs" : [
+
+      ],
+      "selectedRuleIDs" : [
+
+      ],
+      "sources" : [
+        "confidentiality",
+        "integrity"
+      ]
+    },
+    {
+      "control" : "IA-11",
+      "matchedRuleIDs" : [
+        "os_reauth_devices_change_authenticators",
+        "os_reauth_privilege",
+        "os_reauth_users_change_authenticators",
+        "os_sudoers_timestamp_type_configure",
+        "system_settings_screensaver_timeout_enforce"
+      ],
+      "selectedRuleIDs" : [
+        "os_reauth_devices_change_authenticators",
+        "os_reauth_privilege",
+        "os_reauth_users_change_authenticators",
+        "os_sudoers_timestamp_type_configure",
+        "system_settings_screensaver_timeout_enforce"
+      ],
+      "sources" : [
+        "confidentiality",
+        "integrity"
+      ]
+    },
+    {
+      "control" : "IA-12",
+      "matchedRuleIDs" : [
+
+      ],
+      "selectedRuleIDs" : [
+
+      ],
+      "sources" : [
+        "confidentiality",
+        "integrity"
+      ]
+    },
+    {
+      "control" : "IA-12(1)",
+      "matchedRuleIDs" : [
+
+      ],
+      "selectedRuleIDs" : [
+
+      ],
+      "sources" : [
+        "confidentiality",
+        "integrity"
+      ]
+    },
+    {
+      "control" : "IA-12(2)",
+      "matchedRuleIDs" : [
+
+      ],
+      "selectedRuleIDs" : [
+
+      ],
+      "sources" : [
+        "confidentiality",
+        "integrity"
+      ]
+    },
+    {
+      "control" : "IA-12(3)",
+      "matchedRuleIDs" : [
+
+      ],
+      "selectedRuleIDs" : [
+
+      ],
+      "sources" : [
+        "confidentiality",
+        "integrity"
+      ]
+    },
+    {
+      "control" : "IA-12(4)",
+      "matchedRuleIDs" : [
+
+      ],
+      "selectedRuleIDs" : [
+
+      ],
+      "sources" : [
+        "confidentiality",
+        "integrity"
+      ]
+    },
+    {
+      "control" : "IA-2",
+      "matchedRuleIDs" : [
+        "auth_smartcard_enforce",
+        "auth_ssh_password_authentication_disable",
+        "os_root_disable",
+        "os_unlock_active_user_session_disable",
+        "system_settings_automatic_login_disable",
+        "system_settings_loginwindow_prompt_username_password_enforce"
+      ],
+      "selectedRuleIDs" : [
+        "auth_smartcard_enforce",
+        "auth_ssh_password_authentication_disable",
+        "os_root_disable",
+        "os_unlock_active_user_session_disable",
+        "system_settings_automatic_login_disable",
+        "system_settings_loginwindow_prompt_username_password_enforce"
+      ],
+      "sources" : [
+        "confidentiality",
+        "integrity"
+      ]
+    },
+    {
+      "control" : "IA-2(1)",
+      "matchedRuleIDs" : [
+        "auth_pam_login_smartcard_enforce",
+        "auth_pam_su_smartcard_enforce",
+        "auth_pam_sudo_smartcard_enforce",
+        "auth_smartcard_allow",
+        "auth_smartcard_enforce",
+        "auth_ssh_password_authentication_disable"
+      ],
+      "selectedRuleIDs" : [
+        "auth_pam_login_smartcard_enforce",
+        "auth_pam_su_smartcard_enforce",
+        "auth_pam_sudo_smartcard_enforce",
+        "auth_smartcard_allow",
+        "auth_smartcard_enforce",
+        "auth_ssh_password_authentication_disable"
+      ],
+      "sources" : [
+        "confidentiality",
+        "integrity"
+      ]
+    },
+    {
+      "control" : "IA-2(12)",
+      "matchedRuleIDs" : [
+        "auth_smartcard_allow",
+        "auth_smartcard_enforce"
+      ],
+      "selectedRuleIDs" : [
+        "auth_smartcard_allow",
+        "auth_smartcard_enforce"
+      ],
+      "sources" : [
+        "confidentiality",
+        "integrity"
+      ]
+    },
+    {
+      "control" : "IA-2(2)",
+      "matchedRuleIDs" : [
+        "auth_pam_login_smartcard_enforce",
+        "auth_pam_su_smartcard_enforce",
+        "auth_pam_sudo_smartcard_enforce",
+        "auth_smartcard_allow",
+        "auth_smartcard_enforce",
+        "auth_ssh_password_authentication_disable"
+      ],
+      "selectedRuleIDs" : [
+        "auth_pam_login_smartcard_enforce",
+        "auth_pam_su_smartcard_enforce",
+        "auth_pam_sudo_smartcard_enforce",
+        "auth_smartcard_allow",
+        "auth_smartcard_enforce",
+        "auth_ssh_password_authentication_disable"
+      ],
+      "sources" : [
+        "confidentiality",
+        "integrity"
+      ]
+    },
+    {
+      "control" : "IA-2(5)",
+      "matchedRuleIDs" : [
+        "os_root_disable",
+        "os_sshd_permit_root_login_configure",
+        "os_unlock_active_user_session_disable"
+      ],
+      "selectedRuleIDs" : [
+        "os_root_disable",
+        "os_sshd_permit_root_login_configure",
+        "os_unlock_active_user_session_disable"
+      ],
+      "sources" : [
+        "confidentiality",
+        "integrity"
+      ]
+    },
+    {
+      "control" : "IA-2(6)",
+      "matchedRuleIDs" : [
+        "auth_smartcard_enforce",
+        "auth_ssh_password_authentication_disable"
+      ],
+      "selectedRuleIDs" : [
+        "auth_smartcard_enforce",
+        "auth_ssh_password_authentication_disable"
+      ],
+      "sources" : [
+        "confidentiality",
+        "integrity"
+      ]
+    },
+    {
+      "control" : "IA-2(8)",
+      "matchedRuleIDs" : [
+        "auth_pam_login_smartcard_enforce",
+        "auth_pam_su_smartcard_enforce",
+        "auth_pam_sudo_smartcard_enforce",
+        "auth_smartcard_enforce",
+        "auth_ssh_password_authentication_disable",
+        "system_settings_ssh_enable"
+      ],
+      "selectedRuleIDs" : [
+        "auth_pam_login_smartcard_enforce",
+        "auth_pam_su_smartcard_enforce",
+        "auth_pam_sudo_smartcard_enforce",
+        "auth_smartcard_enforce",
+        "auth_ssh_password_authentication_disable",
+        "system_settings_ssh_enable"
+      ],
+      "sources" : [
+        "confidentiality",
+        "integrity"
+      ]
+    },
+    {
+      "control" : "IA-3",
+      "matchedRuleIDs" : [
+        "os_auth_peripherals"
+      ],
+      "selectedRuleIDs" : [
+        "os_auth_peripherals"
+      ],
+      "sources" : [
+        "confidentiality",
+        "integrity"
+      ]
+    },
+    {
+      "control" : "IA-3(1)",
+      "matchedRuleIDs" : [
+
+      ],
+      "selectedRuleIDs" : [
+
+      ],
+      "sources" : [
+        "confidentiality",
+        "integrity"
+      ]
+    },
+    {
+      "control" : "IA-4",
+      "matchedRuleIDs" : [
+        "os_unique_identification"
+      ],
+      "selectedRuleIDs" : [
+        "os_unique_identification"
+      ],
+      "sources" : [
+        "confidentiality",
+        "integrity"
+      ]
+    },
+    {
+      "control" : "IA-4(4)",
+      "matchedRuleIDs" : [
+
+      ],
+      "selectedRuleIDs" : [
+
+      ],
+      "sources" : [
+        "confidentiality",
+        "integrity"
+      ]
+    },
+    {
+      "control" : "IA-4(9)",
+      "matchedRuleIDs" : [
+
+      ],
+      "selectedRuleIDs" : [
+
+      ],
+      "sources" : [
+        "confidentiality",
+        "integrity"
+      ]
+    },
+    {
+      "control" : "IA-5",
+      "matchedRuleIDs" : [
+        "os_obscure_password",
+        "os_password_proximity_disable",
+        "os_password_sharing_disable",
+        "pwpolicy_max_lifetime_enforce",
+        "pwpolicy_minimum_lifetime_enforce",
+        "system_settings_apple_watch_unlock_disable",
+        "system_settings_biometric_disable"
+      ],
+      "selectedRuleIDs" : [
+        "os_obscure_password",
+        "os_password_proximity_disable",
+        "os_password_sharing_disable",
+        "pwpolicy_max_lifetime_enforce",
+        "pwpolicy_minimum_lifetime_enforce",
+        "system_settings_apple_watch_unlock_disable",
+        "system_settings_biometric_disable"
+      ],
+      "sources" : [
+        "confidentiality",
+        "integrity"
+      ]
+    },
+    {
+      "control" : "IA-5(1)",
+      "matchedRuleIDs" : [
+        "os_store_encrypted_passwords",
+        "os_tftpd_disable",
+        "pwpolicy_alpha_numeric_enforce",
+        "pwpolicy_custom_regex_enforce",
+        "pwpolicy_force_password_change",
+        "pwpolicy_history_enforce",
+        "pwpolicy_lower_case_character_enforce",
+        "pwpolicy_minimum_length_enforce",
+        "pwpolicy_simple_sequence_disable",
+        "pwpolicy_special_character_enforce",
+        "pwpolicy_upper_case_character_enforce"
+      ],
+      "selectedRuleIDs" : [
+        "os_store_encrypted_passwords",
+        "os_tftpd_disable",
+        "pwpolicy_alpha_numeric_enforce",
+        "pwpolicy_custom_regex_enforce",
+        "pwpolicy_force_password_change",
+        "pwpolicy_history_enforce",
+        "pwpolicy_lower_case_character_enforce",
+        "pwpolicy_minimum_length_enforce",
+        "pwpolicy_simple_sequence_disable",
+        "pwpolicy_special_character_enforce",
+        "pwpolicy_upper_case_character_enforce"
+      ],
+      "sources" : [
+        "confidentiality",
+        "integrity"
+      ]
+    },
+    {
+      "control" : "IA-5(13)",
+      "matchedRuleIDs" : [
+        "os_filevault_autologin_disable",
+        "system_settings_automatic_login_disable"
+      ],
+      "selectedRuleIDs" : [
+        "os_filevault_autologin_disable",
+        "system_settings_automatic_login_disable"
+      ],
+      "sources" : [
+        "confidentiality",
+        "integrity"
+      ]
+    },
+    {
+      "control" : "IA-5(14)",
+      "matchedRuleIDs" : [
+
+      ],
+      "selectedRuleIDs" : [
+
+      ],
+      "sources" : [
+        "confidentiality",
+        "integrity"
+      ]
+    },
+    {
+      "control" : "IA-5(16)",
+      "matchedRuleIDs" : [
+
+      ],
+      "selectedRuleIDs" : [
+
+      ],
+      "sources" : [
+        "confidentiality",
+        "integrity"
+      ]
+    },
+    {
+      "control" : "IA-5(2)",
+      "matchedRuleIDs" : [
+        "auth_smartcard_certificate_trust_enforce_high",
+        "auth_smartcard_certificate_trust_enforce_moderate",
+        "auth_smartcard_enforce",
+        "auth_ssh_password_authentication_disable"
+      ],
+      "selectedRuleIDs" : [
+        "auth_smartcard_certificate_trust_enforce_high",
+        "auth_smartcard_enforce",
+        "auth_ssh_password_authentication_disable"
+      ],
+      "sources" : [
+        "confidentiality",
+        "integrity"
+      ]
+    },
+    {
+      "control" : "IA-5(6)",
+      "matchedRuleIDs" : [
+
+      ],
+      "selectedRuleIDs" : [
+
+      ],
+      "sources" : [
+        "confidentiality",
+        "integrity"
+      ]
+    },
+    {
+      "control" : "IA-5(7)",
+      "matchedRuleIDs" : [
+
+      ],
+      "selectedRuleIDs" : [
+
+      ],
+      "sources" : [
+        "confidentiality"
+      ]
+    },
+    {
+      "control" : "IA-5(8)",
+      "matchedRuleIDs" : [
+
+      ],
+      "selectedRuleIDs" : [
+
+      ],
+      "sources" : [
+        "confidentiality",
+        "integrity"
+      ]
+    },
+    {
+      "control" : "IA-6",
+      "matchedRuleIDs" : [
+        "os_obscure_password",
+        "os_password_hint_remove",
+        "system_settings_password_hints_disable"
+      ],
+      "selectedRuleIDs" : [
+        "os_obscure_password",
+        "os_password_hint_remove",
+        "system_settings_password_hints_disable"
+      ],
+      "sources" : [
+        "confidentiality"
+      ]
+    },
+    {
+      "control" : "IA-7",
+      "matchedRuleIDs" : [
+        "os_required_crypto_module",
+        "os_ssh_fips_compliant",
+        "os_sshd_fips_compliant"
+      ],
+      "selectedRuleIDs" : [
+        "os_required_crypto_module",
+        "os_ssh_fips_compliant",
+        "os_sshd_fips_compliant"
+      ],
+      "sources" : [
+        "confidentiality",
+        "integrity"
+      ]
+    },
+    {
+      "control" : "IA-8",
+      "matchedRuleIDs" : [
+        "os_identify_non-org_users"
+      ],
+      "selectedRuleIDs" : [
+        "os_identify_non-org_users"
+      ],
+      "sources" : [
+        "confidentiality",
+        "integrity"
+      ]
+    },
+    {
+      "control" : "IA-8(1)",
+      "matchedRuleIDs" : [
+
+      ],
+      "selectedRuleIDs" : [
+
+      ],
+      "sources" : [
+        "confidentiality",
+        "integrity"
+      ]
+    },
+    {
+      "control" : "IA-8(2)",
+      "matchedRuleIDs" : [
+
+      ],
+      "selectedRuleIDs" : [
+
+      ],
+      "sources" : [
+        "integrity"
+      ]
+    },
+    {
+      "control" : "IA-8(4)",
+      "matchedRuleIDs" : [
+
+      ],
+      "selectedRuleIDs" : [
+
+      ],
+      "sources" : [
+        "integrity"
+      ]
+    },
+    {
+      "control" : "IA-9",
+      "matchedRuleIDs" : [
+
+      ],
+      "selectedRuleIDs" : [
+
+      ],
+      "sources" : [
+        "confidentiality",
+        "integrity"
+      ]
+    },
+    {
+      "control" : "IR-1",
+      "matchedRuleIDs" : [
+
+      ],
+      "selectedRuleIDs" : [
+
+      ],
+      "sources" : [
+        "availability",
+        "confidentiality",
+        "integrity"
+      ]
+    },
+    {
+      "control" : "IR-2",
+      "matchedRuleIDs" : [
+
+      ],
+      "selectedRuleIDs" : [
+
+      ],
+      "sources" : [
+        "availability",
+        "confidentiality",
+        "integrity"
+      ]
+    },
+    {
+      "control" : "IR-2(1)",
+      "matchedRuleIDs" : [
+
+      ],
+      "selectedRuleIDs" : [
+
+      ],
+      "sources" : [
+        "availability",
+        "confidentiality",
+        "integrity"
+      ]
+    },
+    {
+      "control" : "IR-2(2)",
+      "matchedRuleIDs" : [
+
+      ],
+      "selectedRuleIDs" : [
+
+      ],
+      "sources" : [
+        "availability",
+        "integrity"
+      ]
+    },
+    {
+      "control" : "IR-3",
+      "matchedRuleIDs" : [
+
+      ],
+      "selectedRuleIDs" : [
+
+      ],
+      "sources" : [
+        "availability",
+        "confidentiality",
+        "integrity"
+      ]
+    },
+    {
+      "control" : "IR-3(2)",
+      "matchedRuleIDs" : [
+
+      ],
+      "selectedRuleIDs" : [
+
+      ],
+      "sources" : [
+        "availability",
+        "confidentiality",
+        "integrity"
+      ]
+    },
+    {
+      "control" : "IR-4",
+      "matchedRuleIDs" : [
+
+      ],
+      "selectedRuleIDs" : [
+
+      ],
+      "sources" : [
+        "availability",
+        "confidentiality",
+        "integrity"
+      ]
+    },
+    {
+      "control" : "IR-4(1)",
+      "matchedRuleIDs" : [
+
+      ],
+      "selectedRuleIDs" : [
+
+      ],
+      "sources" : [
+        "availability",
+        "confidentiality",
+        "integrity"
+      ]
+    },
+    {
+      "control" : "IR-4(10)",
+      "matchedRuleIDs" : [
+
+      ],
+      "selectedRuleIDs" : [
+
+      ],
+      "sources" : [
+        "availability",
+        "confidentiality",
+        "integrity"
+      ]
+    },
+    {
+      "control" : "IR-4(11)",
+      "matchedRuleIDs" : [
+
+      ],
+      "selectedRuleIDs" : [
+
+      ],
+      "sources" : [
+        "availability",
+        "confidentiality",
+        "integrity"
+      ]
+    },
+    {
+      "control" : "IR-4(12)",
+      "matchedRuleIDs" : [
+
+      ],
+      "selectedRuleIDs" : [
+
+      ],
+      "sources" : [
+        "availability",
+        "confidentiality",
+        "integrity"
+      ]
+    },
+    {
+      "control" : "IR-4(13)",
+      "matchedRuleIDs" : [
+
+      ],
+      "selectedRuleIDs" : [
+
+      ],
+      "sources" : [
+        "availability",
+        "confidentiality",
+        "integrity"
+      ]
+    },
+    {
+      "control" : "IR-4(14)",
+      "matchedRuleIDs" : [
+
+      ],
+      "selectedRuleIDs" : [
+
+      ],
+      "sources" : [
+        "availability",
+        "confidentiality",
+        "integrity"
+      ]
+    },
+    {
+      "control" : "IR-4(3)",
+      "matchedRuleIDs" : [
+
+      ],
+      "selectedRuleIDs" : [
+
+      ],
+      "sources" : [
+        "availability",
+        "confidentiality",
+        "integrity"
+      ]
+    },
+    {
+      "control" : "IR-4(4)",
+      "matchedRuleIDs" : [
+
+      ],
+      "selectedRuleIDs" : [
+
+      ],
+      "sources" : [
+        "availability",
+        "confidentiality",
+        "integrity"
+      ]
+    },
+    {
+      "control" : "IR-4(6)",
+      "matchedRuleIDs" : [
+
+      ],
+      "selectedRuleIDs" : [
+
+      ],
+      "sources" : [
+        "availability",
+        "confidentiality",
+        "integrity"
+      ]
+    },
+    {
+      "control" : "IR-4(7)",
+      "matchedRuleIDs" : [
+
+      ],
+      "selectedRuleIDs" : [
+
+      ],
+      "sources" : [
+        "availability",
+        "confidentiality",
+        "integrity"
+      ]
+    },
+    {
+      "control" : "IR-4(8)",
+      "matchedRuleIDs" : [
+
+      ],
+      "selectedRuleIDs" : [
+
+      ],
+      "sources" : [
+        "availability",
+        "confidentiality",
+        "integrity"
+      ]
+    },
+    {
+      "control" : "IR-5",
+      "matchedRuleIDs" : [
+
+      ],
+      "selectedRuleIDs" : [
+
+      ],
+      "sources" : [
+        "availability",
+        "confidentiality",
+        "integrity"
+      ]
+    },
+    {
+      "control" : "IR-5(1)",
+      "matchedRuleIDs" : [
+
+      ],
+      "selectedRuleIDs" : [
+
+      ],
+      "sources" : [
+        "availability",
+        "confidentiality",
+        "integrity"
+      ]
+    },
+    {
+      "control" : "IR-6",
+      "matchedRuleIDs" : [
+
+      ],
+      "selectedRuleIDs" : [
+
+      ],
+      "sources" : [
+        "availability",
+        "confidentiality",
+        "integrity"
+      ]
+    },
+    {
+      "control" : "IR-6(1)",
+      "matchedRuleIDs" : [
+
+      ],
+      "selectedRuleIDs" : [
+
+      ],
+      "sources" : [
+        "availability",
+        "confidentiality",
+        "integrity"
+      ]
+    },
+    {
+      "control" : "IR-6(2)",
+      "matchedRuleIDs" : [
+
+      ],
+      "selectedRuleIDs" : [
+
+      ],
+      "sources" : [
+        "availability",
+        "confidentiality",
+        "integrity"
+      ]
+    },
+    {
+      "control" : "IR-6(3)",
+      "matchedRuleIDs" : [
+
+      ],
+      "selectedRuleIDs" : [
+
+      ],
+      "sources" : [
+        "availability",
+        "confidentiality",
+        "integrity"
+      ]
+    },
+    {
+      "control" : "IR-7",
+      "matchedRuleIDs" : [
+
+      ],
+      "selectedRuleIDs" : [
+
+      ],
+      "sources" : [
+        "availability",
+        "confidentiality",
+        "integrity"
+      ]
+    },
+    {
+      "control" : "IR-7(1)",
+      "matchedRuleIDs" : [
+
+      ],
+      "selectedRuleIDs" : [
+
+      ],
+      "sources" : [
+        "availability",
+        "confidentiality",
+        "integrity"
+      ]
+    },
+    {
+      "control" : "IR-7(2)",
+      "matchedRuleIDs" : [
+
+      ],
+      "selectedRuleIDs" : [
+
+      ],
+      "sources" : [
+        "availability",
+        "confidentiality",
+        "integrity"
+      ]
+    },
+    {
+      "control" : "IR-8",
+      "matchedRuleIDs" : [
+
+      ],
+      "selectedRuleIDs" : [
+
+      ],
+      "sources" : [
+        "availability",
+        "confidentiality",
+        "integrity"
+      ]
+    },
+    {
+      "control" : "IR-9",
+      "matchedRuleIDs" : [
+
+      ],
+      "selectedRuleIDs" : [
+
+      ],
+      "sources" : [
+        "confidentiality"
+      ]
+    },
+    {
+      "control" : "IR-9(2)",
+      "matchedRuleIDs" : [
+
+      ],
+      "selectedRuleIDs" : [
+
+      ],
+      "sources" : [
+        "confidentiality"
+      ]
+    },
+    {
+      "control" : "IR-9(3)",
+      "matchedRuleIDs" : [
+
+      ],
+      "selectedRuleIDs" : [
+
+      ],
+      "sources" : [
+        "availability"
+      ]
+    },
+    {
+      "control" : "IR-9(4)",
+      "matchedRuleIDs" : [
+
+      ],
+      "selectedRuleIDs" : [
+
+      ],
+      "sources" : [
+        "confidentiality"
+      ]
+    },
+    {
+      "control" : "MA-1",
+      "matchedRuleIDs" : [
+
+      ],
+      "selectedRuleIDs" : [
+
+      ],
+      "sources" : [
+        "availability",
+        "confidentiality",
+        "integrity"
+      ]
+    },
+    {
+      "control" : "MA-2",
+      "matchedRuleIDs" : [
+
+      ],
+      "selectedRuleIDs" : [
+
+      ],
+      "sources" : [
+        "availability",
+        "confidentiality",
+        "integrity"
+      ]
+    },
+    {
+      "control" : "MA-2(2)",
+      "matchedRuleIDs" : [
+
+      ],
+      "selectedRuleIDs" : [
+
+      ],
+      "sources" : [
+        "availability",
+        "confidentiality",
+        "integrity"
+      ]
+    },
+    {
+      "control" : "MA-3",
+      "matchedRuleIDs" : [
+
+      ],
+      "selectedRuleIDs" : [
+
+      ],
+      "sources" : [
+        "integrity"
+      ]
+    },
+    {
+      "control" : "MA-3(1)",
+      "matchedRuleIDs" : [
+
+      ],
+      "selectedRuleIDs" : [
+
+      ],
+      "sources" : [
+        "integrity"
+      ]
+    },
+    {
+      "control" : "MA-3(2)",
+      "matchedRuleIDs" : [
+
+      ],
+      "selectedRuleIDs" : [
+
+      ],
+      "sources" : [
+        "integrity"
+      ]
+    },
+    {
+      "control" : "MA-3(3)",
+      "matchedRuleIDs" : [
+
+      ],
+      "selectedRuleIDs" : [
+
+      ],
+      "sources" : [
+        "confidentiality"
+      ]
+    },
+    {
+      "control" : "MA-3(4)",
+      "matchedRuleIDs" : [
+
+      ],
+      "selectedRuleIDs" : [
+
+      ],
+      "sources" : [
+        "integrity"
+      ]
+    },
+    {
+      "control" : "MA-3(5)",
+      "matchedRuleIDs" : [
+
+      ],
+      "selectedRuleIDs" : [
+
+      ],
+      "sources" : [
+        "confidentiality",
+        "integrity"
+      ]
+    },
+    {
+      "control" : "MA-3(6)",
+      "matchedRuleIDs" : [
+
+      ],
+      "selectedRuleIDs" : [
+
+      ],
+      "sources" : [
+        "confidentiality",
+        "integrity"
+      ]
+    },
+    {
+      "control" : "MA-4",
+      "matchedRuleIDs" : [
+        "auth_ssh_password_authentication_disable",
+        "os_nonlocal_maintenance"
+      ],
+      "selectedRuleIDs" : [
+        "auth_ssh_password_authentication_disable",
+        "os_nonlocal_maintenance"
+      ],
+      "sources" : [
+        "integrity"
+      ]
+    },
+    {
+      "control" : "MA-4(1)",
+      "matchedRuleIDs" : [
+        "audit_auditd_enabled",
+        "audit_flags_aa_configure",
+        "audit_flags_ad_configure",
+        "audit_flags_fd_configure",
+        "audit_flags_fm_configure",
+        "audit_flags_fm_failed_configure",
+        "audit_flags_fr_configure",
+        "audit_flags_fw_configure",
+        "audit_flags_lo_configure",
+        "os_authenticated_root_enable",
+        "os_separate_functionality",
+        "os_system_read_only"
+      ],
+      "selectedRuleIDs" : [
+        "audit_auditd_enabled",
+        "audit_flags_aa_configure",
+        "audit_flags_ad_configure",
+        "audit_flags_fd_configure",
+        "audit_flags_fm_configure",
+        "audit_flags_fm_failed_configure",
+        "audit_flags_fr_configure",
+        "audit_flags_fw_configure",
+        "audit_flags_lo_configure",
+        "os_authenticated_root_enable",
+        "os_separate_functionality",
+        "os_system_read_only"
+      ],
+      "sources" : [
+        "integrity"
+      ]
+    },
+    {
+      "control" : "MA-4(3)",
+      "matchedRuleIDs" : [
+
+      ],
+      "selectedRuleIDs" : [
+
+      ],
+      "sources" : [
+        "confidentiality",
+        "integrity"
+      ]
+    },
+    {
+      "control" : "MA-4(4)",
+      "matchedRuleIDs" : [
+
+      ],
+      "selectedRuleIDs" : [
+
+      ],
+      "sources" : [
+        "integrity"
+      ]
+    },
+    {
+      "control" : "MA-4(6)",
+      "matchedRuleIDs" : [
+
+      ],
+      "selectedRuleIDs" : [
+
+      ],
+      "sources" : [
+        "confidentiality",
+        "integrity"
+      ]
+    },
+    {
+      "control" : "MA-4(7)",
+      "matchedRuleIDs" : [
+        "os_verify_remote_disconnection"
+      ],
+      "selectedRuleIDs" : [
+        "os_verify_remote_disconnection"
+      ],
+      "sources" : [
+        "integrity"
+      ]
+    },
+    {
+      "control" : "MA-5",
+      "matchedRuleIDs" : [
+
+      ],
+      "selectedRuleIDs" : [
+
+      ],
+      "sources" : [
+        "availability",
+        "confidentiality",
+        "integrity"
+      ]
+    },
+    {
+      "control" : "MA-5(1)",
+      "matchedRuleIDs" : [
+
+      ],
+      "selectedRuleIDs" : [
+
+      ],
+      "sources" : [
+        "availability",
+        "confidentiality",
+        "integrity"
+      ]
+    },
+    {
+      "control" : "MA-6",
+      "matchedRuleIDs" : [
+
+      ],
+      "selectedRuleIDs" : [
+
+      ],
+      "sources" : [
+        "availability"
+      ]
+    },
+    {
+      "control" : "MA-6(1)",
+      "matchedRuleIDs" : [
+
+      ],
+      "selectedRuleIDs" : [
+
+      ],
+      "sources" : [
+        "availability"
+      ]
+    },
+    {
+      "control" : "MP-1",
+      "matchedRuleIDs" : [
+
+      ],
+      "selectedRuleIDs" : [
+
+      ],
+      "sources" : [
+        "confidentiality",
+        "integrity"
+      ]
+    },
+    {
+      "control" : "MP-2",
+      "matchedRuleIDs" : [
+
+      ],
+      "selectedRuleIDs" : [
+
+      ],
+      "sources" : [
+        "confidentiality",
+        "integrity"
+      ]
+    },
+    {
+      "control" : "MP-3",
+      "matchedRuleIDs" : [
+
+      ],
+      "selectedRuleIDs" : [
+
+      ],
+      "sources" : [
+        "confidentiality"
+      ]
+    },
+    {
+      "control" : "MP-4",
+      "matchedRuleIDs" : [
+
+      ],
+      "selectedRuleIDs" : [
+
+      ],
+      "sources" : [
+        "confidentiality"
+      ]
+    },
+    {
+      "control" : "MP-5",
+      "matchedRuleIDs" : [
+
+      ],
+      "selectedRuleIDs" : [
+
+      ],
+      "sources" : [
+        "confidentiality"
+      ]
+    },
+    {
+      "control" : "MP-6",
+      "matchedRuleIDs" : [
+
+      ],
+      "selectedRuleIDs" : [
+
+      ],
+      "sources" : [
+        "confidentiality"
+      ]
+    },
+    {
+      "control" : "MP-6(1)",
+      "matchedRuleIDs" : [
+
+      ],
+      "selectedRuleIDs" : [
+
+      ],
+      "sources" : [
+        "confidentiality"
+      ]
+    },
+    {
+      "control" : "MP-6(2)",
+      "matchedRuleIDs" : [
+
+      ],
+      "selectedRuleIDs" : [
+
+      ],
+      "sources" : [
+        "confidentiality"
+      ]
+    },
+    {
+      "control" : "MP-6(3)",
+      "matchedRuleIDs" : [
+
+      ],
+      "selectedRuleIDs" : [
+
+      ],
+      "sources" : [
+        "confidentiality"
+      ]
+    },
+    {
+      "control" : "MP-7",
+      "matchedRuleIDs" : [
+        "os_burn_support_disable",
+        "os_external_storage_access_defined",
+        "system_settings_usb_restricted_mode"
+      ],
+      "selectedRuleIDs" : [
+        "os_burn_support_disable",
+        "os_external_storage_access_defined",
+        "system_settings_usb_restricted_mode"
+      ],
+      "sources" : [
+        "confidentiality",
+        "integrity"
+      ]
+    },
+    {
+      "control" : "PE-1",
+      "matchedRuleIDs" : [
+
+      ],
+      "selectedRuleIDs" : [
+
+      ],
+      "sources" : [
+        "availability",
+        "confidentiality",
+        "integrity"
+      ]
+    },
+    {
+      "control" : "PE-10",
+      "matchedRuleIDs" : [
+
+      ],
+      "selectedRuleIDs" : [
+
+      ],
+      "sources" : [
+        "availability"
+      ]
+    },
+    {
+      "control" : "PE-11",
+      "matchedRuleIDs" : [
+
+      ],
+      "selectedRuleIDs" : [
+
+      ],
+      "sources" : [
+        "availability"
+      ]
+    },
+    {
+      "control" : "PE-11(1)",
+      "matchedRuleIDs" : [
+
+      ],
+      "selectedRuleIDs" : [
+
+      ],
+      "sources" : [
+        "availability"
+      ]
+    },
+    {
+      "control" : "PE-12",
+      "matchedRuleIDs" : [
+
+      ],
+      "selectedRuleIDs" : [
+
+      ],
+      "sources" : [
+        "availability"
+      ]
+    },
+    {
+      "control" : "PE-13",
+      "matchedRuleIDs" : [
+
+      ],
+      "selectedRuleIDs" : [
+
+      ],
+      "sources" : [
+        "availability"
+      ]
+    },
+    {
+      "control" : "PE-13(1)",
+      "matchedRuleIDs" : [
+
+      ],
+      "selectedRuleIDs" : [
+
+      ],
+      "sources" : [
+        "availability"
+      ]
+    },
+    {
+      "control" : "PE-13(2)",
+      "matchedRuleIDs" : [
+
+      ],
+      "selectedRuleIDs" : [
+
+      ],
+      "sources" : [
+        "availability"
+      ]
+    },
+    {
+      "control" : "PE-13(4)",
+      "matchedRuleIDs" : [
+
+      ],
+      "selectedRuleIDs" : [
+
+      ],
+      "sources" : [
+        "availability"
+      ]
+    },
+    {
+      "control" : "PE-14",
+      "matchedRuleIDs" : [
+
+      ],
+      "selectedRuleIDs" : [
+
+      ],
+      "sources" : [
+        "availability"
+      ]
+    },
+    {
+      "control" : "PE-15",
+      "matchedRuleIDs" : [
+
+      ],
+      "selectedRuleIDs" : [
+
+      ],
+      "sources" : [
+        "availability"
+      ]
+    },
+    {
+      "control" : "PE-15(1)",
+      "matchedRuleIDs" : [
+
+      ],
+      "selectedRuleIDs" : [
+
+      ],
+      "sources" : [
+        "availability"
+      ]
+    },
+    {
+      "control" : "PE-16",
+      "matchedRuleIDs" : [
+
+      ],
+      "selectedRuleIDs" : [
+
+      ],
+      "sources" : [
+        "availability",
+        "confidentiality",
+        "integrity"
+      ]
+    },
+    {
+      "control" : "PE-17",
+      "matchedRuleIDs" : [
+
+      ],
+      "selectedRuleIDs" : [
+
+      ],
+      "sources" : [
+        "availability",
+        "confidentiality",
+        "integrity"
+      ]
+    },
+    {
+      "control" : "PE-18",
+      "matchedRuleIDs" : [
+
+      ],
+      "selectedRuleIDs" : [
+
+      ],
+      "sources" : [
+        "availability"
+      ]
+    },
+    {
+      "control" : "PE-2",
+      "matchedRuleIDs" : [
+
+      ],
+      "selectedRuleIDs" : [
+
+      ],
+      "sources" : [
+        "availability",
+        "confidentiality",
+        "integrity"
+      ]
+    },
+    {
+      "control" : "PE-22",
+      "matchedRuleIDs" : [
+
+      ],
+      "selectedRuleIDs" : [
+
+      ],
+      "sources" : [
+        "confidentiality"
+      ]
+    },
+    {
+      "control" : "PE-23",
+      "matchedRuleIDs" : [
+
+      ],
+      "selectedRuleIDs" : [
+
+      ],
+      "sources" : [
+        "availability"
+      ]
+    },
+    {
+      "control" : "PE-3",
+      "matchedRuleIDs" : [
+
+      ],
+      "selectedRuleIDs" : [
+
+      ],
+      "sources" : [
+        "availability",
+        "confidentiality",
+        "integrity"
+      ]
+    },
+    {
+      "control" : "PE-3(1)",
+      "matchedRuleIDs" : [
+
+      ],
+      "selectedRuleIDs" : [
+
+      ],
+      "sources" : [
+        "confidentiality",
+        "integrity"
+      ]
+    },
+    {
+      "control" : "PE-4",
+      "matchedRuleIDs" : [
+
+      ],
+      "selectedRuleIDs" : [
+
+      ],
+      "sources" : [
+        "confidentiality",
+        "integrity"
+      ]
+    },
+    {
+      "control" : "PE-5",
+      "matchedRuleIDs" : [
+
+      ],
+      "selectedRuleIDs" : [
+
+      ],
+      "sources" : [
+        "confidentiality"
+      ]
+    },
+    {
+      "control" : "PE-6",
+      "matchedRuleIDs" : [
+
+      ],
+      "selectedRuleIDs" : [
+
+      ],
+      "sources" : [
+        "availability",
+        "confidentiality",
+        "integrity"
+      ]
+    },
+    {
+      "control" : "PE-6(1)",
+      "matchedRuleIDs" : [
+
+      ],
+      "selectedRuleIDs" : [
+
+      ],
+      "sources" : [
+        "availability",
+        "confidentiality",
+        "integrity"
+      ]
+    },
+    {
+      "control" : "PE-6(4)",
+      "matchedRuleIDs" : [
+
+      ],
+      "selectedRuleIDs" : [
+
+      ],
+      "sources" : [
+        "availability",
+        "confidentiality",
+        "integrity"
+      ]
+    },
+    {
+      "control" : "PE-8",
+      "matchedRuleIDs" : [
+
+      ],
+      "selectedRuleIDs" : [
+
+      ],
+      "sources" : [
+        "availability",
+        "confidentiality",
+        "integrity"
+      ]
+    },
+    {
+      "control" : "PE-8(1)",
+      "matchedRuleIDs" : [
+
+      ],
+      "selectedRuleIDs" : [
+
+      ],
+      "sources" : [
+        "availability",
+        "confidentiality",
+        "integrity"
+      ]
+    },
+    {
+      "control" : "PE-8(3)",
+      "matchedRuleIDs" : [
+
+      ],
+      "selectedRuleIDs" : [
+
+      ],
+      "sources" : [
+        "confidentiality"
+      ]
+    },
+    {
+      "control" : "PE-9",
+      "matchedRuleIDs" : [
+
+      ],
+      "selectedRuleIDs" : [
+
+      ],
+      "sources" : [
+        "availability"
+      ]
+    },
+    {
+      "control" : "PL-1",
+      "matchedRuleIDs" : [
+
+      ],
+      "selectedRuleIDs" : [
+
+      ],
+      "sources" : [
+        "availability",
+        "confidentiality",
+        "integrity"
+      ]
+    },
+    {
+      "control" : "PL-10",
+      "matchedRuleIDs" : [
+
+      ],
+      "selectedRuleIDs" : [
+
+      ],
+      "sources" : [
+        "availability",
+        "confidentiality",
+        "integrity"
+      ]
+    },
+    {
+      "control" : "PL-11",
+      "matchedRuleIDs" : [
+
+      ],
+      "selectedRuleIDs" : [
+
+      ],
+      "sources" : [
+        "availability",
+        "confidentiality",
+        "integrity"
+      ]
+    },
+    {
+      "control" : "PL-2",
+      "matchedRuleIDs" : [
+
+      ],
+      "selectedRuleIDs" : [
+
+      ],
+      "sources" : [
+        "availability",
+        "confidentiality",
+        "integrity"
+      ]
+    },
+    {
+      "control" : "PL-4",
+      "matchedRuleIDs" : [
+
+      ],
+      "selectedRuleIDs" : [
+
+      ],
+      "sources" : [
+        "availability",
+        "confidentiality",
+        "integrity"
+      ]
+    },
+    {
+      "control" : "PL-4(1)",
+      "matchedRuleIDs" : [
+
+      ],
+      "selectedRuleIDs" : [
+
+      ],
+      "sources" : [
+        "confidentiality"
+      ]
+    },
+    {
+      "control" : "PL-7",
+      "matchedRuleIDs" : [
+
+      ],
+      "selectedRuleIDs" : [
+
+      ],
+      "sources" : [
+        "availability",
+        "confidentiality",
+        "integrity"
+      ]
+    },
+    {
+      "control" : "PL-8",
+      "matchedRuleIDs" : [
+
+      ],
+      "selectedRuleIDs" : [
+
+      ],
+      "sources" : [
+        "availability",
+        "confidentiality",
+        "integrity"
+      ]
+    },
+    {
+      "control" : "PL-8(1)",
+      "matchedRuleIDs" : [
+
+      ],
+      "selectedRuleIDs" : [
+
+      ],
+      "sources" : [
+        "availability",
+        "confidentiality",
+        "integrity"
+      ]
+    },
+    {
+      "control" : "PL-8(2)",
+      "matchedRuleIDs" : [
+
+      ],
+      "selectedRuleIDs" : [
+
+      ],
+      "sources" : [
+        "availability",
+        "confidentiality",
+        "integrity"
+      ]
+    },
+    {
+      "control" : "PL-9",
+      "matchedRuleIDs" : [
+
+      ],
+      "selectedRuleIDs" : [
+
+      ],
+      "sources" : [
+        "integrity"
+      ]
+    },
+    {
+      "control" : "PS-1",
+      "matchedRuleIDs" : [
+
+      ],
+      "selectedRuleIDs" : [
+
+      ],
+      "sources" : [
+        "availability",
+        "confidentiality",
+        "integrity"
+      ]
+    },
+    {
+      "control" : "PS-2",
+      "matchedRuleIDs" : [
+
+      ],
+      "selectedRuleIDs" : [
+
+      ],
+      "sources" : [
+        "availability",
+        "confidentiality",
+        "integrity"
+      ]
+    },
+    {
+      "control" : "PS-3",
+      "matchedRuleIDs" : [
+
+      ],
+      "selectedRuleIDs" : [
+
+      ],
+      "sources" : [
+        "confidentiality",
+        "integrity"
+      ]
+    },
+    {
+      "control" : "PS-3(4)",
+      "matchedRuleIDs" : [
+
+      ],
+      "selectedRuleIDs" : [
+
+      ],
+      "sources" : [
+        "confidentiality"
+      ]
+    },
+    {
+      "control" : "PS-4",
+      "matchedRuleIDs" : [
+
+      ],
+      "selectedRuleIDs" : [
+
+      ],
+      "sources" : [
+        "availability",
+        "confidentiality",
+        "integrity"
+      ]
+    },
+    {
+      "control" : "PS-4(1)",
+      "matchedRuleIDs" : [
+
+      ],
+      "selectedRuleIDs" : [
+
+      ],
+      "sources" : [
+        "confidentiality"
+      ]
+    },
+    {
+      "control" : "PS-4(2)",
+      "matchedRuleIDs" : [
+
+      ],
+      "selectedRuleIDs" : [
+
+      ],
+      "sources" : [
+        "availability",
+        "confidentiality",
+        "integrity"
+      ]
+    },
+    {
+      "control" : "PS-5",
+      "matchedRuleIDs" : [
+
+      ],
+      "selectedRuleIDs" : [
+
+      ],
+      "sources" : [
+        "availability",
+        "confidentiality",
+        "integrity"
+      ]
+    },
+    {
+      "control" : "PS-6",
+      "matchedRuleIDs" : [
+
+      ],
+      "selectedRuleIDs" : [
+
+      ],
+      "sources" : [
+        "confidentiality",
+        "integrity"
+      ]
+    },
+    {
+      "control" : "PS-6(3)",
+      "matchedRuleIDs" : [
+
+      ],
+      "selectedRuleIDs" : [
+
+      ],
+      "sources" : [
+        "confidentiality"
+      ]
+    },
+    {
+      "control" : "PS-7",
+      "matchedRuleIDs" : [
+
+      ],
+      "selectedRuleIDs" : [
+
+      ],
+      "sources" : [
+        "confidentiality",
+        "integrity"
+      ]
+    },
+    {
+      "control" : "PS-8",
+      "matchedRuleIDs" : [
+
+      ],
+      "selectedRuleIDs" : [
+
+      ],
+      "sources" : [
+        "availability",
+        "confidentiality",
+        "integrity"
+      ]
+    },
+    {
+      "control" : "PS-9",
+      "matchedRuleIDs" : [
+
+      ],
+      "selectedRuleIDs" : [
+
+      ],
+      "sources" : [
+        "availability",
+        "confidentiality",
+        "integrity"
+      ]
+    },
+    {
+      "control" : "RA-1",
+      "matchedRuleIDs" : [
+
+      ],
+      "selectedRuleIDs" : [
+
+      ],
+      "sources" : [
+        "availability",
+        "confidentiality",
+        "integrity"
+      ]
+    },
+    {
+      "control" : "RA-10",
+      "matchedRuleIDs" : [
+
+      ],
+      "selectedRuleIDs" : [
+
+      ],
+      "sources" : [
+        "availability",
+        "confidentiality",
+        "integrity"
+      ]
+    },
+    {
+      "control" : "RA-2",
+      "matchedRuleIDs" : [
+
+      ],
+      "selectedRuleIDs" : [
+
+      ],
+      "sources" : [
+        "availability",
+        "confidentiality",
+        "integrity"
+      ]
+    },
+    {
+      "control" : "RA-3",
+      "matchedRuleIDs" : [
+
+      ],
+      "selectedRuleIDs" : [
+
+      ],
+      "sources" : [
+        "availability",
+        "confidentiality",
+        "integrity"
+      ]
+    },
+    {
+      "control" : "RA-3(1)",
+      "matchedRuleIDs" : [
+
+      ],
+      "selectedRuleIDs" : [
+
+      ],
+      "sources" : [
+        "availability",
+        "confidentiality",
+        "integrity"
+      ]
+    },
+    {
+      "control" : "RA-3(2)",
+      "matchedRuleIDs" : [
+
+      ],
+      "selectedRuleIDs" : [
+
+      ],
+      "sources" : [
+        "availability",
+        "confidentiality",
+        "integrity"
+      ]
+    },
+    {
+      "control" : "RA-3(3)",
+      "matchedRuleIDs" : [
+
+      ],
+      "selectedRuleIDs" : [
+
+      ],
+      "sources" : [
+        "availability",
+        "confidentiality",
+        "integrity"
+      ]
+    },
+    {
+      "control" : "RA-5",
+      "matchedRuleIDs" : [
+
+      ],
+      "selectedRuleIDs" : [
+
+      ],
+      "sources" : [
+        "availability",
+        "confidentiality",
+        "integrity"
+      ]
+    },
+    {
+      "control" : "RA-5(10)",
+      "matchedRuleIDs" : [
+
+      ],
+      "selectedRuleIDs" : [
+
+      ],
+      "sources" : [
+        "availability",
+        "confidentiality",
+        "integrity"
+      ]
+    },
+    {
+      "control" : "RA-5(11)",
+      "matchedRuleIDs" : [
+
+      ],
+      "selectedRuleIDs" : [
+
+      ],
+      "sources" : [
+        "availability",
+        "confidentiality",
+        "integrity"
+      ]
+    },
+    {
+      "control" : "RA-5(2)",
+      "matchedRuleIDs" : [
+
+      ],
+      "selectedRuleIDs" : [
+
+      ],
+      "sources" : [
+        "availability",
+        "confidentiality",
+        "integrity"
+      ]
+    },
+    {
+      "control" : "RA-5(4)",
+      "matchedRuleIDs" : [
+
+      ],
+      "selectedRuleIDs" : [
+
+      ],
+      "sources" : [
+        "availability",
+        "confidentiality",
+        "integrity"
+      ]
+    },
+    {
+      "control" : "RA-5(5)",
+      "matchedRuleIDs" : [
+
+      ],
+      "selectedRuleIDs" : [
+
+      ],
+      "sources" : [
+        "availability",
+        "confidentiality",
+        "integrity"
+      ]
+    },
+    {
+      "control" : "RA-7",
+      "matchedRuleIDs" : [
+
+      ],
+      "selectedRuleIDs" : [
+
+      ],
+      "sources" : [
+        "availability",
+        "confidentiality",
+        "integrity"
+      ]
+    },
+    {
+      "control" : "RA-9",
+      "matchedRuleIDs" : [
+
+      ],
+      "selectedRuleIDs" : [
+
+      ],
+      "sources" : [
+        "availability",
+        "confidentiality",
+        "integrity"
+      ]
+    },
+    {
+      "control" : "SA-1",
+      "matchedRuleIDs" : [
+
+      ],
+      "selectedRuleIDs" : [
+
+      ],
+      "sources" : [
+        "availability",
+        "confidentiality",
+        "integrity"
+      ]
+    },
+    {
+      "control" : "SA-10",
+      "matchedRuleIDs" : [
+
+      ],
+      "selectedRuleIDs" : [
+
+      ],
+      "sources" : [
+        "integrity"
+      ]
+    },
+    {
+      "control" : "SA-10(1)",
+      "matchedRuleIDs" : [
+
+      ],
+      "selectedRuleIDs" : [
+
+      ],
+      "sources" : [
+        "integrity"
+      ]
+    },
+    {
+      "control" : "SA-10(3)",
+      "matchedRuleIDs" : [
+
+      ],
+      "selectedRuleIDs" : [
+
+      ],
+      "sources" : [
+        "integrity"
+      ]
+    },
+    {
+      "control" : "SA-10(7)",
+      "matchedRuleIDs" : [
+
+      ],
+      "selectedRuleIDs" : [
+
+      ],
+      "sources" : [
+        "integrity"
+      ]
+    },
+    {
+      "control" : "SA-11",
+      "matchedRuleIDs" : [
+
+      ],
+      "selectedRuleIDs" : [
+
+      ],
+      "sources" : [
+        "availability",
+        "confidentiality",
+        "integrity"
+      ]
+    },
+    {
+      "control" : "SA-11(1)",
+      "matchedRuleIDs" : [
+
+      ],
+      "selectedRuleIDs" : [
+
+      ],
+      "sources" : [
+        "availability",
+        "confidentiality",
+        "integrity"
+      ]
+    },
+    {
+      "control" : "SA-11(2)",
+      "matchedRuleIDs" : [
+
+      ],
+      "selectedRuleIDs" : [
+
+      ],
+      "sources" : [
+        "availability",
+        "confidentiality",
+        "integrity"
+      ]
+    },
+    {
+      "control" : "SA-15",
+      "matchedRuleIDs" : [
+
+      ],
+      "selectedRuleIDs" : [
+
+      ],
+      "sources" : [
+        "availability",
+        "confidentiality",
+        "integrity"
+      ]
+    },
+    {
+      "control" : "SA-15(3)",
+      "matchedRuleIDs" : [
+
+      ],
+      "selectedRuleIDs" : [
+
+      ],
+      "sources" : [
+        "availability",
+        "confidentiality",
+        "integrity"
+      ]
+    },
+    {
+      "control" : "SA-15(7)",
+      "matchedRuleIDs" : [
+
+      ],
+      "selectedRuleIDs" : [
+
+      ],
+      "sources" : [
+        "integrity"
+      ]
+    },
+    {
+      "control" : "SA-16",
+      "matchedRuleIDs" : [
+
+      ],
+      "selectedRuleIDs" : [
+
+      ],
+      "sources" : [
+        "availability",
+        "confidentiality",
+        "integrity"
+      ]
+    },
+    {
+      "control" : "SA-17",
+      "matchedRuleIDs" : [
+
+      ],
+      "selectedRuleIDs" : [
+
+      ],
+      "sources" : [
+        "availability",
+        "confidentiality",
+        "integrity"
+      ]
+    },
+    {
+      "control" : "SA-2",
+      "matchedRuleIDs" : [
+
+      ],
+      "selectedRuleIDs" : [
+
+      ],
+      "sources" : [
+        "availability",
+        "confidentiality",
+        "integrity"
+      ]
+    },
+    {
+      "control" : "SA-21",
+      "matchedRuleIDs" : [
+
+      ],
+      "selectedRuleIDs" : [
+
+      ],
+      "sources" : [
+        "availability",
+        "confidentiality",
+        "integrity"
+      ]
+    },
+    {
+      "control" : "SA-22",
+      "matchedRuleIDs" : [
+
+      ],
+      "selectedRuleIDs" : [
+
+      ],
+      "sources" : [
+        "availability",
+        "confidentiality",
+        "integrity"
+      ]
+    },
+    {
+      "control" : "SA-3",
+      "matchedRuleIDs" : [
+
+      ],
+      "selectedRuleIDs" : [
+
+      ],
+      "sources" : [
+        "availability",
+        "confidentiality",
+        "integrity"
+      ]
+    },
+    {
+      "control" : "SA-3(1)",
+      "matchedRuleIDs" : [
+
+      ],
+      "selectedRuleIDs" : [
+
+      ],
+      "sources" : [
+        "availability",
+        "confidentiality",
+        "integrity"
+      ]
+    },
+    {
+      "control" : "SA-3(2)",
+      "matchedRuleIDs" : [
+
+      ],
+      "selectedRuleIDs" : [
+
+      ],
+      "sources" : [
+        "confidentiality"
+      ]
+    },
+    {
+      "control" : "SA-3(3)",
+      "matchedRuleIDs" : [
+
+      ],
+      "selectedRuleIDs" : [
+
+      ],
+      "sources" : [
+        "availability"
+      ]
+    },
+    {
+      "control" : "SA-4",
+      "matchedRuleIDs" : [
+
+      ],
+      "selectedRuleIDs" : [
+
+      ],
+      "sources" : [
+        "availability",
+        "confidentiality",
+        "integrity"
+      ]
+    },
+    {
+      "control" : "SA-4(1)",
+      "matchedRuleIDs" : [
+
+      ],
+      "selectedRuleIDs" : [
+
+      ],
+      "sources" : [
+        "availability",
+        "confidentiality",
+        "integrity"
+      ]
+    },
+    {
+      "control" : "SA-4(10)",
+      "matchedRuleIDs" : [
+
+      ],
+      "selectedRuleIDs" : [
+
+      ],
+      "sources" : [
+        "confidentiality",
+        "integrity"
+      ]
+    },
+    {
+      "control" : "SA-4(2)",
+      "matchedRuleIDs" : [
+
+      ],
+      "selectedRuleIDs" : [
+
+      ],
+      "sources" : [
+        "availability",
+        "confidentiality",
+        "integrity"
+      ]
+    },
+    {
+      "control" : "SA-4(3)",
+      "matchedRuleIDs" : [
+
+      ],
+      "selectedRuleIDs" : [
+
+      ],
+      "sources" : [
+        "integrity"
+      ]
+    },
+    {
+      "control" : "SA-4(5)",
+      "matchedRuleIDs" : [
+
+      ],
+      "selectedRuleIDs" : [
+
+      ],
+      "sources" : [
+        "integrity"
+      ]
+    },
+    {
+      "control" : "SA-4(7)",
+      "matchedRuleIDs" : [
+
+      ],
+      "selectedRuleIDs" : [
+
+      ],
+      "sources" : [
+        "confidentiality",
+        "integrity"
+      ]
+    },
+    {
+      "control" : "SA-4(9)",
+      "matchedRuleIDs" : [
+
+      ],
+      "selectedRuleIDs" : [
+
+      ],
+      "sources" : [
+        "availability",
+        "confidentiality",
+        "integrity"
+      ]
+    },
+    {
+      "control" : "SA-5",
+      "matchedRuleIDs" : [
+
+      ],
+      "selectedRuleIDs" : [
+
+      ],
+      "sources" : [
+        "availability",
+        "confidentiality",
+        "integrity"
+      ]
+    },
+    {
+      "control" : "SA-8",
+      "matchedRuleIDs" : [
+
+      ],
+      "selectedRuleIDs" : [
+
+      ],
+      "sources" : [
+        "availability",
+        "confidentiality",
+        "integrity"
+      ]
+    },
+    {
+      "control" : "SA-8(1)",
+      "matchedRuleIDs" : [
+
+      ],
+      "selectedRuleIDs" : [
+
+      ],
+      "sources" : [
+        "availability",
+        "confidentiality",
+        "integrity"
+      ]
+    },
+    {
+      "control" : "SA-8(10)",
+      "matchedRuleIDs" : [
+
+      ],
+      "selectedRuleIDs" : [
+
+      ],
+      "sources" : [
+        "availability",
+        "confidentiality",
+        "integrity"
+      ]
+    },
+    {
+      "control" : "SA-8(11)",
+      "matchedRuleIDs" : [
+
+      ],
+      "selectedRuleIDs" : [
+
+      ],
+      "sources" : [
+        "availability",
+        "confidentiality",
+        "integrity"
+      ]
+    },
+    {
+      "control" : "SA-8(12)",
+      "matchedRuleIDs" : [
+
+      ],
+      "selectedRuleIDs" : [
+
+      ],
+      "sources" : [
+        "availability",
+        "confidentiality",
+        "integrity"
+      ]
+    },
+    {
+      "control" : "SA-8(13)",
+      "matchedRuleIDs" : [
+
+      ],
+      "selectedRuleIDs" : [
+
+      ],
+      "sources" : [
+        "availability",
+        "confidentiality",
+        "integrity"
+      ]
+    },
+    {
+      "control" : "SA-8(14)",
+      "matchedRuleIDs" : [
+
+      ],
+      "selectedRuleIDs" : [
+
+      ],
+      "sources" : [
+        "availability",
+        "confidentiality",
+        "integrity"
+      ]
+    },
+    {
+      "control" : "SA-8(15)",
+      "matchedRuleIDs" : [
+
+      ],
+      "selectedRuleIDs" : [
+
+      ],
+      "sources" : [
+        "availability",
+        "confidentiality",
+        "integrity"
+      ]
+    },
+    {
+      "control" : "SA-8(16)",
+      "matchedRuleIDs" : [
+
+      ],
+      "selectedRuleIDs" : [
+
+      ],
+      "sources" : [
+        "availability",
+        "confidentiality",
+        "integrity"
+      ]
+    },
+    {
+      "control" : "SA-8(17)",
+      "matchedRuleIDs" : [
+
+      ],
+      "selectedRuleIDs" : [
+
+      ],
+      "sources" : [
+        "availability",
+        "confidentiality",
+        "integrity"
+      ]
+    },
+    {
+      "control" : "SA-8(18)",
+      "matchedRuleIDs" : [
+
+      ],
+      "selectedRuleIDs" : [
+
+      ],
+      "sources" : [
+        "availability",
+        "confidentiality",
+        "integrity"
+      ]
+    },
+    {
+      "control" : "SA-8(19)",
+      "matchedRuleIDs" : [
+
+      ],
+      "selectedRuleIDs" : [
+
+      ],
+      "sources" : [
+        "availability",
+        "confidentiality",
+        "integrity"
+      ]
+    },
+    {
+      "control" : "SA-8(2)",
+      "matchedRuleIDs" : [
+
+      ],
+      "selectedRuleIDs" : [
+
+      ],
+      "sources" : [
+        "availability",
+        "confidentiality",
+        "integrity"
+      ]
+    },
+    {
+      "control" : "SA-8(20)",
+      "matchedRuleIDs" : [
+
+      ],
+      "selectedRuleIDs" : [
+
+      ],
+      "sources" : [
+        "availability",
+        "confidentiality",
+        "integrity"
+      ]
+    },
+    {
+      "control" : "SA-8(21)",
+      "matchedRuleIDs" : [
+
+      ],
+      "selectedRuleIDs" : [
+
+      ],
+      "sources" : [
+        "availability",
+        "confidentiality",
+        "integrity"
+      ]
+    },
+    {
+      "control" : "SA-8(22)",
+      "matchedRuleIDs" : [
+
+      ],
+      "selectedRuleIDs" : [
+
+      ],
+      "sources" : [
+        "availability",
+        "confidentiality",
+        "integrity"
+      ]
+    },
+    {
+      "control" : "SA-8(23)",
+      "matchedRuleIDs" : [
+
+      ],
+      "selectedRuleIDs" : [
+
+      ],
+      "sources" : [
+        "availability",
+        "confidentiality",
+        "integrity"
+      ]
+    },
+    {
+      "control" : "SA-8(24)",
+      "matchedRuleIDs" : [
+
+      ],
+      "selectedRuleIDs" : [
+
+      ],
+      "sources" : [
+        "availability",
+        "confidentiality",
+        "integrity"
+      ]
+    },
+    {
+      "control" : "SA-8(25)",
+      "matchedRuleIDs" : [
+
+      ],
+      "selectedRuleIDs" : [
+
+      ],
+      "sources" : [
+        "availability",
+        "confidentiality",
+        "integrity"
+      ]
+    },
+    {
+      "control" : "SA-8(26)",
+      "matchedRuleIDs" : [
+
+      ],
+      "selectedRuleIDs" : [
+
+      ],
+      "sources" : [
+        "availability",
+        "confidentiality",
+        "integrity"
+      ]
+    },
+    {
+      "control" : "SA-8(27)",
+      "matchedRuleIDs" : [
+
+      ],
+      "selectedRuleIDs" : [
+
+      ],
+      "sources" : [
+        "availability",
+        "confidentiality",
+        "integrity"
+      ]
+    },
+    {
+      "control" : "SA-8(28)",
+      "matchedRuleIDs" : [
+
+      ],
+      "selectedRuleIDs" : [
+
+      ],
+      "sources" : [
+        "availability",
+        "confidentiality",
+        "integrity"
+      ]
+    },
+    {
+      "control" : "SA-8(29)",
+      "matchedRuleIDs" : [
+
+      ],
+      "selectedRuleIDs" : [
+
+      ],
+      "sources" : [
+        "availability",
+        "confidentiality",
+        "integrity"
+      ]
+    },
+    {
+      "control" : "SA-8(3)",
+      "matchedRuleIDs" : [
+
+      ],
+      "selectedRuleIDs" : [
+
+      ],
+      "sources" : [
+        "availability",
+        "confidentiality",
+        "integrity"
+      ]
+    },
+    {
+      "control" : "SA-8(30)",
+      "matchedRuleIDs" : [
+
+      ],
+      "selectedRuleIDs" : [
+
+      ],
+      "sources" : [
+        "availability",
+        "confidentiality",
+        "integrity"
+      ]
+    },
+    {
+      "control" : "SA-8(31)",
+      "matchedRuleIDs" : [
+
+      ],
+      "selectedRuleIDs" : [
+
+      ],
+      "sources" : [
+        "availability",
+        "confidentiality",
+        "integrity"
+      ]
+    },
+    {
+      "control" : "SA-8(32)",
+      "matchedRuleIDs" : [
+
+      ],
+      "selectedRuleIDs" : [
+
+      ],
+      "sources" : [
+        "availability",
+        "confidentiality",
+        "integrity"
+      ]
+    },
+    {
+      "control" : "SA-8(4)",
+      "matchedRuleIDs" : [
+
+      ],
+      "selectedRuleIDs" : [
+
+      ],
+      "sources" : [
+        "availability",
+        "confidentiality",
+        "integrity"
+      ]
+    },
+    {
+      "control" : "SA-8(5)",
+      "matchedRuleIDs" : [
+
+      ],
+      "selectedRuleIDs" : [
+
+      ],
+      "sources" : [
+        "availability",
+        "confidentiality",
+        "integrity"
+      ]
+    },
+    {
+      "control" : "SA-8(6)",
+      "matchedRuleIDs" : [
+
+      ],
+      "selectedRuleIDs" : [
+
+      ],
+      "sources" : [
+        "availability",
+        "confidentiality",
+        "integrity"
+      ]
+    },
+    {
+      "control" : "SA-8(7)",
+      "matchedRuleIDs" : [
+
+      ],
+      "selectedRuleIDs" : [
+
+      ],
+      "sources" : [
+        "availability",
+        "confidentiality",
+        "integrity"
+      ]
+    },
+    {
+      "control" : "SA-8(8)",
+      "matchedRuleIDs" : [
+
+      ],
+      "selectedRuleIDs" : [
+
+      ],
+      "sources" : [
+        "availability",
+        "confidentiality",
+        "integrity"
+      ]
+    },
+    {
+      "control" : "SA-8(9)",
+      "matchedRuleIDs" : [
+
+      ],
+      "selectedRuleIDs" : [
+
+      ],
+      "sources" : [
+        "availability",
+        "confidentiality",
+        "integrity"
+      ]
+    },
+    {
+      "control" : "SA-9",
+      "matchedRuleIDs" : [
+
+      ],
+      "selectedRuleIDs" : [
+
+      ],
+      "sources" : [
+        "availability",
+        "confidentiality",
+        "integrity"
+      ]
+    },
+    {
+      "control" : "SA-9(1)",
+      "matchedRuleIDs" : [
+
+      ],
+      "selectedRuleIDs" : [
+
+      ],
+      "sources" : [
+        "integrity"
+      ]
+    },
+    {
+      "control" : "SA-9(2)",
+      "matchedRuleIDs" : [
+
+      ],
+      "selectedRuleIDs" : [
+
+      ],
+      "sources" : [
+        "availability",
+        "confidentiality",
+        "integrity"
+      ]
+    },
+    {
+      "control" : "SA-9(3)",
+      "matchedRuleIDs" : [
+
+      ],
+      "selectedRuleIDs" : [
+
+      ],
+      "sources" : [
+        "availability",
+        "confidentiality",
+        "integrity"
+      ]
+    },
+    {
+      "control" : "SA-9(8)",
+      "matchedRuleIDs" : [
+
+      ],
+      "selectedRuleIDs" : [
+
+      ],
+      "sources" : [
+        "availability",
+        "confidentiality",
+        "integrity"
+      ]
+    },
+    {
+      "control" : "SC-1",
+      "matchedRuleIDs" : [
+
+      ],
+      "selectedRuleIDs" : [
+
+      ],
+      "sources" : [
+        "availability",
+        "confidentiality",
+        "integrity"
+      ]
+    },
+    {
+      "control" : "SC-10",
+      "matchedRuleIDs" : [
+        "os_ssh_server_alive_count_max_configure",
+        "os_ssh_server_alive_interval_configure",
+        "os_sshd_channel_timeout_configure",
+        "os_sshd_client_alive_count_max_configure",
+        "os_sshd_client_alive_interval_configure",
+        "os_sshd_login_grace_time_configure",
+        "os_sshd_unused_connection_timeout_configure"
+      ],
+      "selectedRuleIDs" : [
+        "os_ssh_server_alive_count_max_configure",
+        "os_ssh_server_alive_interval_configure",
+        "os_sshd_channel_timeout_configure",
+        "os_sshd_client_alive_count_max_configure",
+        "os_sshd_client_alive_interval_configure",
+        "os_sshd_login_grace_time_configure",
+        "os_sshd_unused_connection_timeout_configure"
+      ],
+      "sources" : [
+        "confidentiality",
+        "integrity"
+      ]
+    },
+    {
+      "control" : "SC-12",
+      "matchedRuleIDs" : [
+        "os_ssh_pqc_configure",
+        "os_sshd_pqc_configure"
+      ],
+      "selectedRuleIDs" : [
+        "os_ssh_pqc_configure",
+        "os_sshd_pqc_configure"
+      ],
+      "sources" : [
+        "confidentiality",
+        "integrity"
+      ]
+    },
+    {
+      "control" : "SC-12(1)",
+      "matchedRuleIDs" : [
+
+      ],
+      "selectedRuleIDs" : [
+
+      ],
+      "sources" : [
+        "availability"
+      ]
+    },
+    {
+      "control" : "SC-13",
+      "matchedRuleIDs" : [
+        "os_implement_cryptography",
+        "os_ssh_fips_compliant",
+        "os_ssh_pqc_configure",
+        "os_sshd_fips_compliant",
+        "os_sshd_pqc_configure"
+      ],
+      "selectedRuleIDs" : [
+        "os_implement_cryptography",
+        "os_ssh_fips_compliant",
+        "os_ssh_pqc_configure",
+        "os_sshd_fips_compliant",
+        "os_sshd_pqc_configure"
+      ],
+      "sources" : [
+        "confidentiality",
+        "integrity"
+      ]
+    },
+    {
+      "control" : "SC-15",
+      "matchedRuleIDs" : [
+        "os_prohibit_remote_activation_collab_devices"
+      ],
+      "selectedRuleIDs" : [
+        "os_prohibit_remote_activation_collab_devices"
+      ],
+      "sources" : [
+        "confidentiality"
+      ]
+    },
+    {
+      "control" : "SC-16",
+      "matchedRuleIDs" : [
+
+      ],
+      "selectedRuleIDs" : [
+
+      ],
+      "sources" : [
+        "confidentiality",
+        "integrity"
+      ]
+    },
+    {
+      "control" : "SC-16(1)",
+      "matchedRuleIDs" : [
+
+      ],
+      "selectedRuleIDs" : [
+
+      ],
+      "sources" : [
+        "integrity"
+      ]
+    },
+    {
+      "control" : "SC-16(2)",
+      "matchedRuleIDs" : [
+
+      ],
+      "selectedRuleIDs" : [
+
+      ],
+      "sources" : [
+        "integrity"
+      ]
+    },
+    {
+      "control" : "SC-16(3)",
+      "matchedRuleIDs" : [
+
+      ],
+      "selectedRuleIDs" : [
+
+      ],
+      "sources" : [
+        "integrity"
+      ]
+    },
+    {
+      "control" : "SC-17",
+      "matchedRuleIDs" : [
+        "auth_smartcard_certificate_trust_enforce_high",
+        "auth_smartcard_certificate_trust_enforce_moderate",
+        "os_certificate_authority_trust"
+      ],
+      "selectedRuleIDs" : [
+        "auth_smartcard_certificate_trust_enforce_high",
+        "os_certificate_authority_trust"
+      ],
+      "sources" : [
+        "confidentiality",
+        "integrity"
+      ]
+    },
+    {
+      "control" : "SC-18",
+      "matchedRuleIDs" : [
+
+      ],
+      "selectedRuleIDs" : [
+
+      ],
+      "sources" : [
+        "integrity"
+      ]
+    },
+    {
+      "control" : "SC-18(1)",
+      "matchedRuleIDs" : [
+
+      ],
+      "selectedRuleIDs" : [
+
+      ],
+      "sources" : [
+        "integrity"
+      ]
+    },
+    {
+      "control" : "SC-18(2)",
+      "matchedRuleIDs" : [
+
+      ],
+      "selectedRuleIDs" : [
+
+      ],
+      "sources" : [
+        "integrity"
+      ]
+    },
+    {
+      "control" : "SC-18(3)",
+      "matchedRuleIDs" : [
+
+      ],
+      "selectedRuleIDs" : [
+
+      ],
+      "sources" : [
+        "integrity"
+      ]
+    },
+    {
+      "control" : "SC-18(4)",
+      "matchedRuleIDs" : [
+
+      ],
+      "selectedRuleIDs" : [
+
+      ],
+      "sources" : [
+        "integrity"
+      ]
+    },
+    {
+      "control" : "SC-2",
+      "matchedRuleIDs" : [
+        "os_separate_functionality"
+      ],
+      "selectedRuleIDs" : [
+        "os_separate_functionality"
+      ],
+      "sources" : [
+        "confidentiality",
+        "integrity"
+      ]
+    },
+    {
+      "control" : "SC-20",
+      "matchedRuleIDs" : [
+
+      ],
+      "selectedRuleIDs" : [
+
+      ],
+      "sources" : [
+        "integrity"
+      ]
+    },
+    {
+      "control" : "SC-21",
+      "matchedRuleIDs" : [
+        "os_secure_name_resolution"
+      ],
+      "selectedRuleIDs" : [
+        "os_secure_name_resolution"
+      ],
+      "sources" : [
+        "integrity"
+      ]
+    },
+    {
+      "control" : "SC-22",
+      "matchedRuleIDs" : [
+
+      ],
+      "selectedRuleIDs" : [
+
+      ],
+      "sources" : [
+        "availability",
+        "confidentiality",
+        "integrity"
+      ]
+    },
+    {
+      "control" : "SC-23",
+      "matchedRuleIDs" : [
+
+      ],
+      "selectedRuleIDs" : [
+
+      ],
+      "sources" : [
+        "integrity"
+      ]
+    },
+    {
+      "control" : "SC-23(1)",
+      "matchedRuleIDs" : [
+
+      ],
+      "selectedRuleIDs" : [
+
+      ],
+      "sources" : [
+        "integrity"
+      ]
+    },
+    {
+      "control" : "SC-23(3)",
+      "matchedRuleIDs" : [
+
+      ],
+      "selectedRuleIDs" : [
+
+      ],
+      "sources" : [
+        "integrity"
+      ]
+    },
+    {
+      "control" : "SC-23(5)",
+      "matchedRuleIDs" : [
+
+      ],
+      "selectedRuleIDs" : [
+
+      ],
+      "sources" : [
+        "integrity"
+      ]
+    },
+    {
+      "control" : "SC-24",
+      "matchedRuleIDs" : [
+        "os_fail_secure_state"
+      ],
+      "selectedRuleIDs" : [
+        "os_fail_secure_state"
+      ],
+      "sources" : [
+        "confidentiality",
+        "integrity"
+      ]
+    },
+    {
+      "control" : "SC-28",
+      "matchedRuleIDs" : [
+        "os_setup_assistant_filevault_enforce",
+        "system_settings_filevault_enforce"
+      ],
+      "selectedRuleIDs" : [
+        "os_setup_assistant_filevault_enforce",
+        "system_settings_filevault_enforce"
+      ],
+      "sources" : [
+        "confidentiality",
+        "integrity"
+      ]
+    },
+    {
+      "control" : "SC-28(1)",
+      "matchedRuleIDs" : [
+        "os_setup_assistant_filevault_enforce",
+        "system_settings_filevault_enforce"
+      ],
+      "selectedRuleIDs" : [
+        "os_setup_assistant_filevault_enforce",
+        "system_settings_filevault_enforce"
+      ],
+      "sources" : [
+        "confidentiality",
+        "integrity"
+      ]
+    },
+    {
+      "control" : "SC-28(3)",
+      "matchedRuleIDs" : [
+        "os_secure_enclave"
+      ],
+      "selectedRuleIDs" : [
+        "os_secure_enclave"
+      ],
+      "sources" : [
+        "confidentiality",
+        "integrity"
+      ]
+    },
+    {
+      "control" : "SC-3",
+      "matchedRuleIDs" : [
+        "os_isolate_security_functions"
+      ],
+      "selectedRuleIDs" : [
+        "os_isolate_security_functions"
+      ],
+      "sources" : [
+        "confidentiality",
+        "integrity"
+      ]
+    },
+    {
+      "control" : "SC-38",
+      "matchedRuleIDs" : [
+
+      ],
+      "selectedRuleIDs" : [
+
+      ],
+      "sources" : [
+        "availability",
+        "confidentiality",
+        "integrity"
+      ]
+    },
+    {
+      "control" : "SC-39",
+      "matchedRuleIDs" : [
+        "os_application_sandboxing"
+      ],
+      "selectedRuleIDs" : [
+        "os_application_sandboxing"
+      ],
+      "sources" : [
+        "confidentiality",
+        "integrity"
+      ]
+    },
+    {
+      "control" : "SC-4",
+      "matchedRuleIDs" : [
+        "os_prevent_unauthorized_disclosure",
+        "os_sip_enable"
+      ],
+      "selectedRuleIDs" : [
+        "os_prevent_unauthorized_disclosure",
+        "os_sip_enable"
+      ],
+      "sources" : [
+        "confidentiality"
+      ]
+    },
+    {
+      "control" : "SC-41",
+      "matchedRuleIDs" : [
+        "system_settings_usb_restricted_mode"
+      ],
+      "selectedRuleIDs" : [
+        "system_settings_usb_restricted_mode"
+      ],
+      "sources" : [
+        "availability"
+      ]
+    },
+    {
+      "control" : "SC-45",
+      "matchedRuleIDs" : [
+
+      ],
+      "selectedRuleIDs" : [
+
+      ],
+      "sources" : [
+        "integrity"
+      ]
+    },
+    {
+      "control" : "SC-45(1)",
+      "matchedRuleIDs" : [
+        "os_time_server_enabled",
+        "system_settings_time_server_configure",
+        "system_settings_time_server_enforce"
+      ],
+      "selectedRuleIDs" : [
+        "os_time_server_enabled",
+        "system_settings_time_server_configure",
+        "system_settings_time_server_enforce"
+      ],
+      "sources" : [
+        "integrity"
+      ]
+    },
+    {
+      "control" : "SC-47",
+      "matchedRuleIDs" : [
+
+      ],
+      "selectedRuleIDs" : [
+
+      ],
+      "sources" : [
+        "availability"
+      ]
+    },
+    {
+      "control" : "SC-5",
+      "matchedRuleIDs" : [
+        "os_protect_dos_attacks",
+        "os_sshd_per_source_penalties_configure"
+      ],
+      "selectedRuleIDs" : [
+        "os_protect_dos_attacks",
+        "os_sshd_per_source_penalties_configure"
+      ],
+      "sources" : [
+        "availability"
+      ]
+    },
+    {
+      "control" : "SC-5(1)",
+      "matchedRuleIDs" : [
+
+      ],
+      "selectedRuleIDs" : [
+
+      ],
+      "sources" : [
+        "availability"
+      ]
+    },
+    {
+      "control" : "SC-5(2)",
+      "matchedRuleIDs" : [
+        "os_limit_dos_attacks"
+      ],
+      "selectedRuleIDs" : [
+        "os_limit_dos_attacks"
+      ],
+      "sources" : [
+        "availability"
+      ]
+    },
+    {
+      "control" : "SC-5(3)",
+      "matchedRuleIDs" : [
+
+      ],
+      "selectedRuleIDs" : [
+
+      ],
+      "sources" : [
+        "availability"
+      ]
+    },
+    {
+      "control" : "SC-7",
+      "matchedRuleIDs" : [
+        "system_settings_firewall_enable",
+        "system_settings_firewall_stealth_mode_enable"
+      ],
+      "selectedRuleIDs" : [
+        "system_settings_firewall_enable",
+        "system_settings_firewall_stealth_mode_enable"
+      ],
+      "sources" : [
+        "confidentiality",
+        "integrity"
+      ]
+    },
+    {
+      "control" : "SC-7(10)",
+      "matchedRuleIDs" : [
+        "icloud_addressbook_disable",
+        "icloud_bookmarks_disable",
+        "icloud_calendar_disable",
+        "icloud_drive_disable",
+        "icloud_freeform_disable",
+        "icloud_game_center_disable",
+        "icloud_keychain_disable",
+        "icloud_mail_disable",
+        "icloud_notes_disable",
+        "icloud_photos_disable",
+        "icloud_private_relay_disable",
+        "icloud_reminders_disable",
+        "icloud_sync_disable",
+        "os_apple_intelligence_pcc_disable",
+        "os_bluetooth_modification_disable",
+        "os_dictation_disable",
+        "os_image_playground_disable",
+        "os_mail_smart_reply_disable",
+        "os_mail_summary_disable",
+        "os_messages_summary_disable",
+        "os_natural_language_editing_disable",
+        "os_notes_transcription_disable",
+        "os_notes_transcription_summary_disable",
+        "os_on_device_dictation_enforce",
+        "os_photos_enhanced_search_disable",
+        "os_safari_reader_summary_disable",
+        "os_screenshots_disable",
+        "os_visual_intelligence_disable",
+        "os_writing_tools_disable",
+        "system_settings_diagnostics_reports_disable",
+        "system_settings_improve_assistive_voice_disable",
+        "system_settings_improve_search_disable",
+        "system_settings_improve_siri_dictation_disable",
+        "system_settings_location_services_disable",
+        "system_settings_personalized_advertising_disable",
+        "system_settings_siri_ai_disable",
+        "system_settings_siri_disable",
+        "system_settings_usb_restricted_mode"
+      ],
+      "selectedRuleIDs" : [
+        "icloud_addressbook_disable",
+        "icloud_bookmarks_disable",
+        "icloud_calendar_disable",
+        "icloud_drive_disable",
+        "icloud_freeform_disable",
+        "icloud_game_center_disable",
+        "icloud_keychain_disable",
+        "icloud_mail_disable",
+        "icloud_notes_disable",
+        "icloud_photos_disable",
+        "icloud_private_relay_disable",
+        "icloud_reminders_disable",
+        "icloud_sync_disable",
+        "os_apple_intelligence_pcc_disable",
+        "os_bluetooth_modification_disable",
+        "os_dictation_disable",
+        "os_image_playground_disable",
+        "os_mail_smart_reply_disable",
+        "os_mail_summary_disable",
+        "os_messages_summary_disable",
+        "os_natural_language_editing_disable",
+        "os_notes_transcription_disable",
+        "os_notes_transcription_summary_disable",
+        "os_on_device_dictation_enforce",
+        "os_photos_enhanced_search_disable",
+        "os_safari_reader_summary_disable",
+        "os_screenshots_disable",
+        "os_visual_intelligence_disable",
+        "os_writing_tools_disable",
+        "system_settings_diagnostics_reports_disable",
+        "system_settings_improve_assistive_voice_disable",
+        "system_settings_improve_search_disable",
+        "system_settings_improve_siri_dictation_disable",
+        "system_settings_location_services_disable",
+        "system_settings_personalized_advertising_disable",
+        "system_settings_siri_ai_disable",
+        "system_settings_siri_disable",
+        "system_settings_usb_restricted_mode"
+      ],
+      "sources" : [
+        "confidentiality"
+      ]
+    },
+    {
+      "control" : "SC-7(11)",
+      "matchedRuleIDs" : [
+
+      ],
+      "selectedRuleIDs" : [
+
+      ],
+      "sources" : [
+        "integrity"
+      ]
+    },
+    {
+      "control" : "SC-7(12)",
+      "matchedRuleIDs" : [
+        "system_settings_firewall_enable"
+      ],
+      "selectedRuleIDs" : [
+        "system_settings_firewall_enable"
+      ],
+      "sources" : [
+        "availability",
+        "confidentiality",
+        "integrity"
+      ]
+    },
+    {
+      "control" : "SC-7(13)",
+      "matchedRuleIDs" : [
+
+      ],
+      "selectedRuleIDs" : [
+
+      ],
+      "sources" : [
+        "confidentiality",
+        "integrity"
+      ]
+    },
+    {
+      "control" : "SC-7(14)",
+      "matchedRuleIDs" : [
+
+      ],
+      "selectedRuleIDs" : [
+
+      ],
+      "sources" : [
+        "confidentiality",
+        "integrity"
+      ]
+    },
+    {
+      "control" : "SC-7(15)",
+      "matchedRuleIDs" : [
+
+      ],
+      "selectedRuleIDs" : [
+
+      ],
+      "sources" : [
+        "confidentiality",
+        "integrity"
+      ]
+    },
+    {
+      "control" : "SC-7(18)",
+      "matchedRuleIDs" : [
+
+      ],
+      "selectedRuleIDs" : [
+
+      ],
+      "sources" : [
+        "availability",
+        "confidentiality",
+        "integrity"
+      ]
+    },
+    {
+      "control" : "SC-7(21)",
+      "matchedRuleIDs" : [
+
+      ],
+      "selectedRuleIDs" : [
+
+      ],
+      "sources" : [
+        "confidentiality",
+        "integrity"
+      ]
+    },
+    {
+      "control" : "SC-7(25)",
+      "matchedRuleIDs" : [
+
+      ],
+      "selectedRuleIDs" : [
+
+      ],
+      "sources" : [
+        "confidentiality"
+      ]
+    },
+    {
+      "control" : "SC-7(28)",
+      "matchedRuleIDs" : [
+
+      ],
+      "selectedRuleIDs" : [
+
+      ],
+      "sources" : [
+        "confidentiality"
+      ]
+    },
+    {
+      "control" : "SC-7(29)",
+      "matchedRuleIDs" : [
+
+      ],
+      "selectedRuleIDs" : [
+
+      ],
+      "sources" : [
+        "confidentiality"
+      ]
+    },
+    {
+      "control" : "SC-7(3)",
+      "matchedRuleIDs" : [
+
+      ],
+      "selectedRuleIDs" : [
+
+      ],
+      "sources" : [
+        "confidentiality",
+        "integrity"
+      ]
+    },
+    {
+      "control" : "SC-7(4)",
+      "matchedRuleIDs" : [
+
+      ],
+      "selectedRuleIDs" : [
+
+      ],
+      "sources" : [
+        "confidentiality",
+        "integrity"
+      ]
+    },
+    {
+      "control" : "SC-7(5)",
+      "matchedRuleIDs" : [
+        "os_firewall_default_deny_require"
+      ],
+      "selectedRuleIDs" : [
+        "os_firewall_default_deny_require"
+      ],
+      "sources" : [
+        "confidentiality",
+        "integrity"
+      ]
+    },
+    {
+      "control" : "SC-7(7)",
+      "matchedRuleIDs" : [
+
+      ],
+      "selectedRuleIDs" : [
+
+      ],
+      "sources" : [
+        "confidentiality",
+        "integrity"
+      ]
+    },
+    {
+      "control" : "SC-7(8)",
+      "matchedRuleIDs" : [
+
+      ],
+      "selectedRuleIDs" : [
+
+      ],
+      "sources" : [
+        "confidentiality",
+        "integrity"
+      ]
+    },
+    {
+      "control" : "SC-7(9)",
+      "matchedRuleIDs" : [
+
+      ],
+      "selectedRuleIDs" : [
+
+      ],
+      "sources" : [
+        "integrity"
+      ]
+    },
+    {
+      "control" : "SC-8",
+      "matchedRuleIDs" : [
+        "os_ssh_pqc_configure",
+        "os_sshd_pqc_configure",
+        "system_settings_bluetooth_disable"
+      ],
+      "selectedRuleIDs" : [
+        "os_ssh_pqc_configure",
+        "os_sshd_pqc_configure",
+        "system_settings_bluetooth_disable"
+      ],
+      "sources" : [
+        "confidentiality",
+        "integrity"
+      ]
+    },
+    {
+      "control" : "SC-8(1)",
+      "matchedRuleIDs" : [
+        "os_ssh_fips_compliant",
+        "os_ssh_pqc_configure",
+        "os_sshd_fips_compliant",
+        "os_sshd_pqc_configure"
+      ],
+      "selectedRuleIDs" : [
+        "os_ssh_fips_compliant",
+        "os_ssh_pqc_configure",
+        "os_sshd_fips_compliant",
+        "os_sshd_pqc_configure"
+      ],
+      "sources" : [
+        "confidentiality",
+        "integrity"
+      ]
+    },
+    {
+      "control" : "SC-8(2)",
+      "matchedRuleIDs" : [
+
+      ],
+      "selectedRuleIDs" : [
+
+      ],
+      "sources" : [
+        "confidentiality",
+        "integrity"
+      ]
+    },
+    {
+      "control" : "SI-1",
+      "matchedRuleIDs" : [
+
+      ],
+      "selectedRuleIDs" : [
+
+      ],
+      "sources" : [
+        "availability",
+        "confidentiality",
+        "integrity"
+      ]
+    },
+    {
+      "control" : "SI-10",
+      "matchedRuleIDs" : [
+        "os_information_validation"
+      ],
+      "selectedRuleIDs" : [
+        "os_information_validation"
+      ],
+      "sources" : [
+        "integrity"
+      ]
+    },
+    {
+      "control" : "SI-10(3)",
+      "matchedRuleIDs" : [
+        "os_predictable_behavior"
+      ],
+      "selectedRuleIDs" : [
+        "os_predictable_behavior"
+      ],
+      "sources" : [
+        "integrity"
+      ]
+    },
+    {
+      "control" : "SI-10(5)",
+      "matchedRuleIDs" : [
+
+      ],
+      "selectedRuleIDs" : [
+
+      ],
+      "sources" : [
+        "integrity"
+      ]
+    },
+    {
+      "control" : "SI-10(6)",
+      "matchedRuleIDs" : [
+
+      ],
+      "selectedRuleIDs" : [
+
+      ],
+      "sources" : [
+        "integrity"
+      ]
+    },
+    {
+      "control" : "SI-11",
+      "matchedRuleIDs" : [
+        "os_asl_log_files_owner_group_configure",
+        "os_asl_log_files_permissions_configure",
+        "os_newsyslog_files_owner_group_configure",
+        "os_newsyslog_files_permissions_configure",
+        "system_settings_diagnostics_reports_disable"
+      ],
+      "selectedRuleIDs" : [
+        "os_asl_log_files_owner_group_configure",
+        "os_asl_log_files_permissions_configure",
+        "os_newsyslog_files_owner_group_configure",
+        "os_newsyslog_files_permissions_configure",
+        "system_settings_diagnostics_reports_disable"
+      ],
+      "sources" : [
+        "integrity"
+      ]
+    },
+    {
+      "control" : "SI-12",
+      "matchedRuleIDs" : [
+
+      ],
+      "selectedRuleIDs" : [
+
+      ],
+      "sources" : [
+        "confidentiality",
+        "integrity"
+      ]
+    },
+    {
+      "control" : "SI-12(3)",
+      "matchedRuleIDs" : [
+
+      ],
+      "selectedRuleIDs" : [
+
+      ],
+      "sources" : [
+        "confidentiality",
+        "integrity"
+      ]
+    },
+    {
+      "control" : "SI-15",
+      "matchedRuleIDs" : [
+
+      ],
+      "selectedRuleIDs" : [
+
+      ],
+      "sources" : [
+        "integrity"
+      ]
+    },
+    {
+      "control" : "SI-16",
+      "matchedRuleIDs" : [
+        "os_implement_memory_protection"
+      ],
+      "selectedRuleIDs" : [
+        "os_implement_memory_protection"
+      ],
+      "sources" : [
+        "integrity"
+      ]
+    },
+    {
+      "control" : "SI-2",
+      "matchedRuleIDs" : [
+        "os_background_security_improvement_install_enable",
+        "os_sip_enable",
+        "system_settings_background_security_improvement_removal_disable",
+        "system_settings_critical_update_install_enforce",
+        "system_settings_softwareupdate_current"
+      ],
+      "selectedRuleIDs" : [
+        "os_background_security_improvement_install_enable",
+        "os_sip_enable",
+        "system_settings_background_security_improvement_removal_disable",
+        "system_settings_critical_update_install_enforce",
+        "system_settings_softwareupdate_current"
+      ],
+      "sources" : [
+        "integrity"
+      ]
+    },
+    {
+      "control" : "SI-2(2)",
+      "matchedRuleIDs" : [
+        "os_continuous_monitoring"
+      ],
+      "selectedRuleIDs" : [
+        "os_continuous_monitoring"
+      ],
+      "sources" : [
+        "integrity"
+      ]
+    },
+    {
+      "control" : "SI-2(3)",
+      "matchedRuleIDs" : [
+
+      ],
+      "selectedRuleIDs" : [
+
+      ],
+      "sources" : [
+        "integrity"
+      ]
+    },
+    {
+      "control" : "SI-2(4)",
+      "matchedRuleIDs" : [
+
+      ],
+      "selectedRuleIDs" : [
+
+      ],
+      "sources" : [
+        "integrity"
+      ]
+    },
+    {
+      "control" : "SI-2(6)",
+      "matchedRuleIDs" : [
+        "os_remove_software_components_after_updates"
+      ],
+      "selectedRuleIDs" : [
+        "os_remove_software_components_after_updates"
+      ],
+      "sources" : [
+        "integrity"
+      ]
+    },
+    {
+      "control" : "SI-21",
+      "matchedRuleIDs" : [
+
+      ],
+      "selectedRuleIDs" : [
+
+      ],
+      "sources" : [
+        "confidentiality",
+        "integrity"
+      ]
+    },
+    {
+      "control" : "SI-3",
+      "matchedRuleIDs" : [
+        "os_config_data_install_enforce",
+        "os_gatekeeper_enable",
+        "os_malicious_code_prevention",
+        "system_settings_background_security_improvement_removal_disable"
+      ],
+      "selectedRuleIDs" : [
+        "os_config_data_install_enforce",
+        "os_gatekeeper_enable",
+        "os_malicious_code_prevention",
+        "system_settings_background_security_improvement_removal_disable"
+      ],
+      "sources" : [
+        "integrity"
+      ]
+    },
+    {
+      "control" : "SI-3(10)",
+      "matchedRuleIDs" : [
+
+      ],
+      "selectedRuleIDs" : [
+
+      ],
+      "sources" : [
+        "integrity"
+      ]
+    },
+    {
+      "control" : "SI-4",
+      "matchedRuleIDs" : [
+
+      ],
+      "selectedRuleIDs" : [
+
+      ],
+      "sources" : [
+        "availability",
+        "confidentiality",
+        "integrity"
+      ]
+    },
+    {
+      "control" : "SI-4(1)",
+      "matchedRuleIDs" : [
+
+      ],
+      "selectedRuleIDs" : [
+
+      ],
+      "sources" : [
+        "availability",
+        "confidentiality",
+        "integrity"
+      ]
+    },
+    {
+      "control" : "SI-4(10)",
+      "matchedRuleIDs" : [
+
+      ],
+      "selectedRuleIDs" : [
+
+      ],
+      "sources" : [
+        "availability",
+        "confidentiality",
+        "integrity"
+      ]
+    },
+    {
+      "control" : "SI-4(11)",
+      "matchedRuleIDs" : [
+
+      ],
+      "selectedRuleIDs" : [
+
+      ],
+      "sources" : [
+        "availability",
+        "confidentiality",
+        "integrity"
+      ]
+    },
+    {
+      "control" : "SI-4(12)",
+      "matchedRuleIDs" : [
+
+      ],
+      "selectedRuleIDs" : [
+
+      ],
+      "sources" : [
+        "availability",
+        "confidentiality",
+        "integrity"
+      ]
+    },
+    {
+      "control" : "SI-4(14)",
+      "matchedRuleIDs" : [
+
+      ],
+      "selectedRuleIDs" : [
+
+      ],
+      "sources" : [
+        "availability",
+        "confidentiality",
+        "integrity"
+      ]
+    },
+    {
+      "control" : "SI-4(15)",
+      "matchedRuleIDs" : [
+
+      ],
+      "selectedRuleIDs" : [
+
+      ],
+      "sources" : [
+        "availability",
+        "confidentiality",
+        "integrity"
+      ]
+    },
+    {
+      "control" : "SI-4(16)",
+      "matchedRuleIDs" : [
+
+      ],
+      "selectedRuleIDs" : [
+
+      ],
+      "sources" : [
+        "availability",
+        "confidentiality",
+        "integrity"
+      ]
+    },
+    {
+      "control" : "SI-4(19)",
+      "matchedRuleIDs" : [
+
+      ],
+      "selectedRuleIDs" : [
+
+      ],
+      "sources" : [
+        "availability",
+        "confidentiality",
+        "integrity"
+      ]
+    },
+    {
+      "control" : "SI-4(2)",
+      "matchedRuleIDs" : [
+
+      ],
+      "selectedRuleIDs" : [
+
+      ],
+      "sources" : [
+        "availability",
+        "confidentiality",
+        "integrity"
+      ]
+    },
+    {
+      "control" : "SI-4(20)",
+      "matchedRuleIDs" : [
+
+      ],
+      "selectedRuleIDs" : [
+
+      ],
+      "sources" : [
+        "availability",
+        "confidentiality",
+        "integrity"
+      ]
+    },
+    {
+      "control" : "SI-4(22)",
+      "matchedRuleIDs" : [
+
+      ],
+      "selectedRuleIDs" : [
+
+      ],
+      "sources" : [
+        "availability",
+        "confidentiality",
+        "integrity"
+      ]
+    },
+    {
+      "control" : "SI-4(23)",
+      "matchedRuleIDs" : [
+
+      ],
+      "selectedRuleIDs" : [
+
+      ],
+      "sources" : [
+        "availability",
+        "confidentiality",
+        "integrity"
+      ]
+    },
+    {
+      "control" : "SI-4(24)",
+      "matchedRuleIDs" : [
+
+      ],
+      "selectedRuleIDs" : [
+
+      ],
+      "sources" : [
+        "availability",
+        "confidentiality",
+        "integrity"
+      ]
+    },
+    {
+      "control" : "SI-4(25)",
+      "matchedRuleIDs" : [
+
+      ],
+      "selectedRuleIDs" : [
+
+      ],
+      "sources" : [
+        "availability",
+        "confidentiality",
+        "integrity"
+      ]
+    },
+    {
+      "control" : "SI-4(4)",
+      "matchedRuleIDs" : [
+
+      ],
+      "selectedRuleIDs" : [
+
+      ],
+      "sources" : [
+        "availability",
+        "confidentiality",
+        "integrity"
+      ]
+    },
+    {
+      "control" : "SI-4(5)",
+      "matchedRuleIDs" : [
+
+      ],
+      "selectedRuleIDs" : [
+
+      ],
+      "sources" : [
+        "availability",
+        "confidentiality",
+        "integrity"
+      ]
+    },
+    {
+      "control" : "SI-5",
+      "matchedRuleIDs" : [
+
+      ],
+      "selectedRuleIDs" : [
+
+      ],
+      "sources" : [
+        "integrity"
+      ]
+    },
+    {
+      "control" : "SI-5(1)",
+      "matchedRuleIDs" : [
+
+      ],
+      "selectedRuleIDs" : [
+
+      ],
+      "sources" : [
+        "integrity"
+      ]
+    },
+    {
+      "control" : "SI-6",
+      "matchedRuleIDs" : [
+        "os_secure_boot_verify"
+      ],
+      "selectedRuleIDs" : [
+        "os_secure_boot_verify"
+      ],
+      "sources" : [
+        "integrity"
+      ]
+    },
+    {
+      "control" : "SI-6(3)",
+      "matchedRuleIDs" : [
+
+      ],
+      "selectedRuleIDs" : [
+
+      ],
+      "sources" : [
+        "integrity"
+      ]
+    },
+    {
+      "control" : "SI-7",
+      "matchedRuleIDs" : [
+        "os_authenticated_root_enable",
+        "os_secure_boot_verify",
+        "os_sip_enable",
+        "os_system_read_only"
+      ],
+      "selectedRuleIDs" : [
+        "os_authenticated_root_enable",
+        "os_secure_boot_verify",
+        "os_sip_enable",
+        "os_system_read_only"
+      ],
+      "sources" : [
+        "integrity"
+      ]
+    },
+    {
+      "control" : "SI-7(1)",
+      "matchedRuleIDs" : [
+        "os_gatekeeper_enable",
+        "os_secure_boot_verify",
+        "system_settings_gatekeeper_identified_developers_allowed"
+      ],
+      "selectedRuleIDs" : [
+        "os_gatekeeper_enable",
+        "os_secure_boot_verify",
+        "system_settings_gatekeeper_identified_developers_allowed"
+      ],
+      "sources" : [
+        "integrity"
+      ]
+    },
+    {
+      "control" : "SI-7(10)",
+      "matchedRuleIDs" : [
+
+      ],
+      "selectedRuleIDs" : [
+
+      ],
+      "sources" : [
+        "integrity"
+      ]
+    },
+    {
+      "control" : "SI-7(15)",
+      "matchedRuleIDs" : [
+        "os_gatekeeper_enable",
+        "system_settings_gatekeeper_identified_developers_allowed",
+        "system_settings_gatekeeper_override_disallow"
+      ],
+      "selectedRuleIDs" : [
+        "os_gatekeeper_enable",
+        "system_settings_gatekeeper_identified_developers_allowed",
+        "system_settings_gatekeeper_override_disallow"
+      ],
+      "sources" : [
+        "integrity"
+      ]
+    },
+    {
+      "control" : "SI-7(17)",
+      "matchedRuleIDs" : [
+
+      ],
+      "selectedRuleIDs" : [
+
+      ],
+      "sources" : [
+        "integrity"
+      ]
+    },
+    {
+      "control" : "SI-7(2)",
+      "matchedRuleIDs" : [
+
+      ],
+      "selectedRuleIDs" : [
+
+      ],
+      "sources" : [
+        "integrity"
+      ]
+    },
+    {
+      "control" : "SI-7(5)",
+      "matchedRuleIDs" : [
+        "os_secure_boot_verify"
+      ],
+      "selectedRuleIDs" : [
+        "os_secure_boot_verify"
+      ],
+      "sources" : [
+        "integrity"
+      ]
+    },
+    {
+      "control" : "SI-7(7)",
+      "matchedRuleIDs" : [
+
+      ],
+      "selectedRuleIDs" : [
+
+      ],
+      "sources" : [
+        "integrity"
+      ]
+    },
+    {
+      "control" : "SI-7(8)",
+      "matchedRuleIDs" : [
+
+      ],
+      "selectedRuleIDs" : [
+
+      ],
+      "sources" : [
+        "integrity"
+      ]
+    },
+    {
+      "control" : "SI-7(9)",
+      "matchedRuleIDs" : [
+
+      ],
+      "selectedRuleIDs" : [
+
+      ],
+      "sources" : [
+        "integrity"
+      ]
+    },
+    {
+      "control" : "SI-8",
+      "matchedRuleIDs" : [
+
+      ],
+      "selectedRuleIDs" : [
+
+      ],
+      "sources" : [
+        "availability",
+        "integrity"
+      ]
+    },
+    {
+      "control" : "SI-8(2)",
+      "matchedRuleIDs" : [
+
+      ],
+      "selectedRuleIDs" : [
+
+      ],
+      "sources" : [
+        "availability",
+        "integrity"
+      ]
+    },
+    {
+      "control" : "SR-1",
+      "matchedRuleIDs" : [
+
+      ],
+      "selectedRuleIDs" : [
+
+      ],
+      "sources" : [
+        "availability",
+        "confidentiality",
+        "integrity"
+      ]
+    },
+    {
+      "control" : "SR-10",
+      "matchedRuleIDs" : [
+
+      ],
+      "selectedRuleIDs" : [
+
+      ],
+      "sources" : [
+        "availability",
+        "confidentiality",
+        "integrity"
+      ]
+    },
+    {
+      "control" : "SR-11",
+      "matchedRuleIDs" : [
+
+      ],
+      "selectedRuleIDs" : [
+
+      ],
+      "sources" : [
+        "availability",
+        "confidentiality",
+        "integrity"
+      ]
+    },
+    {
+      "control" : "SR-11(1)",
+      "matchedRuleIDs" : [
+
+      ],
+      "selectedRuleIDs" : [
+
+      ],
+      "sources" : [
+        "availability",
+        "confidentiality",
+        "integrity"
+      ]
+    },
+    {
+      "control" : "SR-11(2)",
+      "matchedRuleIDs" : [
+
+      ],
+      "selectedRuleIDs" : [
+
+      ],
+      "sources" : [
+        "availability",
+        "confidentiality",
+        "integrity"
+      ]
+    },
+    {
+      "control" : "SR-12",
+      "matchedRuleIDs" : [
+
+      ],
+      "selectedRuleIDs" : [
+
+      ],
+      "sources" : [
+        "availability",
+        "confidentiality",
+        "integrity"
+      ]
+    },
+    {
+      "control" : "SR-2",
+      "matchedRuleIDs" : [
+
+      ],
+      "selectedRuleIDs" : [
+
+      ],
+      "sources" : [
+        "availability",
+        "confidentiality",
+        "integrity"
+      ]
+    },
+    {
+      "control" : "SR-2(1)",
+      "matchedRuleIDs" : [
+
+      ],
+      "selectedRuleIDs" : [
+
+      ],
+      "sources" : [
+        "availability",
+        "confidentiality",
+        "integrity"
+      ]
+    },
+    {
+      "control" : "SR-3",
+      "matchedRuleIDs" : [
+
+      ],
+      "selectedRuleIDs" : [
+
+      ],
+      "sources" : [
+        "availability",
+        "confidentiality",
+        "integrity"
+      ]
+    },
+    {
+      "control" : "SR-3(1)",
+      "matchedRuleIDs" : [
+
+      ],
+      "selectedRuleIDs" : [
+
+      ],
+      "sources" : [
+        "availability",
+        "confidentiality",
+        "integrity"
+      ]
+    },
+    {
+      "control" : "SR-3(2)",
+      "matchedRuleIDs" : [
+
+      ],
+      "selectedRuleIDs" : [
+
+      ],
+      "sources" : [
+        "availability",
+        "confidentiality",
+        "integrity"
+      ]
+    },
+    {
+      "control" : "SR-3(3)",
+      "matchedRuleIDs" : [
+
+      ],
+      "selectedRuleIDs" : [
+
+      ],
+      "sources" : [
+        "availability",
+        "confidentiality",
+        "integrity"
+      ]
+    },
+    {
+      "control" : "SR-4",
+      "matchedRuleIDs" : [
+
+      ],
+      "selectedRuleIDs" : [
+
+      ],
+      "sources" : [
+        "availability",
+        "confidentiality",
+        "integrity"
+      ]
+    },
+    {
+      "control" : "SR-5",
+      "matchedRuleIDs" : [
+
+      ],
+      "selectedRuleIDs" : [
+
+      ],
+      "sources" : [
+        "availability",
+        "confidentiality",
+        "integrity"
+      ]
+    },
+    {
+      "control" : "SR-5(1)",
+      "matchedRuleIDs" : [
+
+      ],
+      "selectedRuleIDs" : [
+
+      ],
+      "sources" : [
+        "availability",
+        "confidentiality",
+        "integrity"
+      ]
+    },
+    {
+      "control" : "SR-5(2)",
+      "matchedRuleIDs" : [
+
+      ],
+      "selectedRuleIDs" : [
+
+      ],
+      "sources" : [
+        "availability",
+        "confidentiality",
+        "integrity"
+      ]
+    },
+    {
+      "control" : "SR-6",
+      "matchedRuleIDs" : [
+
+      ],
+      "selectedRuleIDs" : [
+
+      ],
+      "sources" : [
+        "availability",
+        "confidentiality",
+        "integrity"
+      ]
+    },
+    {
+      "control" : "SR-6(1)",
+      "matchedRuleIDs" : [
+
+      ],
+      "selectedRuleIDs" : [
+
+      ],
+      "sources" : [
+        "availability",
+        "confidentiality",
+        "integrity"
+      ]
+    },
+    {
+      "control" : "SR-7",
+      "matchedRuleIDs" : [
+
+      ],
+      "selectedRuleIDs" : [
+
+      ],
+      "sources" : [
+        "availability",
+        "confidentiality",
+        "integrity"
+      ]
+    },
+    {
+      "control" : "SR-8",
+      "matchedRuleIDs" : [
+
+      ],
+      "selectedRuleIDs" : [
+
+      ],
+      "sources" : [
+        "availability",
+        "confidentiality",
+        "integrity"
+      ]
+    },
+    {
+      "control" : "SR-9",
+      "matchedRuleIDs" : [
+
+      ],
+      "selectedRuleIDs" : [
+
+      ],
+      "sources" : [
+        "availability",
+        "confidentiality",
+        "integrity"
+      ]
+    },
+    {
+      "control" : "SR-9(1)",
+      "matchedRuleIDs" : [
+
+      ],
+      "selectedRuleIDs" : [
+
+      ],
+      "sources" : [
+        "availability",
+        "confidentiality",
+        "integrity"
+      ]
+    }
+  ],
+  "controlsWithoutSelectedRules" : [
+    "AC-1",
+    "AC-14",
+    "AC-16",
+    "AC-16(6)",
+    "AC-16(7)",
+    "AC-17(10)",
+    "AC-17(4)",
+    "AC-17(6)",
+    "AC-18(5)",
+    "AC-19(5)",
+    "AC-2(13)",
+    "AC-2(7)",
+    "AC-20(2)",
+    "AC-20(3)",
+    "AC-21",
+    "AC-22",
+    "AC-23",
+    "AC-4(4)",
+    "AC-5",
+    "AC-6(3)",
+    "AC-6(7)",
+    "AT-1",
+    "AT-2",
+    "AT-2(2)",
+    "AT-2(3)",
+    "AT-2(4)",
+    "AT-2(5)",
+    "AT-2(6)",
+    "AT-3",
+    "AT-3(1)",
+    "AT-3(2)",
+    "AT-4",
+    "AT-6",
+    "AU-1",
+    "AU-11(1)",
+    "AU-14",
+    "AU-14(3)",
+    "AU-16",
+    "AU-16(1)",
+    "AU-16(2)",
+    "AU-6",
+    "AU-6(1)",
+    "AU-6(3)",
+    "AU-6(4)",
+    "AU-6(5)",
+    "AU-6(6)",
+    "AU-9(2)",
+    "AU-9(4)",
+    "AU-9(6)",
+    "CA-1",
+    "CA-2",
+    "CA-2(1)",
+    "CA-2(2)",
+    "CA-3",
+    "CA-3(6)",
+    "CA-5",
+    "CA-6",
+    "CA-7",
+    "CA-7(1)",
+    "CA-7(3)",
+    "CA-7(4)",
+    "CA-7(5)",
+    "CA-7(6)",
+    "CA-8",
+    "CA-8(1)",
+    "CA-8(3)",
+    "CA-9",
+    "CM-1",
+    "CM-10",
+    "CM-10(1)",
+    "CM-12",
+    "CM-12(1)",
+    "CM-2(2)",
+    "CM-2(3)",
+    "CM-2(7)",
+    "CM-3",
+    "CM-3(1)",
+    "CM-3(2)",
+    "CM-3(4)",
+    "CM-3(6)",
+    "CM-3(7)",
+    "CM-3(8)",
+    "CM-4",
+    "CM-4(1)",
+    "CM-4(2)",
+    "CM-5(5)",
+    "CM-6(2)",
+    "CM-7(3)",
+    "CM-7(8)",
+    "CM-7(9)",
+    "CM-8",
+    "CM-8(1)",
+    "CM-8(2)",
+    "CM-8(4)",
+    "CM-9",
+    "CP-1",
+    "CP-10",
+    "CP-10(2)",
+    "CP-10(4)",
+    "CP-10(6)",
+    "CP-2",
+    "CP-2(1)",
+    "CP-2(2)",
+    "CP-2(3)",
+    "CP-2(5)",
+    "CP-2(8)",
+    "CP-3",
+    "CP-3(1)",
+    "CP-4",
+    "CP-4(1)",
+    "CP-4(2)",
+    "CP-6",
+    "CP-6(1)",
+    "CP-6(2)",
+    "CP-6(3)",
+    "CP-7",
+    "CP-7(1)",
+    "CP-7(2)",
+    "CP-7(3)",
+    "CP-7(4)",
+    "CP-8",
+    "CP-8(1)",
+    "CP-8(2)",
+    "CP-8(3)",
+    "CP-8(4)",
+    "CP-8(5)",
+    "CP-9",
+    "CP-9(1)",
+    "CP-9(2)",
+    "CP-9(3)",
+    "CP-9(5)",
+    "CP-9(8)",
+    "IA-1",
+    "IA-10",
+    "IA-12",
+    "IA-12(1)",
+    "IA-12(2)",
+    "IA-12(3)",
+    "IA-12(4)",
+    "IA-3(1)",
+    "IA-4(4)",
+    "IA-4(9)",
+    "IA-5(14)",
+    "IA-5(16)",
+    "IA-5(6)",
+    "IA-5(7)",
+    "IA-5(8)",
+    "IA-8(1)",
+    "IA-8(2)",
+    "IA-8(4)",
+    "IA-9",
+    "IR-1",
+    "IR-2",
+    "IR-2(1)",
+    "IR-2(2)",
+    "IR-3",
+    "IR-3(2)",
+    "IR-4",
+    "IR-4(1)",
+    "IR-4(10)",
+    "IR-4(11)",
+    "IR-4(12)",
+    "IR-4(13)",
+    "IR-4(14)",
+    "IR-4(3)",
+    "IR-4(4)",
+    "IR-4(6)",
+    "IR-4(7)",
+    "IR-4(8)",
+    "IR-5",
+    "IR-5(1)",
+    "IR-6",
+    "IR-6(1)",
+    "IR-6(2)",
+    "IR-6(3)",
+    "IR-7",
+    "IR-7(1)",
+    "IR-7(2)",
+    "IR-8",
+    "IR-9",
+    "IR-9(2)",
+    "IR-9(3)",
+    "IR-9(4)",
+    "MA-1",
+    "MA-2",
+    "MA-2(2)",
+    "MA-3",
+    "MA-3(1)",
+    "MA-3(2)",
+    "MA-3(3)",
+    "MA-3(4)",
+    "MA-3(5)",
+    "MA-3(6)",
+    "MA-4(3)",
+    "MA-4(4)",
+    "MA-4(6)",
+    "MA-5",
+    "MA-5(1)",
+    "MA-6",
+    "MA-6(1)",
+    "MP-1",
+    "MP-2",
+    "MP-3",
+    "MP-4",
+    "MP-5",
+    "MP-6",
+    "MP-6(1)",
+    "MP-6(2)",
+    "MP-6(3)",
+    "PE-1",
+    "PE-10",
+    "PE-11",
+    "PE-11(1)",
+    "PE-12",
+    "PE-13",
+    "PE-13(1)",
+    "PE-13(2)",
+    "PE-13(4)",
+    "PE-14",
+    "PE-15",
+    "PE-15(1)",
+    "PE-16",
+    "PE-17",
+    "PE-18",
+    "PE-2",
+    "PE-22",
+    "PE-23",
+    "PE-3",
+    "PE-3(1)",
+    "PE-4",
+    "PE-5",
+    "PE-6",
+    "PE-6(1)",
+    "PE-6(4)",
+    "PE-8",
+    "PE-8(1)",
+    "PE-8(3)",
+    "PE-9",
+    "PL-1",
+    "PL-10",
+    "PL-11",
+    "PL-2",
+    "PL-4",
+    "PL-4(1)",
+    "PL-7",
+    "PL-8",
+    "PL-8(1)",
+    "PL-8(2)",
+    "PL-9",
+    "PS-1",
+    "PS-2",
+    "PS-3",
+    "PS-3(4)",
+    "PS-4",
+    "PS-4(1)",
+    "PS-4(2)",
+    "PS-5",
+    "PS-6",
+    "PS-6(3)",
+    "PS-7",
+    "PS-8",
+    "PS-9",
+    "RA-1",
+    "RA-10",
+    "RA-2",
+    "RA-3",
+    "RA-3(1)",
+    "RA-3(2)",
+    "RA-3(3)",
+    "RA-5",
+    "RA-5(10)",
+    "RA-5(11)",
+    "RA-5(2)",
+    "RA-5(4)",
+    "RA-5(5)",
+    "RA-7",
+    "RA-9",
+    "SA-1",
+    "SA-10",
+    "SA-10(1)",
+    "SA-10(3)",
+    "SA-10(7)",
+    "SA-11",
+    "SA-11(1)",
+    "SA-11(2)",
+    "SA-15",
+    "SA-15(3)",
+    "SA-15(7)",
+    "SA-16",
+    "SA-17",
+    "SA-2",
+    "SA-21",
+    "SA-22",
+    "SA-3",
+    "SA-3(1)",
+    "SA-3(2)",
+    "SA-3(3)",
+    "SA-4",
+    "SA-4(1)",
+    "SA-4(10)",
+    "SA-4(2)",
+    "SA-4(3)",
+    "SA-4(5)",
+    "SA-4(7)",
+    "SA-4(9)",
+    "SA-5",
+    "SA-8",
+    "SA-8(1)",
+    "SA-8(10)",
+    "SA-8(11)",
+    "SA-8(12)",
+    "SA-8(13)",
+    "SA-8(14)",
+    "SA-8(15)",
+    "SA-8(16)",
+    "SA-8(17)",
+    "SA-8(18)",
+    "SA-8(19)",
+    "SA-8(2)",
+    "SA-8(20)",
+    "SA-8(21)",
+    "SA-8(22)",
+    "SA-8(23)",
+    "SA-8(24)",
+    "SA-8(25)",
+    "SA-8(26)",
+    "SA-8(27)",
+    "SA-8(28)",
+    "SA-8(29)",
+    "SA-8(3)",
+    "SA-8(30)",
+    "SA-8(31)",
+    "SA-8(32)",
+    "SA-8(4)",
+    "SA-8(5)",
+    "SA-8(6)",
+    "SA-8(7)",
+    "SA-8(8)",
+    "SA-8(9)",
+    "SA-9",
+    "SA-9(1)",
+    "SA-9(2)",
+    "SA-9(3)",
+    "SA-9(8)",
+    "SC-1",
+    "SC-12(1)",
+    "SC-16",
+    "SC-16(1)",
+    "SC-16(2)",
+    "SC-16(3)",
+    "SC-18",
+    "SC-18(1)",
+    "SC-18(2)",
+    "SC-18(3)",
+    "SC-18(4)",
+    "SC-20",
+    "SC-22",
+    "SC-23",
+    "SC-23(1)",
+    "SC-23(3)",
+    "SC-23(5)",
+    "SC-38",
+    "SC-45",
+    "SC-47",
+    "SC-5(1)",
+    "SC-5(3)",
+    "SC-7(11)",
+    "SC-7(13)",
+    "SC-7(14)",
+    "SC-7(15)",
+    "SC-7(18)",
+    "SC-7(21)",
+    "SC-7(25)",
+    "SC-7(28)",
+    "SC-7(29)",
+    "SC-7(3)",
+    "SC-7(4)",
+    "SC-7(7)",
+    "SC-7(8)",
+    "SC-7(9)",
+    "SC-8(2)",
+    "SI-1",
+    "SI-10(5)",
+    "SI-10(6)",
+    "SI-12",
+    "SI-12(3)",
+    "SI-15",
+    "SI-2(3)",
+    "SI-2(4)",
+    "SI-21",
+    "SI-3(10)",
+    "SI-4",
+    "SI-4(1)",
+    "SI-4(10)",
+    "SI-4(11)",
+    "SI-4(12)",
+    "SI-4(14)",
+    "SI-4(15)",
+    "SI-4(16)",
+    "SI-4(19)",
+    "SI-4(2)",
+    "SI-4(20)",
+    "SI-4(22)",
+    "SI-4(23)",
+    "SI-4(24)",
+    "SI-4(25)",
+    "SI-4(4)",
+    "SI-4(5)",
+    "SI-5",
+    "SI-5(1)",
+    "SI-6(3)",
+    "SI-7(10)",
+    "SI-7(17)",
+    "SI-7(2)",
+    "SI-7(7)",
+    "SI-7(8)",
+    "SI-7(9)",
+    "SI-8",
+    "SI-8(2)",
+    "SR-1",
+    "SR-10",
+    "SR-11",
+    "SR-11(1)",
+    "SR-11(2)",
+    "SR-12",
+    "SR-2",
+    "SR-2(1)",
+    "SR-3",
+    "SR-3(1)",
+    "SR-3(2)",
+    "SR-3(3)",
+    "SR-4",
+    "SR-5",
+    "SR-5(1)",
+    "SR-5(2)",
+    "SR-6",
+    "SR-6(1)",
+    "SR-7",
+    "SR-8",
+    "SR-9",
+    "SR-9(1)"
+  ],
+  "excludedRuleIDs" : [
+    "auth_smartcard_certificate_trust_enforce_moderate"
+  ],
+  "sourceRuleCount" : 471,
+  "unmatchedControls" : [
+    "AC-1",
+    "AC-14",
+    "AC-16",
+    "AC-16(6)",
+    "AC-16(7)",
+    "AC-17(10)",
+    "AC-17(4)",
+    "AC-17(6)",
+    "AC-18(5)",
+    "AC-19(5)",
+    "AC-2(13)",
+    "AC-2(7)",
+    "AC-20(2)",
+    "AC-20(3)",
+    "AC-21",
+    "AC-22",
+    "AC-23",
+    "AC-4(4)",
+    "AC-5",
+    "AC-6(3)",
+    "AC-6(7)",
+    "AT-1",
+    "AT-2",
+    "AT-2(2)",
+    "AT-2(3)",
+    "AT-2(4)",
+    "AT-2(5)",
+    "AT-2(6)",
+    "AT-3",
+    "AT-3(1)",
+    "AT-3(2)",
+    "AT-4",
+    "AT-6",
+    "AU-1",
+    "AU-11(1)",
+    "AU-14",
+    "AU-14(3)",
+    "AU-16",
+    "AU-16(1)",
+    "AU-16(2)",
+    "AU-6",
+    "AU-6(1)",
+    "AU-6(3)",
+    "AU-6(4)",
+    "AU-6(5)",
+    "AU-6(6)",
+    "AU-9(2)",
+    "AU-9(4)",
+    "AU-9(6)",
+    "CA-1",
+    "CA-2",
+    "CA-2(1)",
+    "CA-2(2)",
+    "CA-3",
+    "CA-3(6)",
+    "CA-5",
+    "CA-6",
+    "CA-7",
+    "CA-7(1)",
+    "CA-7(3)",
+    "CA-7(4)",
+    "CA-7(5)",
+    "CA-7(6)",
+    "CA-8",
+    "CA-8(1)",
+    "CA-8(3)",
+    "CA-9",
+    "CM-1",
+    "CM-10",
+    "CM-10(1)",
+    "CM-12",
+    "CM-12(1)",
+    "CM-2(2)",
+    "CM-2(3)",
+    "CM-2(7)",
+    "CM-3",
+    "CM-3(1)",
+    "CM-3(2)",
+    "CM-3(4)",
+    "CM-3(6)",
+    "CM-3(7)",
+    "CM-3(8)",
+    "CM-4",
+    "CM-4(1)",
+    "CM-4(2)",
+    "CM-5(5)",
+    "CM-6(2)",
+    "CM-7(3)",
+    "CM-7(8)",
+    "CM-7(9)",
+    "CM-8",
+    "CM-8(1)",
+    "CM-8(2)",
+    "CM-8(4)",
+    "CM-9",
+    "CP-1",
+    "CP-10",
+    "CP-10(2)",
+    "CP-10(4)",
+    "CP-10(6)",
+    "CP-2",
+    "CP-2(1)",
+    "CP-2(2)",
+    "CP-2(3)",
+    "CP-2(5)",
+    "CP-2(8)",
+    "CP-3",
+    "CP-3(1)",
+    "CP-4",
+    "CP-4(1)",
+    "CP-4(2)",
+    "CP-6",
+    "CP-6(1)",
+    "CP-6(2)",
+    "CP-6(3)",
+    "CP-7",
+    "CP-7(1)",
+    "CP-7(2)",
+    "CP-7(3)",
+    "CP-7(4)",
+    "CP-8",
+    "CP-8(1)",
+    "CP-8(2)",
+    "CP-8(3)",
+    "CP-8(4)",
+    "CP-8(5)",
+    "CP-9",
+    "CP-9(1)",
+    "CP-9(2)",
+    "CP-9(3)",
+    "CP-9(5)",
+    "CP-9(8)",
+    "IA-1",
+    "IA-10",
+    "IA-12",
+    "IA-12(1)",
+    "IA-12(2)",
+    "IA-12(3)",
+    "IA-12(4)",
+    "IA-3(1)",
+    "IA-4(4)",
+    "IA-4(9)",
+    "IA-5(14)",
+    "IA-5(16)",
+    "IA-5(6)",
+    "IA-5(7)",
+    "IA-5(8)",
+    "IA-8(1)",
+    "IA-8(2)",
+    "IA-8(4)",
+    "IA-9",
+    "IR-1",
+    "IR-2",
+    "IR-2(1)",
+    "IR-2(2)",
+    "IR-3",
+    "IR-3(2)",
+    "IR-4",
+    "IR-4(1)",
+    "IR-4(10)",
+    "IR-4(11)",
+    "IR-4(12)",
+    "IR-4(13)",
+    "IR-4(14)",
+    "IR-4(3)",
+    "IR-4(4)",
+    "IR-4(6)",
+    "IR-4(7)",
+    "IR-4(8)",
+    "IR-5",
+    "IR-5(1)",
+    "IR-6",
+    "IR-6(1)",
+    "IR-6(2)",
+    "IR-6(3)",
+    "IR-7",
+    "IR-7(1)",
+    "IR-7(2)",
+    "IR-8",
+    "IR-9",
+    "IR-9(2)",
+    "IR-9(3)",
+    "IR-9(4)",
+    "MA-1",
+    "MA-2",
+    "MA-2(2)",
+    "MA-3",
+    "MA-3(1)",
+    "MA-3(2)",
+    "MA-3(3)",
+    "MA-3(4)",
+    "MA-3(5)",
+    "MA-3(6)",
+    "MA-4(3)",
+    "MA-4(4)",
+    "MA-4(6)",
+    "MA-5",
+    "MA-5(1)",
+    "MA-6",
+    "MA-6(1)",
+    "MP-1",
+    "MP-2",
+    "MP-3",
+    "MP-4",
+    "MP-5",
+    "MP-6",
+    "MP-6(1)",
+    "MP-6(2)",
+    "MP-6(3)",
+    "PE-1",
+    "PE-10",
+    "PE-11",
+    "PE-11(1)",
+    "PE-12",
+    "PE-13",
+    "PE-13(1)",
+    "PE-13(2)",
+    "PE-13(4)",
+    "PE-14",
+    "PE-15",
+    "PE-15(1)",
+    "PE-16",
+    "PE-17",
+    "PE-18",
+    "PE-2",
+    "PE-22",
+    "PE-23",
+    "PE-3",
+    "PE-3(1)",
+    "PE-4",
+    "PE-5",
+    "PE-6",
+    "PE-6(1)",
+    "PE-6(4)",
+    "PE-8",
+    "PE-8(1)",
+    "PE-8(3)",
+    "PE-9",
+    "PL-1",
+    "PL-10",
+    "PL-11",
+    "PL-2",
+    "PL-4",
+    "PL-4(1)",
+    "PL-7",
+    "PL-8",
+    "PL-8(1)",
+    "PL-8(2)",
+    "PL-9",
+    "PS-1",
+    "PS-2",
+    "PS-3",
+    "PS-3(4)",
+    "PS-4",
+    "PS-4(1)",
+    "PS-4(2)",
+    "PS-5",
+    "PS-6",
+    "PS-6(3)",
+    "PS-7",
+    "PS-8",
+    "PS-9",
+    "RA-1",
+    "RA-10",
+    "RA-2",
+    "RA-3",
+    "RA-3(1)",
+    "RA-3(2)",
+    "RA-3(3)",
+    "RA-5",
+    "RA-5(10)",
+    "RA-5(11)",
+    "RA-5(2)",
+    "RA-5(4)",
+    "RA-5(5)",
+    "RA-7",
+    "RA-9",
+    "SA-1",
+    "SA-10",
+    "SA-10(1)",
+    "SA-10(3)",
+    "SA-10(7)",
+    "SA-11",
+    "SA-11(1)",
+    "SA-11(2)",
+    "SA-15",
+    "SA-15(3)",
+    "SA-15(7)",
+    "SA-16",
+    "SA-17",
+    "SA-2",
+    "SA-21",
+    "SA-22",
+    "SA-3",
+    "SA-3(1)",
+    "SA-3(2)",
+    "SA-3(3)",
+    "SA-4",
+    "SA-4(1)",
+    "SA-4(10)",
+    "SA-4(2)",
+    "SA-4(3)",
+    "SA-4(5)",
+    "SA-4(7)",
+    "SA-4(9)",
+    "SA-5",
+    "SA-8",
+    "SA-8(1)",
+    "SA-8(10)",
+    "SA-8(11)",
+    "SA-8(12)",
+    "SA-8(13)",
+    "SA-8(14)",
+    "SA-8(15)",
+    "SA-8(16)",
+    "SA-8(17)",
+    "SA-8(18)",
+    "SA-8(19)",
+    "SA-8(2)",
+    "SA-8(20)",
+    "SA-8(21)",
+    "SA-8(22)",
+    "SA-8(23)",
+    "SA-8(24)",
+    "SA-8(25)",
+    "SA-8(26)",
+    "SA-8(27)",
+    "SA-8(28)",
+    "SA-8(29)",
+    "SA-8(3)",
+    "SA-8(30)",
+    "SA-8(31)",
+    "SA-8(32)",
+    "SA-8(4)",
+    "SA-8(5)",
+    "SA-8(6)",
+    "SA-8(7)",
+    "SA-8(8)",
+    "SA-8(9)",
+    "SA-9",
+    "SA-9(1)",
+    "SA-9(2)",
+    "SA-9(3)",
+    "SA-9(8)",
+    "SC-1",
+    "SC-12(1)",
+    "SC-16",
+    "SC-16(1)",
+    "SC-16(2)",
+    "SC-16(3)",
+    "SC-18",
+    "SC-18(1)",
+    "SC-18(2)",
+    "SC-18(3)",
+    "SC-18(4)",
+    "SC-20",
+    "SC-22",
+    "SC-23",
+    "SC-23(1)",
+    "SC-23(3)",
+    "SC-23(5)",
+    "SC-38",
+    "SC-45",
+    "SC-47",
+    "SC-5(1)",
+    "SC-5(3)",
+    "SC-7(11)",
+    "SC-7(13)",
+    "SC-7(14)",
+    "SC-7(15)",
+    "SC-7(18)",
+    "SC-7(21)",
+    "SC-7(25)",
+    "SC-7(28)",
+    "SC-7(29)",
+    "SC-7(3)",
+    "SC-7(4)",
+    "SC-7(7)",
+    "SC-7(8)",
+    "SC-7(9)",
+    "SC-8(2)",
+    "SI-1",
+    "SI-10(5)",
+    "SI-10(6)",
+    "SI-12",
+    "SI-12(3)",
+    "SI-15",
+    "SI-2(3)",
+    "SI-2(4)",
+    "SI-21",
+    "SI-3(10)",
+    "SI-4",
+    "SI-4(1)",
+    "SI-4(10)",
+    "SI-4(11)",
+    "SI-4(12)",
+    "SI-4(14)",
+    "SI-4(15)",
+    "SI-4(16)",
+    "SI-4(19)",
+    "SI-4(2)",
+    "SI-4(20)",
+    "SI-4(22)",
+    "SI-4(23)",
+    "SI-4(24)",
+    "SI-4(25)",
+    "SI-4(4)",
+    "SI-4(5)",
+    "SI-5",
+    "SI-5(1)",
+    "SI-6(3)",
+    "SI-7(10)",
+    "SI-7(17)",
+    "SI-7(2)",
+    "SI-7(7)",
+    "SI-7(8)",
+    "SI-7(9)",
+    "SI-8",
+    "SI-8(2)",
+    "SR-1",
+    "SR-10",
+    "SR-11",
+    "SR-11(1)",
+    "SR-11(2)",
+    "SR-12",
+    "SR-2",
+    "SR-2(1)",
+    "SR-3",
+    "SR-3(1)",
+    "SR-3(2)",
+    "SR-3(3)",
+    "SR-4",
+    "SR-5",
+    "SR-5(1)",
+    "SR-5(2)",
+    "SR-6",
+    "SR-6(1)",
+    "SR-7",
+    "SR-8",
+    "SR-9",
+    "SR-9(1)"
+  ]
+}

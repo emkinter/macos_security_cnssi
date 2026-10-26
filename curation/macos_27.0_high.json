@@ -1,0 +1,3 @@
+{
+  "auth_smartcard_certificate_trust_enforce_moderate": "Select auth_smartcard_certificate_trust_enforce_high, matching the upstream 800-53r5_high_macos_27.0 baseline. Both variants map to IA-5(2) and SC-17; retaining both would specify conflicting trust settings. This high-impact example uses hard revocation checking and requires network availability."
+}
