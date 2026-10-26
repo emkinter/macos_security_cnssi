@@ -992,7 +992,7 @@ do {
         if cn == nil { missing.append("--macos-security-cnssi <path>") }
         if os == nil { missing.append("--branch-name <name>") }
         
-        guard missing.isEmpty else {
+        guard missing.isEmpty, let ms, let cn, let os else {
             print("❌ Error: Missing required arguments for 'merge' command:\n")
             for arg in missing {
                 print("  • \(arg)")
